@@ -422,7 +422,7 @@ href="$title.getAttributeValue("href")">$menu.getChildText("title")</a></div>
 		<div class="column span-8 prepend-16 search searchsub">
     #end
 			<form action="http://www.google.com/search" method="get">
-		         <input value="*.apache.org" name="sitesearch" type="hidden"/>
+		         <input value="attic.apache.org" name="sitesearch" type="hidden"/>
 		         <input size="10" name="q" id="query" type="text"/>
 		         <input name="Search" value="Go" type="submit"/>
 	       </form>
