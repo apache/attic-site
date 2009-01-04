@@ -30,7 +30,7 @@
   <!-- TODO: Make Specifically a link to the relevant board resolution -->
   <p>
     The Apache Attic was created in Dec 2008 to provide process and solutions to make it 
-    clear when an Apache product has reached its end of life. Specifically to be:  
+    clear when an Apache project has reached its end of life. Specifically to be:  
   </p>
   <p style="font-family: monospace">
     "responsible for the oversight of projects which otherwise would not have 
@@ -43,9 +43,9 @@
 <section id="incoming">
   <title>Getting into the Attic</title>
 
-  <p>There are two mechanisms by which a product may enter the Attic. Either the managing 
-     Project Management Committee (PMC) decides it would like to move the product, or The 
-     Apache Software Foundation board dissolves the PMC and chooses to move the product. </p>
+  <p>There are two mechanisms by which a project may enter the Attic. Either the managing 
+     Project Management Committee (PMC) decides it would like to move the project, or The 
+     Apache Software Foundation board dissolves the PMC and chooses to move the project. </p>
 </section>
 
 <section id="attic-projects">
