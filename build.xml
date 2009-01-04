@@ -75,7 +75,7 @@
 		<anakia basedir="${docs.src}" destdir="${docs.dest}/"
              extension=".html" style="./site.vsl"
              projectFile="stylesheets/project.xml"
-             excludes="**/stylesheets/** empty.xml"
+             excludes="**/stylesheets/**"
              includes="**/*.xml"
              lastModifiedCheck="${anakia.check.date}"
              templatePath="${docs.src}/stylesheets"
@@ -127,7 +127,7 @@
 
 	  <target name="clean-docs">
 	    <delete> 
-	    	<fileset dir="${docs.dest}" excludes=".svn/** ca/README dev/drafts/**"/>
+	    	<fileset dir="${docs.dest}" excludes=".svn/**"/>
 	    </delete>
 	  </target>
 
