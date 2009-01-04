@@ -29,7 +29,7 @@
 
   <!-- TODO: Make Specifically a link to the relevant board resolution -->
   <p>
-    The Apache Attic was created in Dec 2008 to provide process and solutions to make it 
+    The Apache Attic was created in December 2008 to provide process and solutions to make it 
     clear when an Apache project has reached its end of life. Specifically to be:  
   </p>
   <p style="font-family: monospace">
@@ -38,14 +38,51 @@
     projects under its oversight"
   </p>
 
+  <p>It is intended to: </p>
+  <ul>
+    <li>Be non-impacting to users</li>
+    <li>Provide restricted oversight for these codebases</li>
+    <li>Provide oversight for active user lists with no Project Management Committee (PMC)</li>
+  </ul>
+
+  <p>It is not intended to: </p>
+  <ul>
+    <li>Rebuild community</li>
+    <li>Make bugfixes</li>
+    <li>Make releases</li>
+  </ul>
 </section>
 
 <section id="incoming">
   <title>Getting into the Attic</title>
 
-  <p>There are two mechanisms by which a project may enter the Attic. Either the managing 
+  <p>There are two expected mechanisms by which a project may enter the Attic. Either the managing 
      Project Management Committee (PMC) decides it would like to move the project, or The 
-     Apache Software Foundation board dissolves the PMC and chooses to move the project. </p>
+     Apache Software Foundation's board dissolves the PMC and chooses to move the project. </p>
+</section>
+
+<section id="candidates">
+  <title>When should a project move to the Attic?</title>
+
+  <p>Projects whose PMC are unable to muster 3 votes for a release, who have no active committers or 
+     are unable to fulfill their reporting duties to the board are all good candidates for the Attic. </p>
+</section>
+
+<section id="process">
+  <title>Process of moving into the Attic</title>
+
+  <p>To be defined. </p>
+</section>
+
+<section id="departure">
+  <title>Process of leaving the Attic again</title>
+
+  <p>Options are: </p>
+  <ul>
+    <li>Forking the project - we'll link to any forks which have been created so please let us know</li>
+    <li>Restarting the community in the Apache Incubator</li>
+    <li>Recreating a PMC for the project</li>
+  </ul>
 </section>
 
 <section id="attic-projects">
@@ -60,6 +97,12 @@
   <p>The Attic is managed by a Project Management Committee (PMC). Discussions are found on 
      the <a href="http://mail-archives.apache.org/mod_mbox/attic-general/">general@ mailing list</a>
      and you are welcome to subscribe. </p>
+</section>
+
+<section id="FAQ">
+  <title>Attic FAQ</title>
+
+  <p>Please ask away on the list and we'll grow this FAQ. </p>
 </section>
 
 </body>

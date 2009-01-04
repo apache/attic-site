@@ -21,11 +21,10 @@ limitations under the License.
   <body>
 
 
-    <projects><title href="">What's the Attic?</title>
+    <projects><title href="">The Apache Attic</title>
     </projects>
 
-    <menu><title href="">Projects in the Attic</title>
-      <li><a href="">Foo Proj</a></li>
+    <menu><title href="#attic-projects">Projects in the Attic</title>
     </menu>
 
   </body>
