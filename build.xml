@@ -104,7 +104,6 @@
 			If a file is not updated, and you think it should be, try deleting the html file and rebuilding.
 			
 			Or rebuild with the property:  -Danakia.check.date=false
-			
 		</echo>
 
 		<antcall target="FixCRLF"></antcall>
