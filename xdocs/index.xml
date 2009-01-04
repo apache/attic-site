@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License. 
+-->
+<document>
+  <properties>
+    <author email="apache.AT.apache.DOT.org">The Apache Software Foundation</author>
+    <title>The Apache Attic</title>
+  </properties>
+<body>
+
+<section id="attic">
+  <title>The Apache Attic</title>
+
+  <!-- TODO: Make Specifically a link to the relevant board resolution -->
+  <p>
+    The Apache Attic was created in Dec 2008 to provide process and solutions to make it 
+    clear when an Apache product has reached its end of life. Specifically to be:  
+  </p>
+  <p style="font-family: monospace">
+    "responsible for the oversight of projects which otherwise would not have 
+    oversight; and be it further ... is not authorized to actively develop and release the 
+    projects under its oversight"
+  </p>
+
+</section>
+
+<section id="incoming">
+  <title>Getting into the Attic</title>
+
+  <p>There are two mechanisms by which a product may enter the Attic. Either the managing 
+     Project Management Committee (PMC) decides it would like to move the product, or The 
+     Apache Software Foundation board dissolves the PMC and chooses to move the product. </p>
+</section>
+
+<section id="attic-projects">
+  <title>Projects in the Attic</title>
+
+  <p>There are currently no projects in the Attic. </p>
+</section>
+
+<section id="contact">
+  <title>Contacting the Attic PMC</title>
+
+  <p>The Attic is managed by a Project Management Committee (PMC). Discussions are found on 
+     the <a href="http://mail-archives.apache.org/mod_mbox/attic-general/">general@ mailing list</a>
+     and you are welcome to subscribe. </p>
+</section>
+
+</body>
+</document>

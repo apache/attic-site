@@ -53,36 +53,6 @@
         </echo>
 	</target>
 
-	<target name='generate-site-map' depends='prepare-texen' if='TexenTask.present'>
-		<delete quiet="true">
-			<fileset dir="${texen.work}" includes="*.xml"/>
-		</delete>
-		<mkdir dir='${texen.work}'/>
-		<taskdef 
-				name="texen" 
-				classname="org.apache.velocity.texen.ant.TexenTask" 
-				classpathref='classpath' />
-		<!-- Use XSLT to extract indexes from development documents -->
-		<xslt 
-				processor="trax"
-				basedir='${docs.src}/dev' 
-				destdir='${texen.work}' 
-				extension='.xml' 
-				style='${texen.src}/index.xsl'>
-			<exclude name='navigation.xml' />
-			<exclude name='sitemap.xml' />
-                        <exclude name='index.xml' />
-			<include name='*.xml' />
-		</xslt>
-
-		<!-- Use Texen to combine indexes into final document -->
-		<texen 
-				controlTemplate='control.vsl' 
-				outputDirectory='${docs.src}/dev' 
-				templatePath='${texen.src}' 
-				outputFile='../../${texen.work}/generation.report' />
-	</target>
-
 	<target name="prepare">
 		<available classname="org.apache.velocity.anakia.AnakiaTask" property="AnakiaTask.present">
 			<classpath refid="classpath"/>
@@ -97,7 +67,7 @@
 	</target>
 
 	
-	<target name="docs" depends="prepare-error, generate-site-map" if="AnakiaTask.present">
+	<target name="docs" depends="prepare-error" if="AnakiaTask.present">
 		<taskdef name="anakia" classname="org.apache.velocity.anakia.AnakiaTask">
 			<classpath refid="classpath"/>
 		</taskdef>
@@ -124,18 +94,13 @@
 				<exclude name="**/*.xml"/>
 				<exclude name="**/stylesheets/**"/>
 				
-				<!-- Ignore the word-processor source documents used to create the PDFs -->
-                <exclude name="**/icla.odt"/>
-                <exclude name="**/icla.doc"/>
-
 				<!-- Editor-specific ignores. -->
 				<exclude name="**/*~"/>
 				<exclude name="**/.#*"/>
 			</fileset>
 		</copy>
 		<echo level="info">
-			The build process always rebuilds site.html, but only rebuilds other html files 
-			that are older than the corresponding xml file. 
+			The build process only rebuilds html files that are older than the corresponding xml file. 
 			If a file is not updated, and you think it should be, try deleting the html file and rebuilding.
 			
 			Or rebuild with the property:  -Danakia.check.date=false
