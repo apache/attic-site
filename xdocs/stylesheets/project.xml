@@ -24,13 +24,8 @@ limitations under the License.
     <projects><title href="">What's the Attic?</title>
     </projects>
 
-    <projects><title href="">Projects in the Attic</title>
+    <menu><title href="">Projects in the Attic</title>
       <li><a href="">Foo Proj</a></li>
-    </projects>
-
-    <menu>
-      <title href=''>Right hand side</title>
-      <li><a href=''>menu</a></li>
     </menu>
 
   </body>
