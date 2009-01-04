@@ -375,19 +375,6 @@ href="$title.getAttributeValue("href")">$menu.getChildText("title")</a></div>
 #else
  <body id="sub">
 #end
- 	<div class="navigation">
-		<ul>
-#if ($isHomePage == 0)
-			<li><a href="$relativePath/" title="Foundation Home">Home</a></li>
-#end
-			<li><a href="$relativePath/foundation" title="About the Foundation">Foundation</a></li>
-			<li><a href="http://projects.apache.org" title="Apache Projects">Projects</a></li>
-			<li><a href="http://people.apache.org" title="Apache People">People</a></li>
-			<li><a href="$relativePath/foundation/getinvolved.html" title="Get involved in Apache">Get Involved</a></li>
-			<li><a href="$relativePath/foundation/sponsorship.html" title="Support the mission of Apache">Support Apache</a></li>			
-			<li class="dlink"><a href="$relativePath/dyn/closer.cgi" title="Download Apache projects">Download</a></li>
-		</ul>
-	</div>
 	<div class="container">
 	<hr class="space col"/>
 	<div class="block">
