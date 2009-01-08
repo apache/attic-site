@@ -71,7 +71,19 @@
 <section id="process">
   <title>Process of moving into the Attic</title>
 
-  <p>To be defined. </p>
+  <p>This won't be defined fully until we actually start moving projects into the Attic. The following is a rough general plan of action. </p>
+  <ol start="0">
+    <li>Prior to this the Apache Board has moved the oversight of the project from its prior PMC to the Attic PMC. </li>
+    <li>Indicate on websites that the project is in the Attic</li>
+    <li>Make the SVN read only</li>
+    <li>Inform user email list</li>
+    <li>Consider killing user email list</li>
+    <li>Kill the dev list</li>
+    <li>README on archives for downloads</li>
+    <li>Kill automated builds</li>
+    <li>Retire in issue-trackers</li>
+    <li>Remove from www.apache.org navigation</li>
+  </ol>
 </section>
 
 <section id="departure">
@@ -83,12 +95,6 @@
     <li>Restarting the community in the Apache Incubator</li>
     <li>Recreating a PMC for the project</li>
   </ul>
-</section>
-
-<section id="attic-projects">
-  <title>Projects in the Attic</title>
-
-  <p>There are currently no projects in the Attic. </p>
 </section>
 
 <section id="contact">

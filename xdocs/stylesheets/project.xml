@@ -21,10 +21,16 @@ limitations under the License.
   <body>
 
 
-    <projects><title href="">The Apache Attic</title>
+    <projects><title>The Apache Attic</title>
+      <li><a href="http://attic.apache.org/">Home</a></li>
     </projects>
 
-    <menu><title href="#attic-projects">Projects in the Attic</title>
+    <projects><title>Related Links</title>
+      <li><a href="http://incubator.apache.org/">Apache Incubator</a></li>
+    </projects>
+
+    <menu><title>Projects in the Attic</title>
+      <li>None yet</li>
     </menu>
 
   </body>
