@@ -27,10 +27,11 @@
 <section id="attic">
   <title>The Apache Attic</title>
 
-  <!-- TODO: Make Specifically a link to the relevant board resolution -->
   <p>
-    The Apache Attic was created in December 2008 to provide process and solutions to make it 
-    clear when an Apache project has reached its end of life. Specifically to be:  
+    The Apache Attic was created in 
+    <a href="http://www.apache.org/foundation/records/minutes/2008/board_minutes_2008_11_19.txt">November 2008</a> 
+    to provide process and solutions to make it clear when an Apache project has reached its 
+    end of life. Specifically to be:  
   </p>
   <p style="font-family: monospace">
     "responsible for the oversight of projects which otherwise would not have 
