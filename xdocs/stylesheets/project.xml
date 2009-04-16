@@ -30,7 +30,7 @@ limitations under the License.
     </projects>
 
     <menu><title>Projects in the Attic</title>
-      <li>None yet</li>
+      <li><a href="http://hivemind.apache.org/">Apache HiveMind</a></li>
     </menu>
 
   </body>
