@@ -112,7 +112,9 @@ ${Name} on behalf of ${project} + the Attic.
      notification should be pointed to general@attic.apache.org. </p>
 
   <p>Someone with JIRA or Bugzilla administrative rights should modify the project to be read-only. In JIRA this means moving it to the Retired 
-     category and applying the Read-Only Permissions. You should also note that the project is retired and read-only in the JIRA description. </p>
+     category and applying the Read-Only Permissions. You should also note that the project is retired and read-only in the JIRA description: </p>
+
+  <pre>THIS PROJECT IS RETIRED AND THE JIRA READ-ONLY.</pre>
 </section>
 
 <section id="atticsite">
