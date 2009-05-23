@@ -22,8 +22,8 @@ limitations under the License.
 
 
     <projects><title>The Apache Attic</title>
-      <li><a href="http://attic.apache.org/">Home</a></li>
-      <li><a href="http://attic.apache.org/process.html">Process</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/process.html">Process</a></li>
       <li><a href="http://issues.apache.org/jira/browse/ATTIC">Process tracking</a></li>
     </projects>
 
@@ -32,11 +32,13 @@ limitations under the License.
     </projects>
 
     <menu><title>Projects in the Attic</title>
-      <li><a href="projects/hivemind.html">HiveMind</a></li>
+      <li><a href="/projects/hivemind.html">HiveMind</a></li>
+      <li><a href="/projects/shale.html">Shale</a></li>
     </menu>
 
     <menu><title>Mailling lists in the Attic</title>
       <li>hivemind-user</li>
+      <li>shale-user</li>
     </menu>
 
   </body>

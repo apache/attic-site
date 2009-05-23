@@ -20,27 +20,27 @@
 <document>
   <properties>
     <author email="general.AT.attic.apache.DOT.org">The Apache Software Foundation</author>
-    <title>Apache HiveMind</title>
+    <title>Apache Shale</title>
   </properties>
 <body>
 
-<section id="hivemind">
-  <title>Apache HiveMind</title>
+<section id="shale">
+  <title>Apache Shale</title>
 
-  <p><a href="http://hivemind.apache.org">Apache HiveMind</a> moved into the Attic in April 2009. 
-     HiveMind was a services and configuration microkernel. Its features are also referred to as 
-     Inversion of Control (IoC) Container or Lightweight Container.
-     Closely linked to Tapestry 4, it lost activity when Tapestry 5 moved to a new IoC container. </p>
-
+  <p><a href="http://shale.apache.org">Apache Shale</a> moved into the Attic in May 2009. 
+     Shale was a web application framework, fundamentally based on JavaServer Faces. This 
+     blog entry from Kito Mann is an excellent discussion of Shale's retirement: 
+     <a href="http://blogs.jsfcentral.com/editorsdesk/entry/shale_in_the_attic">http://blogs.jsfcentral.com/editorsdesk/entry/shale_in_the_attic</a>. </p>
+     
   <p>The user mailing list, website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at 
-     <a href="http://hivemind.apache.org/">http://hivemind.apache.org</a> for more information on HiveMind. </p>
+     <a href="http://shale.apache.org/">http://shale.apache.org</a> for more information on Shale. </p>
 
-  <p><a href="http://markmail.org/thread/hb46sg2nolnntnnz">Discussion on the mailing list</a> 
-     indicated that <a href="http://tapestry.apache.org/tapestry5/tapestry-ioc/">Tapestry IoC</a>
-     was the natural successor to HiveMind. </p>
+  <p><a href="http://markmail.org/message/liexnvlxdlahlr74">Discussion on the mailing list</a> 
+     indicated that <a href="http://seamframework.org">Seam</a> and <a href="http://myfaces.apache.org">MyFaces</a> 
+     were the natural successors to Shale. </p>
 
-  <p>As with any project in the Attic - if you should choose to fork HiveMind outside of Apache, 
+  <p>As with any project in the Attic - if you should choose to fork Shale outside of Apache, 
      please let us know so we can link to your project. </p>
 
 </section>
