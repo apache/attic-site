@@ -64,11 +64,12 @@
     <li>Open a JIRA item - 'Move ${project} to the Attic'. </li>
     <li>Open a subtask: Board resolution successful. </li>
     <li>Ensure a Board resolution is on the next Board agenda. Once this is successful, continue. </li>
+    <li>Open a ticket with Infra to have website and downloads chgrp'd to attic</li>
     <li>Open the following subtasks (see below for more information): 
       <ul>
         <li>Inform users</li>
         <li>Update website with Attic notice</li>
-        <li>Update README in downloads</li>
+        <li>Update README.html in downloads</li>
         <li>Make SVN + JIRA/Bugzilla read-only</li>
         <li>Create page on Attic site</li>
         <li>Turn off automated builds</li>
@@ -120,14 +121,16 @@ ${Name} on behalf of ${project} + the Attic.
 </div>
                  
 <h4 id="downloads">
-   Update README in downloads
+   Update README.html in downloads
 </h4>
 <div class="section-content">
 <p>Another area to take note of the move to the Attic is the download section. Add or update a README.html file that says something like: </p>
 <pre>
-YYYY/MM/DD - Apache ${project} has been retired.
+&lt;h1&gt;Project Retired&lt;/h1&gt;
 
-For more information, please explore the Attic at http://attic.apache.org 
+&lt;p&gt;yyyy/mm/dd - Apache ${project} has been retired.&lt;/p&gt;
+
+&lt;p&gt;For more information, please explore the Attic at http://attic.apache.org&lt;/p&gt;
   </pre>
 </div>
                  
