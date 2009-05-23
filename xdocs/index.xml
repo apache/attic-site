@@ -74,19 +74,8 @@
 <section id="process">
   <title>Process of moving into the Attic</title>
 
-  <p>This won't be defined fully until we actually start moving projects into the Attic. The following is a rough general plan of action. </p>
-  <ol start="0">
-    <li>Prior to this the Apache Board has moved the oversight of the project from its prior PMC to the Attic PMC. </li>
-    <li>Indicate on websites that the project is in the Attic</li>
-    <li>Make the SVN read only</li>
-    <li>Inform user email list</li>
-    <li>Consider killing user email list</li>
-    <li>Kill the dev list</li>
-    <li>README on archives for downloads</li>
-    <li>Kill automated builds</li>
-    <li>Retire in issue-trackers</li>
-    <li>Remove from www.apache.org navigation</li>
-  </ol>
+  <p>This is defined in the separate <a href="process.html">process</a> document. </p>
+
 </section>
 
 <section id="departure">
