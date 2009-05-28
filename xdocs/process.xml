@@ -39,7 +39,7 @@
       <ul>
         <li>Inform users</li>
         <li>Update website with Attic notice</li>
-        <li>Update README.html in downloads</li>
+        <li>Update HEADER.html in downloads</li>
         <li>Make SVN + JIRA/Bugzilla read-only</li>
         <li>Create page on Attic site</li>
         <li>Turn off automated builds</li>
@@ -92,9 +92,9 @@ ${Name} on behalf of ${project} + the Attic.
 </section>
 
 <section id="downloads">
-  <title>Update README.html in downloads</title>
+  <title>Update HEADER.html in downloads</title>
 
-  <p>Another area to take note of the move to the Attic is the download section. Add or update a README.html file that says something like: </p>
+  <p>Another area to take note of the move to the Attic is the download section. Add or update a HEADER.html file that says something like: </p>
 
   <pre>
 &lt;h1&gt;Project Retired&lt;/h1&gt;
