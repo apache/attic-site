@@ -37,8 +37,8 @@ limitations under the License.
     </menu>
 
     <menu><title>Mailling lists in the Attic</title>
-      <li>hivemind-user</li>
-      <li>shale-user</li>
+      <li><a href="http://mail-archives.apache.org/mod_mbox/hivemind-user/">hivemind-user</a></li>
+      <li><a href="http://mail-archives.apache.org/mod_mbox/shale-user/">shale-user</a></li>
     </menu>
 
   </body>
