@@ -27,8 +27,10 @@ limitations under the License.
       <li><a href="http://issues.apache.org/jira/browse/ATTIC">Process tracking</a></li>
     </projects>
 
-    <projects><title>Related Links</title>
-      <li><a href="http://incubator.apache.org/">Apache Incubator</a></li>
+    <projects><title>Related Apache Links</title>
+      <li><a href="http://www.apache.org/">Foundation</a></li>
+      <li><a href="http://www.apache.org/foundation/thanks.html">Sponsors</a></li>
+      <li><a href="http://incubator.apache.org/">Incubator</a></li>
     </projects>
 
     <menu><title>Projects in the Attic</title>
