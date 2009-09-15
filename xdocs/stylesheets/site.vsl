@@ -375,7 +375,7 @@ href="$title.getAttributeValue("href")">$menu.getChildText("title")</a></div>
 #else
  <body id="sub">
 #end
-	<div class="atticcontainer">
+	<div class="container">
 	<hr class="space col"/>
 	<div class="block">
 		<div class="column span-24">
