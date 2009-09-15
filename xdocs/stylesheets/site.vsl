@@ -346,6 +346,7 @@ href="$title.getAttributeValue("href")">$menu.getChildText("title")</a></div>
 #end
 	<link rel="stylesheet" href="http://www.apache.org/style/compressed.css" type="text/css" media="screen, projection"/>
 	<link rel="stylesheet" href="http://www.apache.org/style/style.css" type="text/css" media="screen, projection"/>
+	<link rel="stylesheet" href="http://attic.apache.org/style/attic.css" type="text/css" media="screen, projection"/>
 #if ($is_dynpage == 1)
 	<!--[[]if IE]><link rel="stylesheet" href="http://www.apache.org/style/ie.css" type="text/css" media="screen, projection"/><![[]endif]-->
 #else
