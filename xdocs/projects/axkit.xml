@@ -27,7 +27,7 @@
 <section id="axkit">
   <title>Apache AxKit</title>
 
-  <p><a href="http://axkit.org">Apache Axkit</a> moved into the Attic in August 2009. 
+  <p><a href="http://axkit.org">Apache AxKit</a> moved into the Attic in August 2009. 
      Apache AxKit was an XML Application Server for Apache. It provided on-the-fly 
      conversion from XML to any format, such as HTML, WAP or text using either W3C 
      standard techniques, or flexible custom code.</p>
