@@ -20,7 +20,6 @@ limitations under the License.
 
   <body>
 
-
     <projects><title>The Apache Attic</title>
       <li><a href="/">Home</a></li>
       <li><a href="/process.html">Process</a></li>
@@ -38,11 +37,13 @@ limitations under the License.
       <li><a href="/projects/shale.html">Shale</a></li>
       <li><a href="/projects/axkit.html">AxKit</a></li>
       <li><a href="/projects/xang.html">Xang</a></li>
+      <li><a href="/projects/beehive.html">Beehive</a></li>
     </menu>
 
     <menu><title>Mailling lists in the Attic</title>
       <li><a href="http://mail-archives.apache.org/mod_mbox/hivemind-user/">hivemind-user</a></li>
       <li><a href="http://mail-archives.apache.org/mod_mbox/shale-user/">shale-user</a></li>
+      <li><a href="http://mail-archives.apache.org/mod_mbox/beehive-user/">beehive-user</a></li>
     </menu>
 
   </body>
