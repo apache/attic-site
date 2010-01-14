@@ -35,8 +35,14 @@
      the issue tracker is read-only. See the website at 
      <a href="http://beehive.apache.org/">http://beehive.apache.org</a> for more information on Beehive. </p>
 
-  <p>We do not know of any natural successors or potential forks for Beehive. As with 
-     any project in the Attic - if you should choose to fork Beehive outside of Apache, 
+  <p>If you are looking for a project to use in place of Beehive, the following have been suggested for its components: </p>
+  <ul>
+    <li>Beehive NetUI / Page Flow - Struts 2 or Spring Web Flow</li>
+    <li>Beehive Controls - Spring Beans</li>
+    <li>Beehive WSM (web service metadata) - Axis2's implementation of JSR-181</li>
+  </ul>
+
+  <p>As with any project in the Attic - if you should choose to fork Beehive outside of Apache, 
      please let us know so we can link to your project. </p>
 
 </section>
