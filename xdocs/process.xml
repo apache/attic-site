@@ -40,6 +40,8 @@
         <li>Inform users</li>
         <li>Update website with Attic notice</li>
         <li>Update HEADER.html in downloads</li>
+        <li>Update the project DOAP file</li>
+        <li>Point SVN mails to general at attic</li>
         <li>Make SVN + JIRA/Bugzilla read-only</li>
         <li>Create page on Attic site</li>
         <li>Turn off automated builds</li>
@@ -103,6 +105,18 @@ ${Name} on behalf of ${project} + the Attic.
 
 &lt;p&gt;For more information, please explore the Attic at http://attic.apache.org&lt;/p&gt;
   </pre>
+</section>
+
+<section id="doap">
+    <title>Update the project DOAP file</title>
+
+    <p>Identify whether the project has a DOAP file (see the <a href="https://svn.apache.org/repos/asf/infrastructure/site-tools/trunk/projects/files.xml">files.xml</a> file) and if it does update the PMC to the Attic and add a category of <em>retired</em>. </p>
+</section>
+
+<section id="svnmail">
+    <title>Point SVN mails to general at attic</title>
+
+    <p>Change asf-mailer.conf so that SVN notification emails go to the Attic general list. </p>
 </section>
 
 <section id="readonly">
