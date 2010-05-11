@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Copyright 2009 The Apache Software Foundation
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<document>
+
+  <properties>
+    <author email="general.AT.jakarta.DOT.apache.DOT.org">Apache Jakarta Project</author>
+    <title>Jakarta Taglibs (Retired)</title>
+  </properties>
+
+<body>
+
+  <section name="Jakarta Taglibs (Retired)">
+
+    <p>Starting in 2000, Jakarta hosted the Jakarta Taglibs project, a large collection of JSP Tag Libraries. They ranged from
+       simple utility libraries and UI libraries, to Dreamweaver extensions and an implementation of the JSP Standard Tag Library 
+       (JSTL) specification. </p>
+
+    <p>With the advent of JSTL, the core features of many of the libraries had been standardized and the need for these 
+       libraries diminished. As such, much of the Taglibs codebase moved into maintenance mode. </p>
+
+    <p>In 2008 and 2009, the majority of these libraries were deprecated and have now been retired. The remaining work has 
+       moved over to the <a href="http://tomcat.apache.org/taglibs/">Tomcat Taglibs</a> project - namely the following taglibs: </p>
+    
+    <ul>
+      <li>Standard - The implementations of the various JSTL specifications</li>
+      <li>RDC - Reusable Dialog Components Taglib</li>
+      <li>Extended - a new taglib to house some of the non-standard functionality that is still desirable</li>
+    </ul>
+
+    <p>A list of the retired taglibs follows: </p>
+
+     <table>
+      <tr><th>Name</th><th>JSP version</th><th>Obtain</th></tr>
+      <tr><td><a href="../taglibs/sandbox/doc/mailer2-doc/">Mailer 2</a></td><td>2.0+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated-sandbox/mailer2/trunk/">svn</a></td></tr>
+      <tr><td><a href="../taglibs/doc/cache-doc/">Cache</a></td><td>1.2+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated-sandbox/cache/trunk/">svn</a></td></tr>
+      <tr><td><a href="../taglibs/sandbox/doc/datagrid-doc/">Data Grid</a></td><td>1.2+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated-sandbox/datagrid/trunk/">svn</a></td></tr>
+      <tr><td><a href="../taglibs/doc/application-doc/">Application</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-application.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/doc/benchmark-doc/">Benchmark</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-benchmark.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/doc/bsf-doc/">BSF</a></td><td>1.1+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/bsf/trunk/">svn</a></td></tr>
+      <tr><td><a href="../taglibs/datetime/">DateTime</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-datetime.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/doc/dbtags-doc/">DBTags</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-dbtags.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/i18n/">I18N</a></td><td>1.1+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/i18n/trunk/">svn</a></td></tr>
+      <tr><td><a href="../taglibs/sandbox/doc/image-doc/">Image</a></td><td>1.1+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated-sandbox/image/trunk/">svn</a></td></tr>
+      <tr><td><a href="../taglibs/doc/input-doc/">Input</a></td><td>1.1+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/input/trunk/">svn</a></td></tr>
+      <tr><td><a href="../taglibs/doc/io-doc/">IO</a></td><td>1.1+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/io/trunk/">svn</a></td></tr>
+      <tr><td><a href="../taglibs/iterators/">Iterators</a></td><td>1.2+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/sandbox/iterators/trunk/">svn</a></td></tr>
+      <tr><td><a href="../taglibs/jndi/">JNDI</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-jndi.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/doc/jmstags-doc/">JMS</a></td><td>1.1+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/jmstags/trunk/">svn</a></td></tr>
+      <tr><td><a href="../taglibs/log/">Log</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-log.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/doc/mailer-doc/">Mailer</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-mailer.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/doc/page-doc/">Page</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-page.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/random/">Random</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-random.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/regexp/">Regexp</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-regexp.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/doc/request-doc/">Request</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-request.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/doc/response-doc/">Response</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-response.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/doc/scrape-doc/">Scrape</a></td><td>1.1+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/scrape/trunk/">svn</a></td></tr>
+      <tr><td><a href="../taglibs/doc/session-doc/">Session</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-session.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/string/">String</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-string.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/doc/ultradev4-doc/">UltraDev 4.0 Tool Extension</a></td><td>1.1+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/tools/trunk/UltraDev/4.0/ctlx/">svn</a></td></tr>
+      <tr><td><a href="../taglibs/unstandard/">Unstandard</a></td><td>1.2+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/sandbox/unstandard/trunk/">svn</a></td></tr>
+      <tr><td><a href="../taglibs/doc/utility-doc/">Utility</a></td><td>1.1+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/utility/trunk/">svn</a></td></tr>
+      <tr><td><a href="../taglibs/doc/xsl-doc/">XSL</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-xsl.cgi">download</a></td></tr>
+      <tr><td><a href="../taglibs/doc/xtags-doc/">XTags</a></td><td>1.1+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/xtags/trunk/">svn</a></td></tr>
+     </table>
+  </section>
+
+ </body>
+</document>
