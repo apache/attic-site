@@ -35,7 +35,7 @@
     <li>Open a subtask: Board resolution successful. </li>
     <li>Ensure a Board resolution is on the next Board agenda. Once this is successful, continue. </li>
     <li>Open a ticket with Infra to have website and downloads chgrp'd to attic</li>
-    <li>Open the following subtasks (see below for more information): 
+    <li>Open the following subtasks if needed, or just do them without an issue (see below for more information): 
       <ul>
         <li>Inform users</li>
         <li>Update website with Attic notice</li>
@@ -43,6 +43,7 @@
         <li>Update the project DOAP file</li>
         <li>Point SVN mails to general at attic</li>
         <li>Make SVN + JIRA/Bugzilla read-only</li>
+        <li>Delete from committee-info.txt</li>
         <li>Create page on Attic site</li>
         <li>Turn off automated builds</li>
         <li>Remove from www.apache.org navigation</li>
@@ -131,6 +132,12 @@ ${Name} on behalf of ${project} + the Attic.
   <pre>THIS PROJECT IS RETIRED AND THE JIRA READ-ONLY.</pre>
 </section>
 
+<section id="delete-pmc">
+  <title>Delete from committee-info.txt</title>
+  
+  <p>Someone needs to remove the PMC from the committee-info file. </p>
+</section>
+
 <section id="atticsite">
   <title>Create page on Attic site</title>
 
@@ -161,7 +168,7 @@ ${Name} on behalf of ${project} + the Attic.
     <li>JIRA, Bugzilla + SVN if no one has karma</li>
     <li>Closing down of dev@, commits@ and private@ mailing lists</li>
     <li>Read-only in wiki (be it Confluence or Moinmoin)</li>
-    <li>Delete unix group</li>
+    <li>Delete unix/ldap group</li>
     <li>New moderator for user@ list</li>
   </ul>
 
