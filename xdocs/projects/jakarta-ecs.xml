@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Copyright 2009-10 The Apache Software Foundation
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<document>
+
+  <properties>
+    <author email="general.AT.attic.DOT.apache.DOT.org">The Apache Software Foundation</author>
+    <title>Jakarta ECS</title>
+  </properties>
+
+<body>
+
+  <section name="Jakarta ECS">
+  <title>Jakarta ECS</title>
+
+    <p>Jakarta previously hosted ECS (Element Construction Set), a Java API for generating elements
+       for any of a variety of markup languages (examples included HTML 4.0 and XML).</p>
+
+    <p>In September 2010, ECS was retired due to a lack of development community.</p>
+
+    <p>ECS users are encouraged to switch to other techniques for markup generation.</p>
+
+    <p>The old ECS website is available online <a href="http://jakarta.apache.org/ecs/">here</a>
+       for archival purposes only.</p> 
+
+  </section>
+
+ </body>
+</document>
