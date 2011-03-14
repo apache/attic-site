@@ -76,6 +76,10 @@ limitations under the License.
       <tr><td><a href="http://jakarta.apache.org/taglibs/doc/xsl-doc/">XSL</a></td><td>1.1+</td><td><a href="http://jakarta.apache.org/site/downloads/downloads_taglibs-xsl.cgi">download</a></td></tr>
       <tr><td><a href="http://jakarta.apache.org/taglibs/doc/xtags-doc/">XTags</a></td><td>1.1+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/xtags/trunk/">svn</a></td></tr>
      </table>
+
+  <p>Archived versions of the retired Taglibs may be downloaded from the 
+     <a href="http://archive.apache.org/dist/jakarta/taglibs/">Apache Archives</a>. </p>
+
   </section>
 
  </body>
