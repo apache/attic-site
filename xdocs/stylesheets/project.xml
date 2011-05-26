@@ -33,6 +33,7 @@ limitations under the License.
     </projects>
 
     <menu><title>Projects in the Attic</title>
+      <li><a href="/projects/avalon.html">Avalon</a></li>
       <li><a href="/projects/axkit.html">AxKit</a></li>
       <li><a href="/projects/beehive.html">Beehive</a></li>
       <li><a href="/projects/crimson.html">Crimson</a></li>
