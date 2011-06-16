@@ -32,8 +32,11 @@
      mapping tool that allowed transparent persistence for Java Objects against
      relational databases.</p>
 
-  <p>The user mailing list, website, downloads and issue tracker all remain
-     open, though the issue tracker is read-only. See the website at
+  <p>The website, downloads and issue tracker all remain open, though the
+     issue tracker is read-only. The user mailing list has been closed down,
+     but old posts can be browsed in the
+     <a href="http://mail-archives.apache.org/">mail archives</a>.
+     See the website at
      <a href="http://db.apache.org/ojb/">http://db.apache.org/ojb</a> for more
      information on OJB.</p>
 
