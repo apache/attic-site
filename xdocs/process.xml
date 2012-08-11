@@ -152,7 +152,7 @@ ${Name} on behalf of ${project} + the Attic.
 <section id="atticsite">
   <title>Create page on Attic site</title>
 
-  <p>A simple page should be created on the Attic site. Use existing pages as templates. While you are here, add the user mailing list to the list 
+  <p>A simple page should be created on the Attic site. Use existing pages as templates and make sure you link to the Apache Archives to get the software. While you are here, add the user mailing list to the list 
      of sites under the Attic's oversight. </p>
 </section>
 
