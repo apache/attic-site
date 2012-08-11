@@ -51,7 +51,16 @@
         <li>Announce on announce at apache.org</li>
       </ul>
     </li>
-    <li>Open a new ticket to consider deleting the user list with a due date 6 months in the future</li>
+    <li>Open a new ticket with a due date 6 months in the future: 
+      <ul>
+        <li>to consider deleting the user list</li>
+        <li>to strip dist/project and add a .htaccess containing:
+          <pre>RedirectMatch permanent .* http://attic.apache.org/projects/${project}.html</pre>
+        </li>
+      </ul>
+    </li>
+
+
   </ol>
 
 </section>
