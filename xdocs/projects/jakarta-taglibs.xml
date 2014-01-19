@@ -37,11 +37,18 @@ limitations under the License.
     
     <ul>
       <li>Standard - The implementations of the various JSTL specifications</li>
-      <li>RDC - Reusable Dialog Components Taglib</li>
+      <li><s>RDC - Reusable Dialog Components Taglib</s></li>
       <li>Extended - a new taglib to house some of the non-standard functionality that is still desirable</li>
     </ul>
 
-    <p>A list of the retired taglibs follows: </p>
+    <p>In 2014 the RDC Taglib was retired from the Tomcat Taglibs project. </p>
+
+     <table>
+      <tr><th>Name</th><th>JSP version</th><th>Obtain</th></tr>
+      <tr><td><a href="http://tomcat.apache.org/taglibs/rdc/">RDC</a></td><td>2.0+</td><td><a href="http://svn.apache.org/repos/asf/tomcat/taglibs/rdc/">svn</a></td></tr>
+     </table>
+
+    <p>A list of the original retired taglibs follows: </p>
 
      <table>
       <tr><th>Name</th><th>JSP version</th><th>Obtain</th></tr>
