@@ -38,7 +38,6 @@ limitations under the License.
     <ul>
       <li>Standard - The implementations of the various JSTL specifications</li>
       <li><s>RDC - Reusable Dialog Components Taglib</s></li>
-      <li>Extended - a new taglib to house some of the non-standard functionality that is still desirable</li>
     </ul>
 
     <p>In 2014 the RDC Taglib was retired from the Tomcat Taglibs project. </p>
