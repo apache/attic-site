@@ -62,44 +62,66 @@
 <p>At some point a project will vote to join the Attic. The following defines a process 
      to move that project into the Attic and gently close it down. </p>
 <ol>
-    <li>Open a JIRA item - 'Move ${project} to the Attic'. </li>
-    <li>Open a subtask: Board resolution successful. </li>
-    <li>Ensure a Board resolution is on the next Board agenda. Once this is successful, continue. </li>
-    <li>Open a ticket with Infra to have website and downloads chgrp'd to attic</li>
-    <li>Open the following subtasks if needed, or just do them without an issue (see below for more information): 
+    <li>Open a JIRA item - 'Move ${project} to the Attic'. Add the following items to the details: 
       <ul>
+        <li>Confirm Board Resolution (if TLP)</li>
+        <li>Delete from committee-info.txt (if TLP)</li>
+        <li>Remove VP entry on http://www.apache.org/foundation/ (if TLP)</li>
         <li>Inform users</li>
-        <li>Update website with Attic notice</li>
-        <li>Update HEADER.html in downloads</li>
-        <li>Update the project DOAP file</li>
-        <li>Point SVN mails to general at attic</li>
-        <li>Make SVN + JIRA/Bugzilla read-only</li>
-        <li>Delete from committee-info.txt</li>
         <li>Create page on Attic site</li>
-        <li>Turn off automated builds</li>
-        <li>Remove from www.apache.org navigation</li>
-        <li>Close down infrastructure resources</li>
+        <li>Obtain SVN karma and point SVN mails to general at attic</li>
+        <li>i. Update website with Attic notice</li>
+        <li>ii. Update the project DOAP file</li>
+        <li>Remove from www.apache.org navigation (if TLP)</li>
         <li>Announce on announce at apache.org</li>
       </ul>
     </li>
-    <li>Open a new ticket with a due date 6 months in the future: 
+    <li>Open an Infrastructure JIRA issue identifying the resources that need turning off/making read only. Typically:
       <ul>
-        <li>to consider deleting the user list</li>
-        <li>to strip dist/project and add a .htaccess containing:
+        <li>Update HEADER.html in downloads</li>
+        <li>Make SVN + JIRA/Bugzilla read-only</li>
+        <li>Turn off automated builds</li>
+        <li>Close down infrastructure resources</li>
+        <li>JIRA, Bugzilla + SVN if no one has karma</li>
+        <li>Closing down of dev@, commits@ and private@ mailing lists</li>
+        <li>Read-only in wiki (be it Confluence or Moinmoin)</li>
+        <li>Delete unix/ldap group</li>
+        <li>New moderator for user@ list (with volunteer named)</li>
+      </ul>
+    </li>
+    <li>Open a new JIRA issue with a due date 6 months in the future. When the due date is up, the issue should be moved to the Infrastructure JIRA and ask to:
+      <ul>
+        <li>delete the user list (unless still active)</li>
+        <li>strip dist/project and add a .htaccess containing:
           <pre>RedirectMatch permanent .* http://attic.apache.org/projects/${project}.html</pre>
         </li>
       </ul>
     </li>
 
-
   </ol>
 </div>
                  
-<h4 id="informing">
-   Informing users of the vote
+<h4 id="confirm-resolution">
+   How To: Confirm Board Resolution (if TLP)
 </h4>
 <div class="section-content">
-<p>Your first task is to let the users know that the project is moving into the Attic. Consider the following template: </p>
+<p>Check previous Board minutes (in SVN or to committers@) to confirm project was retired. </p>
+</div>
+                 
+<h4 id="delete-pmc">
+   How To: Delete from committee-info.txt
+</h4>
+<div class="section-content">
+<p>Someone needs to remove the PMC from the committee-info file. </p>
+<p>If the outgoing PMC chair is not chair of any other PMCs, 
+  then ask infra to adjust the 'pmc-chairs' LDAP group accordingly.</p>
+</div>
+                 
+<h4 id="informing">
+   How To: Inform users of the move to the Attic
+</h4>
+<div class="section-content">
+<p>You should let the users know that the project is moving into the Attic. Consider the following template: </p>
 <pre>
 A heads up for the ${project} user community that the ${project} project has 
 been 'moved to the Attic'. This means that the ${project} developers (more 
@@ -124,103 +146,54 @@ ${Name} on behalf of ${project} + the Attic.
      already know and you can skip this stage. Make sure you read that thread if it does exist. </p>
 </div>
                  
-<h4 id="website">
-   Adding an Attic notice to the website
-</h4>
-<div class="section-content">
-<p>A banner needs to be added to the website indicating that it is now in the Attic. This needs to be done in a lightweight way 
-     without having to learn how the project manage their site. The simplest way is to (carefully!) search and replace for a common 
-     tag such as the body tag. </p>
-</div>
-                 
-<h4 id="downloads">
-   Update HEADER.html in downloads
-</h4>
-<div class="section-content">
-<p>Another area to take note of the move to the Attic is the download section. Add or update a HEADER.html file that says something like: </p>
-<pre>
-&lt;h1&gt;Project Retired&lt;/h1&gt;
-
-&lt;p&gt;yyyy/mm/dd - Apache ${project} has been retired.&lt;/p&gt;
-
-&lt;p&gt;For more information, please explore the Attic at http://attic.apache.org&lt;/p&gt;
-  </pre>
-</div>
-                 
-<h4 id="doap">
-   Update the project DOAP file
-</h4>
-<div class="section-content">
-<p>Identify whether the project has a DOAP file (see the <a href="https://svn.apache.org/repos/asf/infrastructure/site-tools/trunk/projects/files.xml">files.xml</a> file) and if it does update the PMC to the Attic and add a category of <em>retired</em>. </p>
-</div>
-                 
-<h4 id="svnmail">
-   Point SVN mails to general at attic
-</h4>
-<div class="section-content">
-<p>Change asf-mailer.conf so that SVN notification emails go to the Attic general list. </p>
-</div>
-                 
-<h4 id="readonly">
-   Make SVN + JIRA/Bugzilla read-only
-</h4>
-<div class="section-content">
-<p>Someone with SVN karma karma should edit the asf-authorization file. The project's karma should be moved to read-only and the commit 
-     notification should be pointed to general@attic.apache.org. </p>
-<p>Someone with JIRA or Bugzilla administrative rights should modify the project to be read-only. In JIRA this means moving it to the Retired 
-     category and applying the Read-Only Permissions. You should also note that the project is retired and read-only in the JIRA description: </p>
-<pre>THIS PROJECT IS RETIRED AND THE JIRA READ-ONLY.</pre>
-</div>
-                 
-<h4 id="delete-pmc">
-   Delete from committee-info.txt
-</h4>
-<div class="section-content">
-<p>Someone needs to remove the PMC from the committee-info file. </p>
-<p>If the outgoing PMC chair is not chair of any other PMCs, 
-  then ask infra to adjust the 'pmc-chairs' LDAP group accordingly.</p>
-</div>
-                 
 <h4 id="atticsite">
-   Create page on Attic site
+   How To: Create page on Attic site
 </h4>
 <div class="section-content">
 <p>A simple page should be created on the Attic site. Use existing pages as templates and make sure you link to the Apache Archives to get the software. While you are here, add the user mailing list to the list 
      of sites under the Attic's oversight. </p>
 </div>
                  
-<h4 id="builds">
-   Turn off automated builds
+<h4 id="svnkarma">
+   How To: Obtain SVN karma
 </h4>
 <div class="section-content">
-<p>Research to find out if an automated build exists and get it turned off. </p>
+<p>Change asf-authorization-template so that the attic-pmc has karma instead of the defunct project. </p>
+</div>
+                 
+<h4 id="svnmail">
+   How To: Point SVN mails to general at attic
+</h4>
+<div class="section-content">
+<p>Change asf-mailer.conf so that SVN notification emails go to the Attic general list. </p>
+</div>
+                 
+<h4 id="website">
+   How To: Adding an Attic notice to the website
+</h4>
+<div class="section-content">
+<p>A banner needs to be added to the website indicating that it is now in the Attic. This needs to be done in a lightweight way 
+     without having to learn how the project manage their site. One way is to (carefully!) search and replace for a common 
+     tag such as the body tag. Another is to edit the CSS. </p>
+</div>
+                 
+<h4 id="doap">
+   How To: Update the project DOAP file
+</h4>
+<div class="section-content">
+<p>Identify whether the project has a DOAP file (see the <a href="https://svn.apache.org/repos/asf/infrastructure/site-tools/trunk/projects/files.xml">files.xml</a> file) and if it does update the PMC to the Attic and add a category of <em>retired</em>. </p>
 </div>
                  
 <h4 id="www.apache">
-   Remove from www.apache.org navigation
+   How To: Remove from www.apache.org navigation
 </h4>
 <div class="section-content">
 <p>As a retired project, a link on the front page of Apache is no longer necessary. Remove the link and regenerate the main Apache site. </p>
 <p>It's also worth checking that the VP link from http://www.apache.org/foundation/ has been removed. </p>
 </div>
                  
-<h4 id="infra">
-   Close down infrastructure resources
-</h4>
-<div class="section-content">
-<p>Open a ticket with Infrastructure asking for resources to be closed down. This includes: </p>
-<ul>
-    <li>JIRA, Bugzilla + SVN if no one has karma</li>
-    <li>Closing down of dev@, commits@ and private@ mailing lists</li>
-    <li>Read-only in wiki (be it Confluence or Moinmoin)</li>
-    <li>Delete unix/ldap group</li>
-    <li>New moderator for user@ list</li>
-  </ul>
-<p>Bear in mind you will need to identify who is volunteering as the new moderator for the user@ list will be. </p>
-</div>
-                 
 <h4 id="announce">
-   Announce on announce@apache.org
+   How To: Announce on announce@apache.org
 </h4>
 <div class="section-content">
 <p>Announce that the project is now retired. Consider the following template. </p>
@@ -254,6 +227,21 @@ on behalf of the Apache Attic and the now retired Apache ${project} project
   </pre>
 <p>It's important to include the boilerplate from the project's site so people 
      know what we're talking about. </p>
+</div>
+                 
+<h4 id="downloads">
+   How To: Update HEADER.html in downloads
+</h4>
+<div class="section-content">
+<p>Another area to take note of the move to the Attic is the download section. Add or update a HEADER.html file that says something like: </p>
+<pre>
+&lt;h1&gt;Project Retired&lt;/h1&gt;
+
+&lt;p&gt;yyyy/mm/dd - Apache ${project} has been retired.&lt;/p&gt;
+
+&lt;p&gt;For more information, please explore the Attic at http://attic.apache.org&lt;/p&gt;
+  </pre>
+<p><i>TODO: Identify if Infra should handle dist/ retirement or not. </i></p>
 </div>
          </div>
     <div class="column span-8 last">
