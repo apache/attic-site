@@ -85,6 +85,12 @@
   then ask infra to adjust the 'pmc-chairs' LDAP group accordingly.</p>
 </section>
 
+<section id="update-foundation-site">
+  <title>Remove VP entry on http://www.apache.org/foundation/</title>
+  <p>Access the CMS <a href="https://cms.apache.org/redirect?uri=http://www.apache.org/foundation/">here</a> 
+  and update the text. </p>
+</section>
+
 <section id="informing">
   <title>How To: Inform users of the move to the Attic</title>
 
