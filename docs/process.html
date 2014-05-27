@@ -78,26 +78,17 @@
     </li>
     <li>Open an Infrastructure JIRA issue identifying the resources that need turning off/making read only. Typically:
       <ul>
-        <li>Update HEADER.html in downloads</li>
-        <li>Make SVN + JIRA/Bugzilla read-only</li>
-        <li>Turn off automated builds</li>
-        <li>Close down infrastructure resources</li>
-        <li>JIRA, Bugzilla + SVN if no one has karma</li>
-        <li>Closing down of dev@, commits@ and private@ mailing lists</li>
-        <li>Read-only in wiki (be it Confluence or Moinmoin)</li>
-        <li>Delete unix/ldap group</li>
-        <li>New moderator for user@ list (with volunteer named)</li>
-      </ul>
-    </li>
-    <li>Open a new JIRA issue with a due date 6 months in the future. When the due date is up, the issue should be moved to the Infrastructure JIRA and ask to:
-      <ul>
-        <li>delete the user list (unless still active)</li>
-        <li>strip dist/project and add a .htaccess containing:
+        <li>Remove files from www.apache.org/dist/project and add a .htaccess containing:
           <pre>RedirectMatch permanent .* http://attic.apache.org/projects/${project}.html</pre>
         </li>
+        <li>Closing down of dev@, commits@ and private@ mailing lists</li>
+        <li>Close down the user mailing list (unless still active - in which case propose a moderator to Infra)</li>
+        <li>Make SVN + JIRA/Bugzilla read-only</li>
+        <li>Make the wiki (Confluence/Moinmoin) read-only</li>
+        <li>Delete unix/ldap group</li>
+        <li>Turn off automated builds</li>
       </ul>
     </li>
-
   </ol>
 </div>
                  
@@ -235,21 +226,6 @@ on behalf of the Apache Attic and the now retired Apache ${project} project
   </pre>
 <p>It's important to include the boilerplate from the project's site so people 
      know what we're talking about. </p>
-</div>
-                 
-<h4 id="downloads">
-   How To: Update HEADER.html in downloads
-</h4>
-<div class="section-content">
-<p>Another area to take note of the move to the Attic is the download section. Add or update a HEADER.html file that says something like: </p>
-<pre>
-&lt;h1&gt;Project Retired&lt;/h1&gt;
-
-&lt;p&gt;yyyy/mm/dd - Apache ${project} has been retired.&lt;/p&gt;
-
-&lt;p&gt;For more information, please explore the Attic at http://attic.apache.org&lt;/p&gt;
-  </pre>
-<p><i>TODO: Identify if Infra should handle dist/ retirement or not. </i></p>
 </div>
          </div>
     <div class="column span-8 last">
