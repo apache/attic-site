@@ -60,10 +60,5 @@ limitations under the License.
       <li><a href="/projects/xmlbeans.html">XMLBeans</a></li>
     </menu>
 
-    <menu><title>Mailling lists in the Attic</title>
-      <li><a href="http://mail-archives.apache.org/mod_mbox/excalibur-user/">excalibur-user</a></li>
-      <li><a href="http://mail-archives.apache.org/mod_mbox/jakarta-cactus-user/">jakarta-cactus-user</a></li>
-    </menu>
-
   </body>
 </project>
