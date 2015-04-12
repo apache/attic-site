@@ -184,7 +184,11 @@ ${Name} on behalf of ${project} + the Attic.
    How To: Update the project DOAP file
 </h4>
 <div class="section-content">
-<p>Identify whether the project has a DOAP file (see the <a href="https://svn.apache.org/repos/asf/infrastructure/site-tools/trunk/projects/files.xml">files.xml</a> file) and if it does update the PMC to the Attic and add a category of <em>retired</em>. </p>
+<p>Identify whether the project has a DOAP file (see the <a href="https://svn.apache.org/repos/asf/infrastructure/site-tools/trunk/projects/files.xml">files.xml</a> file) and if it does update the PMC to the Attic and add a category of <em>retired</em>: </p>
+<p>
+    <code>pmc change:    &lt;asfext:pmc rdf:resource="http://attic.apache.org" /&gt;</code>
+    <code>new category:  &lt;category rdf:resource="http://projects.apache.org/category/retired" /&gt;</code>
+    </p>
 </div>
                  
 <h4 id="www.apache">
