@@ -45,6 +45,7 @@
             <li>iii. Make SVN read-only</li>
           </ol>
         </li>
+        <li>Move committee's PMC data file to retired (if TLP)</li>
         <li>Remove from www.apache.org navigation (if TLP)</li>
         <li>Announce on announce at apache.org</li>
       </ul>
@@ -151,6 +152,16 @@ ${Name} on behalf of ${project} + the Attic.
     <p>
     <code>pmc change:    &lt;asfext:pmc rdf:resource="http://attic.apache.org" /&gt;</code>
     <code>new category:  &lt;category rdf:resource="http://projects.apache.org/category/retired" /&gt;</code>
+    </p>
+</section>
+
+<section id="PMCdata">
+    <title>How To: Move committee's PMC data file to retired</title>
+
+    <p>Comment PMC data files index entry (see the <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees.xml">committees.xml</a> file
+       and old <a href="https://svn.apache.org/repos/asf/infrastructure/site-tools/trunk/projects/pmc_list.xml">pmc_list.xml</a> file) and move PMC data file
+       from <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees">committees/</a> directory
+       to <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees-retired">committees-retired/</a>.
     </p>
 </section>
 
