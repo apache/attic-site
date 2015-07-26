@@ -76,6 +76,7 @@
             <li>iii. Make SVN read-only</li>
           </ol>
         </li>
+        <li>Move committee's PMC data file to retired (if TLP)</li>
         <li>Remove from www.apache.org navigation (if TLP)</li>
         <li>Announce on announce at apache.org</li>
       </ul>
@@ -184,10 +185,22 @@ ${Name} on behalf of ${project} + the Attic.
    How To: Update the project DOAP file
 </h4>
 <div class="section-content">
-<p>Identify whether the project has a DOAP file (see the <a href="https://svn.apache.org/repos/asf/infrastructure/site-tools/trunk/projects/files.xml">files.xml</a> file) and if it does update the PMC to the Attic and add a category of <em>retired</em>: </p>
+<p>Identify whether the project has a DOAP file (see the <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/projects.xml">projects.xml</a> file
+       and old <a href="https://svn.apache.org/repos/asf/infrastructure/site-tools/trunk/projects/files.xml">files.xml</a> file) and if it does, update the PMC to the Attic and add a category of <em>retired</em>: </p>
 <p>
     <code>pmc change:    &lt;asfext:pmc rdf:resource="http://attic.apache.org" /&gt;</code>
     <code>new category:  &lt;category rdf:resource="http://projects.apache.org/category/retired" /&gt;</code>
+    </p>
+</div>
+                 
+<h4 id="PMCdata">
+   How To: Move committee's PMC data file to retired
+</h4>
+<div class="section-content">
+<p>Comment PMC data files index entry (see the <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees.xml">committees.xml</a> file
+       and old <a href="https://svn.apache.org/repos/asf/infrastructure/site-tools/trunk/projects/pmc_list.xml">pmc_list.xml</a> file) and move PMC data file
+       from <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees">committees/</a> directory
+       to <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees-retired">committees-retired/</a>.
     </p>
 </div>
                  
