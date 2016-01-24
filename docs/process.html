@@ -62,28 +62,28 @@
 <p>At some point a project will vote to join the Attic. The following defines a process 
      to move that project into the Attic and gently close it down. </p>
 <ol>
-    <li>Open a JIRA item - 'Move ${project} to the Attic'. Add the following items to the details: 
+    <li>Open a JIRA item - 'Move ${project} to the Attic'.<br /> Add the following items to the details: 
       <ul>
         <li>Confirm Board Resolution (if TLP)</li>
         <li>Delete from committee-info.txt (if TLP)</li>
-        <li>Remove VP entry on http://www.apache.org/foundation/ (if TLP)</li>
+        <li>Remove VP entry on <a href="http://www.apache.org/foundation/">http://www.apache.org/foundation/</a> (if TLP)</li>
         <li>Inform users</li>
-        <li>Create page on Attic site</li>
+        <li>Create page on Attic site: http://attic.apache.org/projects/${project}.html</li>
         <li>Obtain SVN karma and point SVN mails to general at attic
-          <ol type="i">
-            <li>i. Update website with Attic notice</li>
-            <li>ii. Update the project DOAP file</li>
+          <ul>
+            <li>i. Update website with Attic notice: http://${project}.apache.org/</li>
+            <li>ii. Update the project DOAP file: https://projects.apache.org/project.html?${project}</li>
             <li>iii. Make SVN read-only</li>
-          </ol>
+          </ul>
         </li>
-        <li>Move committee's PMC data file to retired (if TLP)</li>
-        <li>Remove from www.apache.org navigation (if TLP)</li>
-        <li>Announce on announce at apache.org</li>
+        <li>Move <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees.xml">committee's PMC data file to retired</a> (if TLP)</li>
+        <li>Remove from <a href="http://www.apache.org/#projects-list">http://www.apache.org/#projects-list</a> navigation (if TLP)</li>
+        <li>Announce on <a href="http://mail-archives.apache.org/mod_mbox/www-announce/">announce at apache.org</a></li>
       </ul>
     </li>
-    <li>Open an Infrastructure JIRA issue identifying the resources that need turning off/making read only. Typically:
+    <li>Open an <a href="https://issues.apache.org/jira/browse/INFRA">Infrastructure JIRA</a> issue identifying the resources that need turning off/making read only. Typically:
       <ul>
-        <li>Remove files from www.apache.org/dist/project and add a .htaccess containing:
+        <li>Remove files from <a href="http://www.apache.org/dist/">www.apache.org/dist</a> and add a <code>.htaccess</code> containing:
           <pre>RedirectMatch permanent .* http://attic.apache.org/projects/${project}.html</pre>
         </li>
         <li>Closing down of dev@, commits@ and private@ mailing lists</li>
@@ -144,7 +144,7 @@ You can follow this process in JIRA:
 
 Thanks,
 
-${Name} on behalf of ${project} + the Attic. 
+${Name} on behalf of ${project} + the Attic.
   </pre>
 <p>Bear in mind to subscribe to the user list to avoid moderation. Also bear in mind that the user mailing list may 
      already know and you can skip this stage. Make sure you read that thread if it does exist. </p>
@@ -154,8 +154,9 @@ ${Name} on behalf of ${project} + the Attic.
    How To: Create page on Attic site
 </h4>
 <div class="section-content">
-<p>A simple page should be created on the Attic site. Use existing pages as templates and make sure you link to the Apache Archives to get the software. While you are here, add the user mailing list to the list 
-     of sites under the Attic's oversight. </p>
+<p>A simple page should be created on the Attic site. Use <a href="https://svn.apache.org/repos/asf/attic/site/xdocs/projects">existing pages</a> as templates
+     and make sure you link to the Apache Archives to get the software. While you are here, add the user mailing list to the list 
+     of sites under the Attic's oversight<!-- TODO hboutemy: how to do that? -->. </p>
 </div>
                  
 <h4 id="svnkarma">
@@ -179,6 +180,8 @@ ${Name} on behalf of ${project} + the Attic.
 <p>A banner needs to be added to the website indicating that it is now in the Attic. This needs to be done in a lightweight way 
      without having to learn how the project manage their site. One way is to (carefully!) search and replace for a common 
      tag such as the body tag. Another is to edit the CSS. </p>
+<p>Site may be published through <a href="https://svn.apache.org/repos/infra/websites/production/">websites svn</a> or other means: need investigation on
+     each case. </p>
 </div>
                  
 <h4 id="doap">
@@ -205,12 +208,12 @@ ${Name} on behalf of ${project} + the Attic.
 </div>
                  
 <h4 id="www.apache">
-   How To: Remove from www.apache.org navigation
+   How To: Remove from http://www.apache.org/#projects-list navigation
 </h4>
 <div class="section-content">
-<p>As a retired project, a link on the front page of Apache is no longer necessary. Remove the link and regenerate the main Apache site. 
-     This is done via the trunk/templates/blocks/projects.mdtext of the www.apache.org CMS. </p>
-<p>It's also worth checking that the VP link from http://www.apache.org/foundation/ has been removed. </p>
+<p>As a retired project, a <a href="http://www.apache.org/#projects-list">link on the front page of Apache site</a> is no longer necessary. Remove the link and regenerate the main Apache site. 
+     This is done via the <code>trunk/templates/blocks/projects.mdtext</code> of the <a href="https://cms.apache.org/redirect?uri=http://www.apache.org/index.html">www.apache.org CMS</a>. </p>
+<p>It's also worth checking that the VP link from <a href="http://www.apache.org/foundation/">http://www.apache.org/foundation/</a> has been removed. </p>
 </div>
                  
 <h4 id="announce">
