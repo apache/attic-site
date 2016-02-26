@@ -344,13 +344,13 @@ href="$title.getAttributeValue("href")">$menu.getChildText("title")</a></div>
 #if ($root.getAttributeValue("id") == "closer")
 #set ($is_dynpage = 1)
 #end
-	<link rel="stylesheet" href="http://attic.apache.org/style/compressed.css" type="text/css" media="screen, projection"/>
-	<link rel="stylesheet" href="http://attic.apache.org/style/style.css" type="text/css" media="screen, projection"/>
-	<link rel="stylesheet" href="http://attic.apache.org/style/attic.css" type="text/css" media="screen, projection"/>
+	<link rel="stylesheet" href="/style/compressed.css" type="text/css" media="screen, projection"/>
+	<link rel="stylesheet" href="/style/style.css" type="text/css" media="screen, projection"/>
+	<link rel="stylesheet" href="/style/attic.css" type="text/css" media="screen, projection"/>
 #if ($is_dynpage == 1)
-	<!--[[]if IE]><link rel="stylesheet" href="http://attic.apache.org/style/ie.css" type="text/css" media="screen, projection"/><![[]endif]-->
+	<!--[[]if IE]><link rel="stylesheet" href="/style/ie.css" type="text/css" media="screen, projection"/><![[]endif]-->
 #else
-	<!--[if IE]><link rel="stylesheet" href="http://attic.apache.org/style/ie.css" type="text/css" media="screen, projection"/><![endif]-->
+	<!--[if IE]><link rel="stylesheet" href="/style/ie.css" type="text/css" media="screen, projection"/><![endif]-->
 #end
 #set ($atoms = $root.getChild("properties").getChildren("atom"))
 #foreach ( $atom in $atoms )
