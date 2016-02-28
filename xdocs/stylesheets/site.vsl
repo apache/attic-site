@@ -30,6 +30,17 @@
 ##
 ## This is where the macros live
 ##
+## ** resource_table macro **
+##
+##    <resource_table project="NAME_OF_PROJECT" subproject="OPTIONAL_NAME_OF_SUBPROJECT">
+##      <mail name='MAIL_NAME: eg user/dev/commits'/>
+##      <jira/>
+##      <moin/>
+##    </resource_table>
+## 
+## Project website, downloads, board minutes (unless subproject) 
+##   and dev mailing list are added by default. 
+##
 #macro ( resource_table $elem)
 #set ($proj = $elem.getAttributeValue("project"))
 #if($elem.getAttributeValue("subproject"))
