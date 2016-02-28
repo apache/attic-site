@@ -30,14 +30,13 @@ limitations under the License.
     <p>As there were no new features or releases planned, the Jakarta Regexp project was retired in
        April 2011.</p>
 
+    <resource_table project="jakarta" subproject="regexp">
+      <mail name="user"/>
+      <bugzilla/>
+    </resource_table>
+
     <p>Jakarta Regexp users are encouraged to use similar features in newer Java versions, such
        as <i>java.util.regexp</i></p>
-
-    <p>The old Jakarta Regexp website is available online <a href="http://jakarta.apache.org/regexp/">here</a>
-       for archival purposes only.</p>
-
-  <p>Archived versions of Jakarta Regexp may be downloaded from the 
-     <a href="http://archive.apache.org/dist/jakarta/regexp/">Apache Archives</a>. </p>
 
   </section>
 

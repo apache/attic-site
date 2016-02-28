@@ -30,14 +30,13 @@ limitations under the License.
 
     <p>In Novermber 2007, Slide was retired due to a lack of development community.</p>
 
+    <resource_table project="jakarta" subproject="slide">
+      <mail name="user"/>
+      <bugzilla/>
+    </resource_table>
+
     <p>If you are looking for a WebDAV client or a server-side Content Repository, please consider the
        <a href="http://jackrabbit.apache.org">Apache Jackrabbit</a> project as an alternative.</p>
-
-    <p>The old Slide website is available online <a href="http://jakarta.apache.org/slide/">here</a>
-       for archival purposes only.</p> 
-
-  <p>Archived versions of Slide may be downloaded from the 
-     <a href="http://archive.apache.org/dist/jakarta/slide/">Apache Archives</a>. </p>
 
   </section>
 

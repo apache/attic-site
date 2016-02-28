@@ -29,13 +29,12 @@ limitations under the License.
 
     <p>In August 2011, Cactus was retired due to a lack of development community.</p>
 
+    <resource_table project="jakarta" subproject="cactus">
+      <mail name="user"/>
+      <jira/>
+    </resource_table>
+
     <p>Cactus users are encouraged to switch to other techniques for testing.</p>
-
-    <p>The old Cactus website is available online <a href="http://jakarta.apache.org/cactus/">here</a>
-       for archival purposes only.</p> 
-
-  <p>Archived versions of Cactus may be downloaded from the 
-     <a href="http://archive.apache.org/dist/jakarta/cactus/">Apache Archives</a>. </p>
 
   </section>
 
