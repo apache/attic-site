@@ -29,7 +29,13 @@ limitations under the License.
 
     <p>In December 2011, Jakarta was retired as all of its subprojects had either become their own projects or been retired. </p>
 
-    <p>Software may be downloaded from the <a href="http://archive.apache.org/dist/jakarta/">Archives</a>. </p>
+    <resource_table project="jakarta" hide_keys="true">
+      <mail name="announcements"/>
+      <mail name="general"/>
+      <mail name="site-cvs"/>
+      <mail name="notifications"/>
+    </resource_table>
+
 
   </section>
 
