@@ -32,8 +32,8 @@
   </p>
 
   <resource_table project="rave">
-    <user_mail/>
-    <commit_mail/>
+    <mail name="users"/>
+    <mail name="commits"/>
     <jira/>
     <moin/>
   </resource_table>

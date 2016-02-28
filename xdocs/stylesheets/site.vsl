@@ -57,11 +57,10 @@
       <td>Mailing List Archives</td>
       <td>
         <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-dev/">dev</a>
-#if($elem.getChild("user_mail"))
-        | <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-user${pluralize_user}/">user${pluralize_user}</a>
-#end
-#if($elem.getChild("commit_mail"))
-        | <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-commits/">commits</a>
+#set ($mail_links = $elem.getChildren("mail"))
+#foreach ( $mail_link in $mail_links )
+#set ($mail_name = $mail_link.getAttributeValue('name'))
+        | <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-${mail_name}/">${mail_name}</a>
 #end
       </td>
     </tr>

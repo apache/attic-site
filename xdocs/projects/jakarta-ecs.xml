@@ -31,7 +31,7 @@ limitations under the License.
     <p>In September 2010, ECS was retired due to a lack of development community.</p>
 
     <resource_table project="jakarta" subproject="ecs">
-      <user_mail/>
+      <mail name="user"/>
       <jira/>
     </resource_table>
 
