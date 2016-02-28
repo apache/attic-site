@@ -34,7 +34,7 @@
 ##
 ##    <resource_table project="NAME_OF_PROJECT" subproject="OPTIONAL_NAME_OF_SUBPROJECT">
 ##      <mail name='MAIL_NAME: eg user/dev/commits'/>
-##      <jira/>
+##      <jira/>  OR  <bugzilla/>
 ##      <moin/>
 ##    </resource_table>
 ## 
@@ -82,6 +82,16 @@
       <td><a href="https://issues.apache.org/jira/browse/${subproj}/">JIRA</a></td>
 #else
       <td><a href="https://issues.apache.org/jira/browse/${proj}/">JIRA</a></td>
+#end
+    </tr>
+#end
+#if($elem.getChild("bugzilla"))
+    <tr>
+      <td>Issue Tracker</td>
+#if ($elem.getAttributeValue("subproject"))
+      <td><a href="https://bz.apache.org/bugzilla/buglist.cgi?product=${subproj}">Bugzilla</a></td>
+#else
+      <td><a href="https://bz.apache.org/bugzilla/buglist.cgi?product=${proj}">Bugzilla</a></td>
 #end
     </tr>
 #end
