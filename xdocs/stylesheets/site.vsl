@@ -30,6 +30,72 @@
 ##
 ## This is where the macros live
 ##
+#macro ( resource_table $elem)
+#set ($proj = $elem.getAttributeValue("project"))
+#if($elem.getAttributeValue("subproject"))
+#set ($subproj = $elem.getAttributeValue("subproject"))
+#set ($full_slash = "${proj}/${subproj}")
+#set ($full_dash = "${proj}-${subproj}")
+#set ($pluralize_user = "")
+#else
+#set ($subproj = '')
+#set ($full_slash = "$proj")
+#set ($full_dash = "$proj")
+#set ($pluralize_user = "s")
+#end
+
+  <table style="margin-left: auto; margin-right:auto; width:90%">
+    <tr>
+      <th>Read-only Resource</th>
+      <th>Link(s)</th>
+    </tr>
+    <tr>
+      <td>Website</td>
+      <td><a href="http://${proj}.apache.org/${subproj}">${proj}.apache.org/${subproj}</a></td>
+    </tr>
+    <tr>
+      <td>Mailing List Archives</td>
+      <td>
+        <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-dev/">dev</a>
+#if($elem.getChild("user_mail"))
+        | <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-user${pluralize_user}/">user${pluralize_user}</a>
+#end
+#if($elem.getChild("commit_mail"))
+        | <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-commits/">commits</a>
+#end
+      </td>
+    </tr>
+#if($elem.getChild("jira"))
+    <tr>
+      <td>Issue Tracker</td>
+#if ($elem.getAttributeValue("subproject"))
+      <td><a href="https://issues.apache.org/jira/browse/${subproj}/">JIRA</a></td>
+#else
+      <td><a href="https://issues.apache.org/jira/browse/${proj}/">JIRA</a></td>
+#end
+    </tr>
+#end
+#if($elem.getChild("moin"))
+    <tr>
+      <td>Wiki</td>
+      <td><a href="http://wiki.apache.org/${proj}/">wiki.apache.org/${proj}/</a></td>
+    </tr>
+#end
+#if (!$elem.getAttributeValue("subproject"))
+    <tr>
+      <td>Board Reports</td>
+      <td><a href="https://whimsy.apache.org/board/minutes/${proj}.html">Minutes</a></td>
+    </tr>
+#end
+    <tr>
+      <td>Downloads</td>
+      <td><a href="http://archive.apache.org/dist/${full_slash}/">archive.apache.org/dist/${full_slash}/</a> | <a href="http://archive.apache.org/dist/${full_slash}/KEYS">KEYS</a></td>
+    </tr>
+  </table>
+
+#end
+##
+##
 #macro ( relativise $elem )
 #if ($elem.getAttribute("href"))
 #set ($href = $elem.getAttributeValue("href"))
@@ -223,6 +289,8 @@ $note
 #foreach ( $items in $section.getChildren() )
 #if ($items.getName().equals("source"))
 #source ($items)
+#elseif ($items.getName().equals("resource_table"))
+#resource_table($items)
 #elseif ($items.getName().equals("table"))
 #color_table ($items)
 #elseif ($items.getName().equals("note"))
