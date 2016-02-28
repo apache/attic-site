@@ -34,7 +34,6 @@
   <resource_table project="rave">
     <user_mail/>
     <commit_mail/>
-    <issue_tracker type="jira"/>
     <jira/>
     <moin/>
   </resource_table>
