@@ -31,15 +31,14 @@
     Apache Onami was a project focused on the development and maintenance of a set of Google Guice extensions not provided out of the box by the library itself.
   </p>
 
-  <p>The user mailing list, website, downloads and issue tracker all remain open, though 
-     the issue tracker is read-only. See the website at 
-     <a href="http://onami.apache.org/">http://onami.apache.org</a> for more information on Onami. </p>
+  <resource_table project="onami">
+    <mail name='user'/>
+    <mail name='commits'/>
+    <jira/>
+  </resource_table>
 
   <p>As with any project in the Attic - if you should choose to fork Onami outside of Apache, 
      please let us know so we can link to your project. </p>
-
-  <p>Archived versions of Onami may be downloaded from the 
-     <a href="http://archive.apache.org/dist/onami/">Apache Archives</a>. </p>
 
 </section>
 

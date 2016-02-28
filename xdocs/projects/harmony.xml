@@ -27,10 +27,14 @@ limitations under the License.
 
     <p>In November 2011, Apache Harmony was retired. </p>
 
-    <p>The old Harmony website is available online <a href="http://harmony.apache.org/">here</a>
-       for archival purposes only.</p> 
+    <p>Harmony software was a modular Java runtime with class libraries and associated tools. </p>
 
-    <p>Software may be downloaded from the <a href="http://archive.apache.org/dist/harmony/">Archives</a>. </p>
+    <resource_table project="harmony">
+      <mail name='alerts'/>
+      <mail name='commits'/>
+      <jira/>
+      <moin/>
+    </resource_table>
 
   </section>
 
