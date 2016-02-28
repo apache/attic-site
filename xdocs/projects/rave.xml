@@ -31,8 +31,7 @@
     Apache Rave was a web and social mashup engine that aggregated and served web widgets. It was targeted as an engine for internet and intranet portals.
   </p>
 
-  <center>
-  <table width="90%">
+  <table style="margin-left: auto; margin-right:auto; width:90%">
     <tr>
       <th>Read-only Resource</th>
       <th>Link(s)</th>
@@ -62,7 +61,7 @@
       <td><a href="http://archive.apache.org/dist/rave/">archive.apache.org/dist/rave/</a> | <a href="http://archive.apache.org/dist/rave/KEYS">KEYS</a></td>
     </tr>
   </table>
-  </center>
+
   <p>As with any project in the Attic - if you should choose to fork Rave outside of Apache, 
      please let us know so we can link to your project. </p>
 
