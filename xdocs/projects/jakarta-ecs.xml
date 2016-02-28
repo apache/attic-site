@@ -32,11 +32,10 @@ limitations under the License.
 
     <p>ECS users are encouraged to switch to other techniques for markup generation.</p>
 
-    <p>The old ECS website is available online <a href="http://jakarta.apache.org/ecs/">here</a>
-       for archival purposes only.</p> 
-
-  <p>Archived versions of ECS may be downloaded from the 
-     <a href="http://archive.apache.org/dist/jakarta/ecs/">Apache Archives</a>. </p>
+  <resource_table project="jakarta" subproject="ecs">
+    <user_mail/>
+    <jira>ECS</jira>
+  </resource_table>
 
   </section>
 
