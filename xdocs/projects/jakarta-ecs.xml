@@ -30,12 +30,12 @@ limitations under the License.
 
     <p>In September 2010, ECS was retired due to a lack of development community.</p>
 
-    <p>ECS users are encouraged to switch to other techniques for markup generation.</p>
+    <resource_table project="jakarta" subproject="ecs">
+      <user_mail/>
+      <jira>ECS</jira>
+    </resource_table>
 
-  <resource_table project="jakarta" subproject="ecs">
-    <user_mail/>
-    <jira>ECS</jira>
-  </resource_table>
+    <p>ECS users are encouraged to switch to other techniques for markup generation.</p>
 
   </section>
 
