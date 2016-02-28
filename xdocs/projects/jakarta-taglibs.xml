@@ -32,6 +32,10 @@ limitations under the License.
     <p>With the advent of JSTL, the core features of many of the libraries had been standardized and the need for these 
        libraries diminished. As such, much of the Taglibs codebase moved into maintenance mode. </p>
 
+    <resource_table project="jakarta" subproject="taglibs">
+      <bugzilla/>
+    </resource_table>
+
     <p>In 2008 and 2009, the majority of these libraries were deprecated and have now been retired. The remaining work has 
        moved over to the <a href="http://tomcat.apache.org/taglibs/">Tomcat Taglibs</a> project - namely the following taglibs: </p>
     
@@ -82,9 +86,6 @@ limitations under the License.
       <tr><td><a href="http://jakarta.apache.org/taglibs/doc/xsl-doc/">XSL</a></td><td>1.1+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/xsl/trunk/">svn</a></td></tr>
       <tr><td><a href="http://jakarta.apache.org/taglibs/doc/xtags-doc/">XTags</a></td><td>1.1+</td><td><a href="http://svn.apache.org/repos/asf/jakarta/taglibs/deprecated/xtags/trunk/">svn</a></td></tr>
      </table>
-
-  <p>Archived versions of the retired Taglibs may be downloaded from the 
-     <a href="http://archive.apache.org/dist/jakarta/taglibs/">Apache Archives</a>. </p>
 
   </section>
 
