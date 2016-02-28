@@ -31,15 +31,40 @@
     Apache Rave was a web and social mashup engine that aggregated and served web widgets. It was targeted as an engine for internet and intranet portals.
   </p>
 
-  <p>The user mailing list, website, downloads and issue tracker all remain open, though 
-     the issue tracker is read-only. See the website at 
-     <a href="http://rave.apache.org/">http://rave.apache.org</a> for more information on Rave. </p>
-
+  <center>
+  <table width="90%">
+    <tr>
+      <th>Read-only Resource</th>
+      <th>Link(s)</th>
+    </tr>
+    <tr>
+      <td>Website</td>
+      <td><a href="http://rave.apache.org/">rave.apache.org</a></td>
+    </tr>
+    <tr>
+      <td>Mailing List Archives</td>
+      <td><a href="http://mail-archives.apache.org/mod_mbox/rave-users/">users</a> | <a href="http://mail-archives.apache.org/mod_mbox/rave-dev/">dev</a> | <a href="http://mail-archives.apache.org/mod_mbox/rave-commits/">commits</a></td>
+    </tr>
+    <tr>
+      <td>Issue Tracker</td>
+      <td><a href="https://issues.apache.org/jira/browse/rave/">JIRA</a></td>
+    </tr>
+    <tr>
+      <td>Wiki</td>
+      <td><a href="http://wiki.apache.org/rave/">wiki.apache.org/rave/</a></td>
+    </tr>
+    <tr>
+      <td>Board Reports</td>
+      <td><a href="https://whimsy.apache.org/board/minutes/Rave.html">Minutes</a></td>
+    </tr>
+    <tr>
+      <td>Downloads</td>
+      <td><a href="http://archive.apache.org/dist/rave/">archive.apache.org/dist/rave/</a> | <a href="http://archive.apache.org/dist/rave/KEYS">KEYS</a></td>
+    </tr>
+  </table>
+  </center>
   <p>As with any project in the Attic - if you should choose to fork Rave outside of Apache, 
      please let us know so we can link to your project. </p>
-
-  <p>Archived versions of Rave may be downloaded from the 
-     <a href="http://archive.apache.org/dist/rave/">Apache Archives</a>. </p>
 
 </section>
 
