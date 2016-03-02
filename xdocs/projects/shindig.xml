@@ -30,15 +30,15 @@
   <p><a href="http://shindig.apache.org">Apache Shindig</a> moved into the Attic in November 2015. 
   Shindig was an OpenSocial container to help you to start hosting OpenSocial apps quickly. </p>
      
-  <p>The user mailing list, website, downloads and issue tracker all remain open, though 
-     the issue tracker is read-only. See the website at 
-     <a href="http://shindig.apache.org/">http://shindig.apache.org</a> for more information on Shindig. </p>
+  <resource_table project="shindig">
+    <mail name="users"/>
+    <mail name="commits"/>
+    <jira/>
+    <cwiki/>
+  </resource_table>
 
   <p>As with any project in the Attic - if you should choose to fork Shindig outside of Apache, 
      please let us know so we can link to your project. </p>
-
-  <p>Archived versions of the Shindig may be downloaded from the 
-     <a href="http://archive.apache.org/dist/shindig/">Apache Archives</a>. </p>
 
 </section>
 

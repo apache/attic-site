@@ -32,16 +32,16 @@
      blog entry from Kito Mann is an excellent discussion of Shale's retirement: 
      <a href="http://blogs.jsfcentral.com/editorsdesk/entry/shale_in_the_attic">http://blogs.jsfcentral.com/editorsdesk/entry/shale_in_the_attic</a>. </p>
      
-  <p>The user mailing list, website, downloads and issue tracker all remain open, though 
-     the issue tracker is read-only. See the website at 
-     <a href="http://shale.apache.org/">http://shale.apache.org</a> for more information on Shale. </p>
-
   <p><a href="http://markmail.org/message/liexnvlxdlahlr74">Discussion on the mailing list</a> 
      indicated that <a href="http://seamframework.org">Seam</a> and <a href="http://myfaces.apache.org">MyFaces</a> 
      were the natural successors to Shale. </p>
 
-  <p>As with any project in the Attic - if you should choose to fork Shale outside of Apache, 
-     please let us know so we can link to your project. </p>
+  <resource_table project="shale">
+    <mail name="user"/>
+    <mail name="commits"/>
+    <jira/>
+    <moin/>
+  </resource_table>
 
   <p>Archived versions of the Shale may be downloaded from the 
      <a href="http://archive.apache.org/dist/shale/">Apache Archives</a>. </p>
