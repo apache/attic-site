@@ -35,7 +35,7 @@
 ##    <resource_table project="NAME_OF_PROJECT" subproject="OPTIONAL_NAME_OF_SUBPROJECT">
 ##      <mail name='MAIL_NAME: eg user/dev/commits'/>
 ##      <jira/>  OR  <bugzilla/>
-##      <moin/>
+##      <moin/>  OR  <cwiki/>
 ##    </resource_table>
 ## 
 ## Project website, downloads, board minutes (unless subproject) 
@@ -99,6 +99,12 @@
     <tr>
       <td>Wiki</td>
       <td><a href="http://wiki.apache.org/${proj}/">wiki.apache.org/${proj}/</a></td>
+    </tr>
+#end
+#if($elem.getChild("cwiki"))
+    <tr>
+      <td>Wiki</td>
+      <td><a href="https://cwiki.apache.org/confluence/display/${proj}/">cwiki.apache.org: ${proj}</a></td>
     </tr>
 #end
 #if (!$elem.getAttributeValue("subproject"))
