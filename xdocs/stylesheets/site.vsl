@@ -107,6 +107,12 @@
       <td><a href="https://cwiki.apache.org/confluence/display/${proj}/">cwiki.apache.org: ${proj}</a></td>
     </tr>
 #end
+#if($elem.getChild("svn"))
+    <tr>
+      <td>SVN</td>
+      <td><a href="http://svn.apache.org/viewvc/${proj}/${subproj}">svn.apache.org/${proj}/${subproj}</a></td>
+    </tr>
+#end
 #if (!$elem.getAttributeValue("subproject"))
     <tr>
       <td>Board Reports</td>
