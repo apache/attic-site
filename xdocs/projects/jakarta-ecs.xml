@@ -33,6 +33,7 @@ limitations under the License.
     <resource_table project="jakarta" subproject="ecs">
       <mail name="user"/>
       <jira/>
+      <svn/>
     </resource_table>
 
     <p>ECS users are encouraged to switch to other techniques for markup generation.</p>

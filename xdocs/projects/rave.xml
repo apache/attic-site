@@ -36,6 +36,7 @@
     <mail name="commits"/>
     <jira/>
     <moin/>
+    <svn/>
   </resource_table>
 
   <p>As with any project in the Attic - if you should choose to fork Rave outside of Apache, 

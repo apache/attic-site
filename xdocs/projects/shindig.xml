@@ -35,6 +35,7 @@
     <mail name="commits"/>
     <jira/>
     <cwiki/>
+    <svn/>
   </resource_table>
 
   <p>As with any project in the Attic - if you should choose to fork Shindig outside of Apache, 

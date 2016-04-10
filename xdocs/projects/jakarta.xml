@@ -34,6 +34,7 @@ limitations under the License.
       <mail name="general"/>
       <mail name="site-cvs"/>
       <mail name="notifications"/>
+      <svn/>
     </resource_table>
 
 

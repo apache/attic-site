@@ -32,6 +32,7 @@ limitations under the License.
     <resource_table project="jakarta" subproject="cactus">
       <mail name="user"/>
       <jira/>
+      <svn/>
     </resource_table>
 
     <p>Cactus users are encouraged to switch to other techniques for testing.</p>

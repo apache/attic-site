@@ -33,6 +33,7 @@ limitations under the License.
     <resource_table project="jakarta" subproject="regexp">
       <mail name="user"/>
       <bugzilla/>
+      <svn/>
     </resource_table>
 
     <p>Jakarta Regexp users are encouraged to use similar features in newer Java versions, such

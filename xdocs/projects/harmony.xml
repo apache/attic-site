@@ -33,6 +33,7 @@ limitations under the License.
       <mail name='alerts'/>
       <mail name='commits'/>
       <jira/>
+      <svn/>
       <moin/>
     </resource_table>
 

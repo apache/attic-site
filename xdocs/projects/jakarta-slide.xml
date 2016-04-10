@@ -33,6 +33,7 @@ limitations under the License.
     <resource_table project="jakarta" subproject="slide">
       <mail name="user"/>
       <bugzilla/>
+      <svn/>
     </resource_table>
 
     <p>If you are looking for a WebDAV client or a server-side Content Repository, please consider the
