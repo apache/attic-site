@@ -32,10 +32,11 @@
 ##
 ## ** resource_table macro **
 ##
-##    <resource_table project="NAME_OF_PROJECT" subproject="OPTIONAL_NAME_OF_SUBPROJECT">
+##    <resource_table project="NAME_OF_PROJECT" subproject="OPTIONAL_NAME_OF_SUBPROJECT" hide_keys="true|false" hide_dev="true|false">
 ##      <mail name='MAIL_NAME: eg user/dev/commits'/>
 ##      <jira/>  OR  <bugzilla/>
 ##      <moin/>  OR  <cwiki/>
+##      <svn/>
 ##    </resource_table>
 ## 
 ## Project website, downloads, board minutes (unless subproject) 
@@ -67,7 +68,11 @@
     <tr>
       <td>Mailing List Archives</td>
       <td>
+#if($elem.getAttributeValue("hide_dev"))
+      <!-- hiding dev list -->
+#else
         <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-dev/">dev</a>
+#end
 #set ($mail_links = $elem.getChildren("mail"))
 #foreach ( $mail_link in $mail_links )
 #set ($mail_name = $mail_link.getAttributeValue('name'))
