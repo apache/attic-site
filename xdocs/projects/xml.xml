@@ -33,11 +33,10 @@
 
     <p>In April 2012, the XML project was retired as all of its subprojects had either become their own projects or been retired. </p>
 
-    <resource_table project="xml" hide_keys="true" hide_dev="true">
+    <resource_table project="xml" hide_keys="true" replace_dev="bugs">
       <mail name="announcements"/>
       <mail name="general"/>
       <mail name="general-cvs"/>
-      <mail name="bugs"/>
       <svn/>
     </resource_table>
 

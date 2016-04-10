@@ -32,7 +32,7 @@
 ##
 ## ** resource_table macro **
 ##
-##    <resource_table project="NAME_OF_PROJECT" subproject="OPTIONAL_NAME_OF_SUBPROJECT" hide_keys="true|false" hide_dev="true|false">
+##    <resource_table project="NAME_OF_PROJECT" subproject="OPTIONAL_NAME_OF_SUBPROJECT" hide_keys="true|false" replace_dev="alternate_list">
 ##      <mail name='MAIL_NAME: eg user/dev/commits'/>
 ##      <jira/>  OR  <bugzilla/>
 ##      <moin/>  OR  <cwiki/>
@@ -68,8 +68,9 @@
     <tr>
       <td>Mailing List Archives</td>
       <td>
-#if($elem.getAttributeValue("hide_dev"))
-      <!-- hiding dev list -->
+#if($elem.getAttributeValue("replace_dev"))
+#set ($replacedev = $elem.getAttributeValue("replace_dev"))
+        <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-${replacedev}/">${replacedev}</a>
 #else
         <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-dev/">dev</a>
 #end
