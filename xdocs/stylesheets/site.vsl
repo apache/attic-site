@@ -495,27 +495,6 @@ href="$title.getAttributeValue("href")">$menu.getChildText("title")</a></div>
       </div>
 	</div>
 	<hr/>
-	<div class="block">
-    #if ($isHomePage == 1)
-		<div class="column span-15 first append-1">
-			<h3>
-        #set ($allSections = $root.getChild("body").getChildren("section"))
-        #if ($allSections.get(0).getChild('title').getText())
-          $allSections.get(0).getChild('title').getText()
-        #end
-      </h3>
-		</div>
-		<div class="column span-8 las search">
-    #else 
-		<div class="column span-8 prepend-16 search searchsub">
-    #end
-			<form action="http://www.google.com/search" method="get">
-		         <input value="attic.apache.org" name="sitesearch" type="hidden"/>
-		         <input size="10" name="q" id="query" type="text"/>
-		         <input name="Search" value="Go" type="submit"/>
-	       </form>
-		</div>
-	</div>
 	<div class="block content">
 		<div class="column span-15 colborder">
      #set ($allSections = $root.getChild("body").getChildren("section"))
