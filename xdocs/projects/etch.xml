@@ -34,7 +34,6 @@
     <mail name="user"/>
     <mail name="commits"/>
     <jira/>
-    <cwiki/>
     <svn/>
   </resource_table>
 
