@@ -27,7 +27,7 @@
 <section id="etch">
   <title>Apache Etch</title>
 
-  <p><a href="http://etch.apache.org">Apache Etch</a> moved into the Attic in May 2016. 
+  <p><a href="http://etch.apache.org">Apache Etch</a> moved into the Attic in June 2016. 
      Etch was a cross-platform, language- and transport-independent framework for building and consuming network services. </p>
      
   <resource_table project="etch">
