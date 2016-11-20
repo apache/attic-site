@@ -116,7 +116,7 @@
 #if($elem.getChild("svn"))
     <tr>
       <td>SVN</td>
-      <td><a href="http://svn.apache.org/viewvc/${proj}/${subproj}">svn.apache.org/${proj}/${subproj}</a></td>
+      <td><a href="http://svn.apache.org/viewvc/${proj}/${subproj}">svn.apache.org/repos/asf/${proj}/${subproj}</a></td>
     </tr>
 #end
 #if (!$elem.getAttributeValue("subproject"))
