@@ -30,9 +30,13 @@
   <p><a href="http://directmemory.apache.org">Apache DirectMemory</a> moved into the Attic in July 2015. 
   DirectMemory was an off-heap cache for the Java Virtual Machine. </p>
      
-  <p>The user mailing list, website, downloads and issue tracker all remain open, though 
-     the issue tracker is read-only. See the website at 
-     <a href="http://directmemory.apache.org/">http://directmemory.apache.org</a> for more information on DirectMemory. </p>
+  <resource_table project="directmemory">
+    <mail name="commits"/>
+    <mail name="user"/>
+    <jira/>
+    <cwiki/>
+    <svn/>
+  </resource_table>
 
   <p>As with any project in the Attic - if you should choose to fork DirectMemory outside of Apache, 
      please let us know so we can link to your project. </p>
