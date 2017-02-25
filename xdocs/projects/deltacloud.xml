@@ -31,9 +31,13 @@
   Deltacloud provided the API server and drivers necessary for connecting to cloud providers via 
   a cloud abstraction API. </p>
      
-  <p>The user mailing list, website, downloads and issue tracker all remain open, though 
-     the issue tracker is read-only. See the website at 
-     <a href="http://deltacloud.apache.org/">http://deltacloud.apache.org</a> for more information on Deltacloud. </p>
+  <resource_table project="deltacloud">
+    <mail name="commits"/>
+    <mail name="user"/>
+    <jira key="DTACLOUD"/>
+    <git/>
+    <svn/>
+  </resource_table>
 
   <p>As with any project in the Attic - if you should choose to fork Deltacloud outside of Apache, 
      please let us know so we can link to your project. </p>
