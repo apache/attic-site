@@ -32,9 +32,12 @@
     and micromessaging platform that allows people to discover and meet one another and get controlled 
     access to other sources of information. </p>
 
-  <p>The user mailing list, website, downloads and issue tracker all remain open, though 
-     the issue tracker is read-only. See the website at 
-     <a href="http://esme.apache.org/">http://esme.apache.org</a> for more information on ESME. </p>
+  <resource_table project="esme">
+    <mail name="commits"/>
+    <jira/>
+    <cwiki/>
+    <svn/>
+  </resource_table>
 
   <p>As with any project in the Attic - if you should choose to fork ESME outside of Apache, 
      please let us know so we can link to your project. </p>
