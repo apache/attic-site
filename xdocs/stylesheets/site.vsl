@@ -32,7 +32,7 @@
 ##
 ## ** resource_table macro **
 ##
-##    <resource_table project="NAME_OF_PROJECT" subproject="OPTIONAL_NAME_OF_SUBPROJECT" hide_keys="true|false" replace_dev="alternate_list">
+##    <resource_table project="NAME_OF_PROJECT" subproject="OPTIONAL_NAME_OF_SUBPROJECT" hide_keys="true|false" replace_dev="alternate_list" board_report_id="OPTIONAL_ALTERNATIVE_BOARD_REPORT_ID">
 ##      <mail name='MAIL_NAME: eg user/dev/commits'/>
 ##      <jira key="OPTIONAL_KEY"/>  OR  <bugzilla/>
 ##      <moin/>  OR  <cwiki/>
@@ -140,7 +140,12 @@
 #if (!$elem.getAttributeValue("subproject"))
     <tr>
       <td>Board Reports</td>
+#if ($elem.getAttributeValue("board_report_id"))
+#set ($br_id = $elem.getAttributeValue("board_report_id"))
+      <td><a href="https://whimsy.apache.org/board/minutes/${br_id}.html">Minutes</a></td>
+#else
       <td><a href="https://whimsy.apache.org/board/minutes/${proj}.html">Minutes</a></td>
+#end
     </tr>
 #end
     <tr>

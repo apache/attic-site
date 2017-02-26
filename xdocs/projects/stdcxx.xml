@@ -35,6 +35,14 @@
      the issue tracker is read-only. See the website at 
      <a href="http://stdcxx.apache.org/">http://stdcxx.apache.org</a> for more information on the project. </p>
 
+  <resource_table project="stdcxx" board_report_id="Cxx_Standard_Library">
+    <mail name="commits"/>
+    <mail name="user"/>
+    <jira/>
+    <moin/>
+    <svn/>
+  </resource_table>
+
   <p>As with any project in the Attic - if you should choose to fork the retired project outside of Apache, 
      please let us know so we can link to your project. </p>
 
