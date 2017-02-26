@@ -32,8 +32,11 @@
   <p>For more information, including its successors, archives and description; see the website at 
      <a href="http://avalon.apache.org/">http://avalon.apache.org</a>. </p>
 
-  <p>Archived versions of Avalon may be downloaded from the 
-     <a href="http://archive.apache.org/dist/avalon/">Apache Archives</a>. </p>
+  <resource_table project="avalon">
+    <jira/>
+    <moin/>
+    <svn/>
+  </resource_table>
 
 </section>
 
