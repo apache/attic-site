@@ -41,6 +41,13 @@
      <a href="http://www.modpython.org/">http://www.modpython.org</a> for more information on mod_python. 
      Quetz itself never had a website. </p>
 
+  <resource_table project="quetzalcoatl">
+    <no_website/>
+    <no_lists/>
+    <no_downloads/>
+    <svn/>
+  </resource_table>
+
   <p>As with any project in the Attic - if you should choose to fork mod_python outside of Apache, 
      please let us know so we can link to your project. </p>
 

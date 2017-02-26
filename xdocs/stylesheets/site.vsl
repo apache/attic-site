@@ -37,6 +37,9 @@
 ##      <jira key="OPTIONAL_KEY"/>  OR  <bugzilla/>
 ##      <moin/>  OR  <cwiki/>
 ##      <svn/>  OR  <git/>
+##      <no_website/>
+##      <no_lists/>
+##      <no_downloads/>
 ##    </resource_table>
 ## 
 ## Project website, downloads, board minutes (unless subproject) 
@@ -63,12 +66,18 @@
     </tr>
     <tr>
       <td>Website</td>
+#if($elem.getChild("no_website"))
+      <td>n/a</td>
+#else
       <td><a href="http://${proj}.apache.org/${subproj}">${proj}.apache.org/${subproj}</a></td>
+#end
     </tr>
     <tr>
       <td>Mailing List Archives</td>
       <td>
-#if($elem.getAttributeValue("replace_dev"))
+#if($elem.getChild("no_lists"))
+      n/a
+#elseif($elem.getAttributeValue("replace_dev"))
 #set ($replacedev = $elem.getAttributeValue("replace_dev"))
         <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-${replacedev}/">${replacedev}</a>
 #else
@@ -136,6 +145,9 @@
 #end
     <tr>
       <td>Downloads</td>
+#if($elem.getChild("no_downloads"))
+      <td>n/a</td>
+#else
       <td><a href="http://archive.apache.org/dist/${full_slash}/">archive.apache.org/dist/${full_slash}/</a> 
 #if($elem.getAttributeValue("hide_keys"))
       <!-- hiding KEYS -->
@@ -143,6 +155,7 @@
       | <a href="http://archive.apache.org/dist/${full_slash}/KEYS">KEYS</a>
 #end
       </td>
+#end
     </tr>
   </table>
 
