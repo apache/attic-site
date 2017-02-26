@@ -32,9 +32,13 @@
      Inversion of Control (IoC) Container or Lightweight Container.
      Closely linked to Tapestry 4, it lost activity when Tapestry 5 moved to a new IoC container. </p>
 
-  <p>The user mailing list, website, downloads and issue tracker all remain open, though 
-     the issue tracker is read-only. See the website at 
-     <a href="http://hivemind.apache.org/">http://hivemind.apache.org</a> for more information on HiveMind. </p>
+  <resource_table project="hivemind">
+    <mail name="commits"/>
+    <mail name="user"/>
+    <jira/>
+    <moin/>
+    <svn/>
+  </resource_table>
 
   <p><a href="http://markmail.org/thread/hb46sg2nolnntnnz">Discussion on the mailing list</a> 
      indicated that <a href="http://tapestry.apache.org/tapestry5/tapestry-ioc/">Tapestry IoC</a>
@@ -42,9 +46,6 @@
 
   <p>As with any project in the Attic - if you should choose to fork HiveMind outside of Apache, 
      please let us know so we can link to your project. </p>
-
-  <p>Archived versions of HiveMind may be downloaded from the 
-     <a href="http://archive.apache.org/dist/hivemind/">Apache Archives</a>. </p>
 
   <p>One fork that has been created is Gaderian at <a href="http://gaderian.ops4j.org/">http://gaderian.ops4j.org/</a>. </p>
 
