@@ -31,9 +31,13 @@
     Apache Click was a JEE web application framework, providing a natural rich client style programming model.
   </p>
 
-  <p>The user mailing list, website, downloads and issue tracker all remain open, though 
-     the issue tracker is read-only. See the website at 
-     <a href="http://click.apache.org/">http://click.apache.org</a> for more information on Click. </p>
+  <resource_table project="click">
+    <mail name="commits"/>
+    <mail name="user"/>
+    <jira key="CLK"/>
+    <cwiki/>
+    <svn/>
+  </resource_table>
 
   <p>As with any project in the Attic - if you should choose to fork Click outside of Apache, 
      please let us know so we can link to your project. </p>
