@@ -155,8 +155,21 @@ ${Name} on behalf of ${project} + the Attic.
    How To: Create page on Attic site
 </h4>
 <div class="section-content">
-<p>A simple page should be created on the Attic site. Use <a href="https://svn.apache.org/repos/asf/attic/site/xdocs/projects">existing pages</a> as templates
-     and make sure you link to the Apache Archives to get the software. While you are here, add the user mailing list to the list 
+<p>The Attic website is built using Anakia. Anakia is an old site technology built on top of Apache Velocity. </p>
+<p>When adding a project to the Attic, you should create a project page. Specifically you should: </p>
+<ul>
+    <li>Add a files in xdocs/projects/</li>
+    <li><ul>
+       <li>Specifically, in xdocs/projects/ copy one of the files to the new project name</li>
+       <li>Edit the new file</li>
+       <li>Add the new file as a link in the xdocs/stylesheets/project.xml navigation</li>
+    </ul></li>
+    <li>Run 'ant'</li>
+    <li>Review the generated files in docs/** in your browser</li>
+    <li>SVN commit all changes. Remember to add both the new xdocs/ project file and the new generated docs/ project file</li>
+    <li>The new pages should go live quickly</li>
+  </ul>
+<p>While you are here, add the user mailing list to the list 
      of sites under the Attic's oversight<!-- TODO hboutemy: how to do that? -->. </p>
 </div>
                  
