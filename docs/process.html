@@ -199,22 +199,25 @@ all work are done in "{infra-repo}/modules/subversion_server/files/authorization
 <p>A banner needs to be added to the website indicating that it is now in the Attic. This needs to be done in a lightweight way 
      without having to learn how the project manage their site. One way is to (carefully!) search and replace for a common 
      tag such as the body tag. Another is to edit the CSS. </p>
+<pre>
+      &lt;div style="background: red"&gt;&lt;h1&gt;2017/01/01 - Apache foo has been retired. &lt;/h1&gt;&lt;h2&gt;For more information, please explore the &lt;a href="http://attic.apache.org/"&gt;Attic&lt;/a&gt;. &lt;/h2&gt;&lt;/div&gt;
+</pre>
 <p>Site may be published through <a href="https://svn.apache.org/repos/infra/websites/production/">websites svn</a> or other means: need investigation on
      each case. </p>
 </div>
                  
 <h4 id="doap">
-   How To: Update the project DOAP file
+   How to: 6.ii Update the project DOAP file (if any): https://projects.apache.org/project.html?${project}
 </h4>
 <div class="section-content">
-<p>Identify whether the project has a DOAP file (see the <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/projects.xml">projects.xml</a> file
-       and old <a href="https://svn.apache.org/repos/asf/infrastructure/site-tools/trunk/projects/files.xml">files.xml</a> file) and if it does, update the PMC to the Attic and add a category of <em>retired</em>: </p>
+<p>The files referenced are in <a href="https://svn.apache.org/repos/asf/comdev">https://svn.apache.org/repos/asf/comdev</a></p>
+<p>Identify whether the project has a DOAP file (see the &lt;comdev repo&gt;/projects.apache.org/data/projects.xml file if update the rdf file with PMC to the Attic and add a category of <em>retired</em>: </p>
 <pre>pmc change:    &lt;asfext:pmc rdf:resource="http://attic.apache.org" /&gt;
 new category:  &lt;category rdf:resource="http://projects.apache.org/category/retired" /&gt;</pre>
 </div>
                  
 <h4 id="PMCdata">
-   How To: Move committee's PMC data file to retired
+   How to: 7. Move committee's PMC data file to retired (if TLP)
 </h4>
 <div class="section-content">
 <p>If committee appears in <a href="https://projects.apache.org/committees.html">committees list</a>, moving data to retired will remove it from the list.
@@ -227,7 +230,7 @@ new category:  &lt;category rdf:resource="http://projects.apache.org/category/re
 </div>
                  
 <h4 id="www.apache">
-   How To: Remove from http://www.apache.org/#projects-list navigation
+   How to: 8. Remove from http://www.apache.org/#projects-list navigation (if TLP)
 </h4>
 <div class="section-content">
 <p>As a retired project, a <a href="http://www.apache.org/#projects-list">link on the front page of Apache site</a> is no longer necessary. Remove the link and regenerate the main Apache site. 
@@ -236,7 +239,7 @@ new category:  &lt;category rdf:resource="http://projects.apache.org/category/re
 </div>
                  
 <h4 id="announce">
-   How To: Announce on announce@apache.org
+   How to: 9. Announce on announce@apache.org
 </h4>
 <div class="section-content">
 <p>Announce that the project is now retired. Consider the following template. </p>
