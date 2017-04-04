@@ -31,7 +31,7 @@
 Apache Abdera was a project to build a functionally-complete, high-performance implementation of the IETF Atom Syndication Format (RFC 4287) and Atom Publishing Protocol (RFC 5023) specifications.</p>
      
   <resource_table project="abdera">
-    <mail name="commits"/>
+    <mail/>
     <svn/>
     <cwiki/>
   </resource_table>
