@@ -155,19 +155,20 @@ ${Name} on behalf of ${project} + the Attic.
 </section>
 
 <section id="svnkarma">
-    <title>How To: Obtain SVN karma</title>
+    <title>How to: 6. Obtain source control karma and point source control mails to general at attic</title>
 
-    <p>Change asf-authorization-template so that the attic-pmc has karma instead of the defunct project. </p>
+    <p>follow the workflow <a href="https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo">https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo</a>,<br />
+sometimes it helps chatting with infra <a href="https://www.hipchat.com/gIjVtYcNy">https://www.hipchat.com/gIjVtYcNy</a>,<br />
+all work are done in "{infra-repo}/modules/subversion_server/files/authorization/"</p>
+    <ul>
+        <li>Change "asf-authorization-template" so that the attic-pmc has karma instead of the defunct project. </li>
+        <li>Change "asf-mailer.conf" so that the attic-pmc has karma instead of the defunct project. Add project to attic regex, and if there are a project entry remove it</li>
+    </ul>
 </section>
 
-<section id="svnmail">
-    <title>How To: Point SVN mails to general at attic</title>
-
-    <p>Change asf-mailer.conf so that SVN notification emails go to the Attic general list. </p>
-</section>
 
 <section id="website">
-  <title>How To: Adding an Attic notice to the website</title>
+  <title>How to: 6.i Update website with Attic notice: http://${project}.apache.org/</title>
 
   <p>A banner needs to be added to the website indicating that it is now in the Attic. This needs to be done in a lightweight way 
      without having to learn how the project manage their site. One way is to (carefully!) search and replace for a common 
