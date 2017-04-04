@@ -40,20 +40,18 @@
         <li>If the PMC can't get enough people to vote to dissolve the PMC (and there are not three -1 votes), then that is grounds for moving the project to the Attic. They should inform the board as above, noting that the vote failed to get enough votes. </li>
       </ul>
     </li>
-    <li>If the board approve the resolution, open a JIRA item - 'Move ${project} to the Attic'.<br /> Copy/paste the following items to the details (see "how to" below for a description of each step): 
+    <li>If the board approve the resolution, open a JIRA item - 'Move ${project} to the Attic'.<br /> Copy/paste the following items to the details (see "How to" below for a description of each step): 
       <ol type="1">
         <li>Confirm Board Resolution (if TLP)</li>
         <li>Delete from committee-info.txt (if TLP)</li>
         <li>Remove VP entry on <a href="http://www.apache.org/foundation/">http://www.apache.org/foundation/</a> (if TLP)</li>
-        <li>Inform users</li>
+        <li>Inform users of the move to the Attic</li>
         <li>Create project page on Attic site: http://attic.apache.org/projects/${project}.html</li>
         <li>Obtain source control karma and point source control mails to general at attic
           <ul>
             <li>i. Update website with Attic notice: http://${project}.apache.org/</li>
             <li>ii. Update the project DOAP file (if any): https://projects.apache.org/project.html?${project}</li>
-            <li>iii. Make source control read-only</li>
-          </ul>
-        </li>
+            <li>iii. Make source control read-only</li></ul></li>
         <li>Move committee's PMC data file to retired (if TLP)</li>
         <li>Remove from <a href="http://www.apache.org/#projects-list">http://www.apache.org/#projects-list</a> navigation (if TLP)</li>
         <li>Announce on <a href="http://mail-archives.apache.org/mod_mbox/www-announce/">announce at apache.org</a></li>
@@ -76,8 +74,8 @@
 
 </section>
 
-<section id="confirm-resolution">
-  <title>How To: General pointers</title>
+<section id="General-pointers">
+  <title>How to: General pointers</title>
 
   <p>The following are usefull svn/https locations:
     <ul>
@@ -87,31 +85,30 @@
      <li>committees.xml <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees.xml">https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees.xml</a></li>
     </ul>
   </p>
+</section>
 
-  <title>How To: Confirm Board Resolution (if TLP)</title>
-
-  <p>Check previous Board minutes (in SVN or to committers@) to confirm project was retired. </p>
+<section id="confirm-resolution">
+  <title>How to: 1. Confirm Board Resolution (if TLP)</title>
+  <p>Check previous Board minutes (in SVN or to committers@) to confirm project was retired.</p>
 </section>
   
 <section id="delete-pmc">
-  <title>How To: Delete from committee-info.txt</title>
+  <title>How to: 2. Delete from committee-info.txt  (if TLP)</title>
   
-  <p>Someone needs to remove the PMC from the committee-info file. </p>
-  <p>If the outgoing PMC chair is not chair of any other PMCs, 
-  then ask infra to adjust the 'pmc-chairs' LDAP group accordingly.</p>
+  <p>Remove the PMC from <a href="https://svn.apache.org/repos/private/committers/board/committee-info.txt">https://svn.apache.org/repos/private/committers/board/committee-info.txt</a></p>
 </section>
 
 <section id="update-foundation-site">
-  <title>Remove VP entry on http://www.apache.org/foundation/</title>
+  <title>How to: 3. Remove VP entry on http://www.apache.org/foundation/</title>
   <p>Access the CMS <a href="https://cms.apache.org/redirect?uri=http://www.apache.org/foundation/">here</a> 
   and update the text. </p>
+  <p>Check if the outgoing PMC chair is not chair of any other PMCs, then ask infra to adjust the 'pmc-chairs' LDAP group accordingly.</p>
 </section>
 
 <section id="informing">
-  <title>How To: Inform users of the move to the Attic</title>
+  <title>How to: 4. Inform users of the move to the Attic</title>
 
-  <p>You should let the users know that the project is moving into the Attic. Consider the following template: </p>
-
+  <p>Let the users know that the project is moving into the Attic. Use the following template: </p>
   <pre>
 A heads up for the ${project} user community that the ${project} project has 
 been 'moved to the Attic'. This means that the ${project} developers (more 
@@ -133,12 +130,12 @@ Thanks,
 ${Name} on behalf of ${project} + the Attic.
   </pre>
 
-  <p>Bear in mind to subscribe to the user list to avoid moderation. Also bear in mind that the user mailing list may 
+  <p>Remember to subscribe to the user list <a href="https://whimsy.apache.org/committers/subscribe">https://whimsy.apache.org/committers/subscribe</a> to avoid moderation. Also bear in mind that the user mailing list may 
      already know and you can skip this stage. Make sure you read that thread if it does exist. </p>
 </section>
 
 <section id="atticsite">
-  <title>How To: Create page on Attic site</title>
+  <title>How to: 5. Create project page on Attic site: http://attic.apache.org/projects/${project}.html</title>
 
   <p>The Attic website is built using Anakia. Anakia is an old site technology built on top of Apache Velocity. 
      You can get the source for the site from Subversion: </p>
