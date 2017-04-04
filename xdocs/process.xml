@@ -40,25 +40,24 @@
         <li>If the PMC can't get enough people to vote to dissolve the PMC (and there are not three -1 votes), then that is grounds for moving the project to the Attic. They should inform the board as above, noting that the vote failed to get enough votes. </li>
       </ul>
     </li>
-    <li>If the board approve the resolution, open a JIRA item - 'Move ${project} to the Attic'.<br /> Add the following items to the details: 
-      <ul>
+    <li>If the board approve the resolution, open a JIRA item - 'Move ${project} to the Attic'.<br /> Copy/paste the following items to the details (see "how to" below for a description of each step): 
+      <ol type="1">
         <li>Confirm Board Resolution (if TLP)</li>
         <li>Delete from committee-info.txt (if TLP)</li>
         <li>Remove VP entry on <a href="http://www.apache.org/foundation/">http://www.apache.org/foundation/</a> (if TLP)</li>
         <li>Inform users</li>
-        <li>Create page on Attic site: http://attic.apache.org/projects/${project}.html</li>
+        <li>Create project page on Attic site: http://attic.apache.org/projects/${project}.html</li>
         <li>Obtain source control karma and point source control mails to general at attic
           <ul>
             <li>i. Update website with Attic notice: http://${project}.apache.org/</li>
-            <li>ii. Update the project DOAP file: https://projects.apache.org/project.html?${project}</li>
+            <li>ii. Update the project DOAP file (if any): https://projects.apache.org/project.html?${project}</li>
             <li>iii. Make source control read-only</li>
           </ul>
         </li>
-        <li>Move committee's PMC data file to retired (if TLP):
-          <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees.xml">https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees.xml</a></li>
+        <li>Move committee's PMC data file to retired (if TLP)</li>
         <li>Remove from <a href="http://www.apache.org/#projects-list">http://www.apache.org/#projects-list</a> navigation (if TLP)</li>
         <li>Announce on <a href="http://mail-archives.apache.org/mod_mbox/www-announce/">announce at apache.org</a></li>
-      </ul>
+      </ol>
     </li>
     <li>Open an <a href="https://issues.apache.org/jira/browse/INFRA">Infrastructure JIRA</a> issue identifying the resources that need turning off/making read only. Typically:
       <ul>
@@ -80,10 +79,13 @@
 <section id="confirm-resolution">
   <title>How To: General pointers</title>
 
-  <p>The following are usefull svn/https locations:<br />
-     svn site <a href="http://svn.apache.org/repos/asf/attic">http://svn.apache.org/repos/asf/attic</a><br />
-     site <a href="http://attic.apache.org">http://attic.apache.org</a><br />
-     jira <a href="https://issues.apache.org/jira/browse/ATTIC">https://issues.apache.org/jira/browse/ATTIC</a><br />
+  <p>The following are usefull svn/https locations:
+    <ul>
+     <li>svn site <a href="http://svn.apache.org/repos/asf/attic">http://svn.apache.org/repos/asf/attic</a></li>
+     <li>site <a href="http://attic.apache.org">http://attic.apache.org</a></li>
+     <li>jira <a href="https://issues.apache.org/jira/browse/ATTIC">https://issues.apache.org/jira/browse/ATTIC</a></li>
+     <li>committees.xml <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees.xml">https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees.xml</a></li>
+    </ul>
   </p>
 
   <title>How To: Confirm Board Resolution (if TLP)</title>
