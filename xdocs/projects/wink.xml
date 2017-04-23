@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License. 
+-->
+<document>
+  <properties>
+    <author email="general.AT.attic.apache.DOT.org">The Apache Software Foundation</author>
+    <title>Apache Wink</title>
+  </properties>
+<body>
+
+<section id="wink">
+  <title>Apache Wink</title>
+
+  <p><a href="http://wink.apache.org">Apache Wink</a> moved into the Attic in April 2017. 
+Apache Wink was a simple yet solid framework for building RESTful Web services. It is comprised of a Server module and a Client module for developing and consuming RESTful Web services.</p>
+  <resource_table project="">
+    <mail name="commits"/>
+    <mail name="user"/>
+    <svn/>
+    <cwiki/>
+  </resource_table>
+
+  <p>As with any project in the Attic - if you should choose to fork Wink outside of Apache, 
+     please let us know so we can link to your project. </p>
+</section>
+
+</body>
+</document>
