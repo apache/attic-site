@@ -29,7 +29,7 @@
 
   <p><a href="http://wink.apache.org">Apache Wink</a> moved into the Attic in April 2017. 
 Apache Wink was a simple yet solid framework for building RESTful Web services. It is comprised of a Server module and a Client module for developing and consuming RESTful Web services.</p>
-  <resource_table project="">
+  <resource_table project="wink">
     <mail name="commits"/>
     <mail name="user"/>
     <svn/>
