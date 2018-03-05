@@ -1,289 +1,54 @@
-Tue Feb 06 10:23:19 CET 2018  [debug] AvalonLogSystem initialized using logfile 'velocity.log'
-Tue Feb 06 10:23:19 CET 2018   [info] ************************************************************** 
-Tue Feb 06 10:23:19 CET 2018   [info] Starting Jakarta Velocity v1.4
-Tue Feb 06 10:23:19 CET 2018   [info] RuntimeInstance initializing.
-Tue Feb 06 10:23:19 CET 2018   [info] Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
-Tue Feb 06 10:23:19 CET 2018   [info] Trying to use logger class org.apache.velocity.runtime.log.AvalonLogSystem
-Tue Feb 06 10:23:19 CET 2018   [info] Using logger class org.apache.velocity.runtime.log.AvalonLogSystem
-Tue Feb 06 10:23:19 CET 2018   [info] Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
-Tue Feb 06 10:23:19 CET 2018   [info] Resource Loader Instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
-Tue Feb 06 10:23:19 CET 2018   [info] FileResourceLoader : initialization starting.
-Tue Feb 06 10:23:19 CET 2018   [info] FileResourceLoader : adding path '.'
-Tue Feb 06 10:23:19 CET 2018   [info] FileResourceLoader : adding path 'xdocs/stylesheets/'
-Tue Feb 06 10:23:19 CET 2018   [info] FileResourceLoader : initialization complete.
-Tue Feb 06 10:23:19 CET 2018   [info] ResourceCache : initialized. (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
-Tue Feb 06 10:23:19 CET 2018   [info] Default ResourceManager initialization complete.
-Tue Feb 06 10:23:19 CET 2018   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Literal
-Tue Feb 06 10:23:19 CET 2018   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Macro
-Tue Feb 06 10:23:19 CET 2018   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Parse
-Tue Feb 06 10:23:19 CET 2018   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Include
-Tue Feb 06 10:23:19 CET 2018   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
-Tue Feb 06 10:23:20 CET 2018   [info] Created: 20 parsers.
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : initialization starting.
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : adding VMs from VM library template : VM_global_library.vm
-Tue Feb 06 10:23:20 CET 2018  [error] ResourceManager : unable to find resource 'VM_global_library.vm' in any resource loader.
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : error using  VM library template VM_global_library.vm : org.apache.velocity.exception.ResourceNotFoundException: Unable to find resource 'VM_global_library.vm'
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro :  VM library template macro registration complete.
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : allowInline = true : VMs can be defined inline in templates
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : allowInlineLocal = false : VMs defined inline will be  global in scope if allowed.
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : messages on  : VM system will output logging messages
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : autoload off  : VM system will not automatically reload global library macros
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : initialization complete.
-Tue Feb 06 10:23:20 CET 2018   [info] Velocity successfully started.
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : added new VM : #resource_table( elem ) : source = ./site.vsl
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : added new VM : #relativise( elem ) : source = ./site.vsl
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : added new VM : #color_table( table ) : source = ./site.vsl
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : added new VM : #make_toc( ) : source = ./site.vsl
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : added new VM : #make_note( note ) : source = ./site.vsl
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : added new VM : #metaauthor( author email ) : source = ./site.vsl
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : added new VM : #metaatom( title url ) : source = ./site.vsl
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : added new VM : #source( value ) : source = ./site.vsl
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : added new VM : #eccnmatrix( matrix ) : source = ./site.vsl
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : added new VM : #section( section level ) : source = ./site.vsl
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : added new VM : #makeProject( ) : source = ./site.vsl
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : added new VM : #listProjects( ) : source = ./site.vsl
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : added new VM : #getProjectImage( ) : source = ./site.vsl
-Tue Feb 06 10:23:20 CET 2018   [info] Velocimacro : added new VM : #document( ) : source = ./site.vsl
-Tue Feb 06 10:23:20 CET 2018  [error] VM #section: error : too few arguments to macro. Wanted 2 got 0
-Tue Feb 06 10:23:20 CET 2018   [info] ResourceManager : found ./site.vsl with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
-Tue Feb 06 10:23:20 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]
+Mon Mar 05 13:49:49 CET 2018  [debug] AvalonLogSystem initialized using logfile 'velocity.log'
+Mon Mar 05 13:49:49 CET 2018   [info] ************************************************************** 
+Mon Mar 05 13:49:49 CET 2018   [info] Starting Jakarta Velocity v1.4
+Mon Mar 05 13:49:49 CET 2018   [info] RuntimeInstance initializing.
+Mon Mar 05 13:49:49 CET 2018   [info] Default Properties File: org/apache/velocity/runtime/defaults/velocity.properties
+Mon Mar 05 13:49:49 CET 2018   [info] Trying to use logger class org.apache.velocity.runtime.log.AvalonLogSystem
+Mon Mar 05 13:49:49 CET 2018   [info] Using logger class org.apache.velocity.runtime.log.AvalonLogSystem
+Mon Mar 05 13:49:49 CET 2018   [info] Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+Mon Mar 05 13:49:49 CET 2018   [info] Resource Loader Instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+Mon Mar 05 13:49:49 CET 2018   [info] FileResourceLoader : initialization starting.
+Mon Mar 05 13:49:49 CET 2018   [info] FileResourceLoader : adding path '.'
+Mon Mar 05 13:49:49 CET 2018   [info] FileResourceLoader : adding path 'xdocs/stylesheets/'
+Mon Mar 05 13:49:49 CET 2018   [info] FileResourceLoader : initialization complete.
+Mon Mar 05 13:49:49 CET 2018   [info] ResourceCache : initialized. (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+Mon Mar 05 13:49:49 CET 2018   [info] Default ResourceManager initialization complete.
+Mon Mar 05 13:49:49 CET 2018   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+Mon Mar 05 13:49:49 CET 2018   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+Mon Mar 05 13:49:49 CET 2018   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+Mon Mar 05 13:49:49 CET 2018   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Include
+Mon Mar 05 13:49:49 CET 2018   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+Mon Mar 05 13:49:49 CET 2018   [info] Created: 20 parsers.
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : initialization starting.
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : adding VMs from VM library template : VM_global_library.vm
+Mon Mar 05 13:49:49 CET 2018  [error] ResourceManager : unable to find resource 'VM_global_library.vm' in any resource loader.
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : error using  VM library template VM_global_library.vm : org.apache.velocity.exception.ResourceNotFoundException: Unable to find resource 'VM_global_library.vm'
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro :  VM library template macro registration complete.
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : allowInline = true : VMs can be defined inline in templates
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : allowInlineLocal = false : VMs defined inline will be  global in scope if allowed.
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : messages on  : VM system will output logging messages
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : autoload off  : VM system will not automatically reload global library macros
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : initialization complete.
+Mon Mar 05 13:49:49 CET 2018   [info] Velocity successfully started.
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : added new VM : #resource_table( elem ) : source = ./site.vsl
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : added new VM : #relativise( elem ) : source = ./site.vsl
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : added new VM : #color_table( table ) : source = ./site.vsl
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : added new VM : #make_toc( ) : source = ./site.vsl
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : added new VM : #make_note( note ) : source = ./site.vsl
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : added new VM : #metaauthor( author email ) : source = ./site.vsl
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : added new VM : #metaatom( title url ) : source = ./site.vsl
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : added new VM : #source( value ) : source = ./site.vsl
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : added new VM : #eccnmatrix( matrix ) : source = ./site.vsl
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : added new VM : #section( section level ) : source = ./site.vsl
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : added new VM : #makeProject( ) : source = ./site.vsl
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : added new VM : #listProjects( ) : source = ./site.vsl
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : added new VM : #getProjectImage( ) : source = ./site.vsl
+Mon Mar 05 13:49:49 CET 2018   [info] Velocimacro : added new VM : #document( ) : source = ./site.vsl
+Mon Mar 05 13:49:49 CET 2018  [error] VM #section: error : too few arguments to macro. Wanted 2 got 0
+Mon Mar 05 13:49:49 CET 2018   [info] ResourceManager : found ./site.vsl with loader org.apache.velocity.runtime.resource.loader.FileResourceLoader
+Mon Mar 05 13:49:49 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 9, column 1]
+Mon Mar 05 13:49:49 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 13, column 1]
+Mon Mar 05 13:49:49 CET 2018  [error] Left side ($root.getAttributeValue("id")) of '==' operation has null value. If a reference, it may not be in the context. Operation not possible. ./site.vsl [line 18, column 38]
+Mon Mar 05 13:49:49 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 44, column 1]
+Mon Mar 05 13:49:49 CET 2018  [error] RHS of #set statement is null. Context will not be modified. ./site.vsl [line 58, column 9]

@@ -81,9 +81,7 @@
     </li>
     <li>Open an <a href="https://issues.apache.org/jira/browse/INFRA">Infrastructure JIRA</a> issue identifying the resources that need turning off/making read only. Typically:
       <ul>
-        <li>Remove files from <a href="http://www.apache.org/dist/">www.apache.org/dist</a> and add a <code>.htaccess</code> containing:
-          <pre>RedirectMatch permanent .* http://attic.apache.org/projects/${project}.html</pre>
-        </li>
+        <li>Remove files from <a href="http://www.apache.org/dist/">www.apache.org/dist</a></li>
         <li>Closing down of dev@, commits@ and private@ <a href="http://mail-archives.apache.org/mod_mbox/">mailing lists</a></li>
         <li>Close down the user mailing list (unless still active - in which case propose a moderator to Infra)</li>
         <li>Make JIRA|Bugzilla read-only</li>
