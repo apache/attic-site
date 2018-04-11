@@ -94,7 +94,7 @@ function handle(r)
   local err = nil
   local HOST = r.hostname
   local PROJ, _ = string.gsub ( HOST, '.apache.org', '' )
-  local PATH = r.pathinfo
+  local PATH = r.path_info
   local TEST = false
 
   r.content_type = "text/html"
@@ -104,26 +104,7 @@ function handle(r)
   --   r:puts( string.format("arg [%s] [%s]<br>\n", k, v) )
   -- end
 
-  if get.PROJ then
-    if get.PROJ == '' then
-      err = "PROJ is empty"
-    else
-      PROJ = get.PROJ
-      HOST = PROJ .. '.apache.org'
-    end
---else
---  local uri = r.unparsed_uri:sub(string.len(PROG)-1)
---  local idx = uri:find('/')
---  if idx then
---    PROJ = uri:sub(1,idx-1) ; PATH = uri:sub(idx+1)
---  else
---    PROJ = uri ; PATH = ''
---  end
-  end
-
-  if err ~= nil then r:puts(err) return apache2.OK end
-
-  if not TEST and not get.test and not in_attic(PROJ) then
+  if not TEST and not get.test and not in_attic(HOST) then
     err = "project is not in attic"
       .. " PROJ [" .. PROJ .. "]"
       .. " HOST [" .. HOST .. "]"
