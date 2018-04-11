@@ -77,7 +77,7 @@ function change_loc()
   <div id="top" class="top"></div>
   <span id='loc'></span>
   </div>
-  <iframe id="f2" onload="change_loc()" src="/try2/FRAME/!PATH!"></iframe>
+  <iframe id="f2" onload="change_loc()" src="/FRAME/!PATH!"></iframe>
 </body>
 </html>
 ]=]
@@ -94,7 +94,7 @@ function handle(r)
   local err = nil
   local PROJ
   local PATH
-  local TEST = true
+  local TEST = false
 
   r.content_type = "text/html"
 
@@ -110,8 +110,7 @@ function handle(r)
       PROJ = r.subprocess_env['REQUEST_URI']
     end
   else
-    -- |try2| == 1 + 3
-    local uri = r.unparsed_uri:sub(3+string.len(PROG))
+    local uri = r.unparsed_uri:sub(string.len(PROG)-1)
     local idx = uri:find('/')
     if idx then
       PROJ = uri:sub(1,idx-1) ; PATH = uri:sub(idx+1)
