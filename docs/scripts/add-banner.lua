@@ -92,7 +92,7 @@ function in_attic(p) return exists ( ATTIC_PRJS .. p ) end
 function handle(r)
   local get = r:parseargs()
   local err = nil
-  local HOST = r:hostname
+  local HOST = r.hostname
   local PROJ, _ = string.gsub ( HOST, '.apache.org', '' )
   local PATH = r.pathinfo
   local TEST = false
