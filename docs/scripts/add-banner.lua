@@ -122,7 +122,7 @@ function handle(r)
   if err ~= nil then r:puts(err) return apache2.OK end
 
   if not TEST and not get.test and not in_attic(PROJ) then
-    err = "project is not in attic [" .. PROJ .. "]"
+    err = "project is not in attic [" .. PROJ .. "] [" .. r.unparsed_uri .. "]"
   end
 
   if err ~= nil then
