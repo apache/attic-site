@@ -82,7 +82,7 @@ function change_loc()
 </html>
 ]=]
 
-local PROG  = 'scripts/add-banner.lua' ;
+local PROG  = '/scripts/add-banner.lua/' ;
 local ATTIC_DIR  = '/var/www/attic.apache.org/'
 local ATTIC_PRJS = ATTIC_DIR .. 'flagged/'
 
@@ -92,8 +92,9 @@ function in_attic(p) return exists ( ATTIC_PRJS .. p ) end
 function handle(r)
   local get = r:parseargs()
   local err = nil
-  local PROJ
-  local PATH
+  local HOST = r:hostname()
+  local PROJ, _ = string.gsub ( HOST, '.apache.org', '' )
+  local PATH = r.pathinfo()
   local TEST = false
 
   r.content_type = "text/html"
@@ -122,7 +123,10 @@ function handle(r)
   if err ~= nil then r:puts(err) return apache2.OK end
 
   if not TEST and not get.test and not in_attic(PROJ) then
-    err = "project is not in attic [" .. PROJ .. "] [" .. r.unparsed_uri .. "]"
+    err = "project is not in attic"
+      .. " PROJ [" .. PROJ .. "]"
+      .. " HOST [" .. HOST .. "]"
+      .. " PATH [" .. PATH .. "]"
   end
 
   if err ~= nil then
@@ -131,7 +135,7 @@ function handle(r)
     local text = TEMPL
     local subs =
       { ['!PROJ!'] = PROJ
-      , ['!HOST!'] = PROJ .. '.apache.org'
+      , ['!HOST!'] = HOST
       , ['!PATH!'] = PATH
       }
     for k, v in pairs ( subs ) do text, _ = string.gsub ( text, k, v ) end
