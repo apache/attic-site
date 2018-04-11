@@ -119,7 +119,7 @@ function handle(r)
 --  else
 --    PROJ = uri ; PATH = ''
 --  end
---end
+  end
 
   if err ~= nil then r:puts(err) return apache2.OK end
 
