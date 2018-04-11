@@ -82,7 +82,7 @@ function change_loc()
 </html>
 ]=]
 
-local PROG  = 'add-banner.lua' ;
+local PROG  = 'scripts/add-banner.lua' ;
 local ATTIC_DIR  = '/var/www/attic.apache.org/'
 local ATTIC_PRJS = ATTIC_DIR .. 'flagged/'
 
