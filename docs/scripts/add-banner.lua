@@ -108,17 +108,18 @@ function handle(r)
     if get.PROJ == '' then
       err = "PROJ is empty"
     else
-      PROJ = r.subprocess_env['REQUEST_URI']
+      PROJ = get.PROJ
+      HOST = PROJ .. '.apache.org'
     end
-  else
-    local uri = r.unparsed_uri:sub(string.len(PROG)-1)
-    local idx = uri:find('/')
-    if idx then
-      PROJ = uri:sub(1,idx-1) ; PATH = uri:sub(idx+1)
-    else
-      PROJ = uri ; PATH = ''
-    end
-  end
+--else
+--  local uri = r.unparsed_uri:sub(string.len(PROG)-1)
+--  local idx = uri:find('/')
+--  if idx then
+--    PROJ = uri:sub(1,idx-1) ; PATH = uri:sub(idx+1)
+--  else
+--    PROJ = uri ; PATH = ''
+--  end
+--end
 
   if err ~= nil then r:puts(err) return apache2.OK end
 
