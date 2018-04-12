@@ -17,15 +17,14 @@ function output_filter(r)
 
     -- add header:
     local host = r.hostname:match("^([^.]+)") -- get TLP part of hostname
-    local name = host:gsub("^%l", string.upper) -- Prettify (TODO: look up real name)
     local sty1 = 'font-size:x-large;padding:15px;color:white;background:red;' ;
     local sty2 = 'color:white' ;
     coroutine.yield ( ([[
       <div style='%s'>
-        Project <i>%s</i> has retired. For details please refer to its
+        Project <i>%s</i> is retired. See %s's
         <a style='%s' href="https://attic.apache.org/projects/%s.html">
-        Attic page</a>.
-      </div>]]):format(sty1, name, sty2, host) )
+        attic page</a>.
+      </div>]]):format(sty1, host, host, sty2, host) )
     -- spit out the actual page
     while bucket do
         coroutine.yield(bucket)
