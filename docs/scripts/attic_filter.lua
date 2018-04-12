@@ -4,13 +4,14 @@ function output_filter(r)
 
     -- add header:
     local host = r.hostname:match("^([^.]+)") -- get TLP part of hostname
-    coroutine.yield(([[
-        <div style='width: 100%; height: 32px; color: #FFF; background: #C00;'>
-            This project has retired! See
-            <a href='https://attic.apache.org/%s.html'>attic.apache.org/%s.html</a>.
-        </div>
-        ]]):format(host, host))
-
+    local sty1 = 'font-size:x-large;padding:15px;color:white;background:red;' ;
+    local sty2 = 'color:white' ;
+    coroutine.yield ( ([[
+      <div style='%s'>
+        Project <i>%s</i> is retired. See %s's
+        <a style='%s' href="https://attic.apache.org/projects/%s.html">
+        attic page</a>.
+      </div>]]):format(sty1, host, host, sty2, host) )
     -- spit out the actual page
     while bucket do
         coroutine.yield(bucket)
