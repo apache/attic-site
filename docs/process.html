@@ -71,9 +71,8 @@
         <li>Create project page on Attic site: http://attic.apache.org/projects/${project}.html</li>
         <li>Obtain source control karma and point source control mails to general at attic
           <ul>
-            <li>i. Update website with Attic notice: http://${project}.apache.org/</li>
-            <li>ii. Update the project DOAP file (if any): https://projects.apache.org/project.html?${project}</li>
-            <li>iii. Make source control read-only</li></ul></li>
+            <li>i. Update the project DOAP file (if any): https://projects.apache.org/project.html?${project}</li>
+            <li>ii. Make source control read-only</li></ul></li>
         <li>Move committee's PMC data file to retired (if TLP)</li>
         <li>Remove from <a href="http://www.apache.org/#projects-list">http://www.apache.org/#projects-list</a> navigation (if TLP)</li>
         <li>Announce on <a href="http://mail-archives.apache.org/mod_mbox/www-announce/">announce at apache.org</a></li>
@@ -166,6 +165,11 @@ ${Name} on behalf of ${project} + the Attic.
 <p>The Attic website is built using Anakia. Anakia is an old site technology built on top of Apache Velocity. 
      You can get the source for the site from Subversion: </p>
 <pre>svn co https://svn.apache.org/repos/asf/attic/site</pre>
+<p>Create directory to signal project is moved to Attic:</p>
+<ul>
+    <li><code>mkdir docs/flagged/${project}.apache.org ;</code></li>
+    <li><code>touch docsflagged/${project}.apache.org/${project}.apache.org</code></li>
+  </ul>
 <p>To create a project page do:</p>
 <ul>
     <li>in xdocs/projects/ copy one of the files to the new project name (eg. devicemap.xml)</li>
@@ -188,20 +192,6 @@ all work are done in "{infra-repo}/modules/subversion_server/files/authorization
         <li>Change "asf-authorization-template" so that the attic-pmc has karma instead of the defunct project. </li>
         <li>Change "asf-mailer.conf" so that the attic-pmc has karma instead of the defunct project. Add project to attic regex, and if there are a project entry remove it</li>
     </ul>
-</div>
-                 
-<h4 id="website">
-   How to: 6.i Update website with Attic notice: http://${project}.apache.org/
-</h4>
-<div class="section-content">
-<p>A banner needs to be added to the website indicating that it is now in the Attic. This needs to be done in a lightweight way 
-     without having to learn how the project manage their site. One way is to (carefully!) search and replace for a common 
-     tag such as the body tag. Another is to edit the CSS. </p>
-<pre>
-      &lt;div style="background: red"&gt;&lt;h1&gt;2017/01/01 - Apache foo has been retired. &lt;/h1&gt;&lt;h2&gt;<br />For more information, please explore the &lt;a href="http://attic.apache.org/"&gt;Attic&lt;/a&gt;. &lt;/h2&gt;&lt;/div&gt;
-</pre>
-<p>Site may be published through <a href="https://svn.apache.org/repos/infra/websites/production/">websites svn</a> or other means: need investigation on
-     each case. </p>
 </div>
                  
 <h4 id="doap">
