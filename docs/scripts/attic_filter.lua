@@ -16,10 +16,12 @@ function output_filter(r)
     if not r.content_type:match(".*text/html.*") then return end
 
     -- add header:
-    local host = r.hostname:match("^([^.]+)") -- get TLP part of hostname
-    local name = host:gsub("^%l", string.upper) -- Prettify (TODO: look up real name)
+    -- get TLP part of hostname
+    local host = r.hostname:match("^([^.]+)")
+    -- Prettify (TODO: look up real name)
+    local name = host:gsub("^%l", string.upper)
     local sty1 = 'font-size:x-large;padding:15px;color:white;background:red;' ;
-    local sty2 = 'color:white' ;
+    local sty2 = 'color:white;text-decoration:underline' ;
     coroutine.yield ( ([[
       <div style='%s'>
         Project <i>%s</i> has retired. For details please refer to its
