@@ -122,7 +122,8 @@
 <p>The Apache Incubator project is the entry path into The Apache Software Foundation for projects and codebases wishing to become part of the Foundation's efforts. Not all projects 'graduate' out of the Incubator and are instead retired. Those retired projects may be found on the Incubator's <a href="http://incubator.apache.org/projects/index.html#retired">Project page</a>. </p>
 </div>
          </div>
-    <!--#include virtual="/sidebar.html" -->
+    <?php echo "JAN TEST:    "; echo dirname(__FILE__); echo " CHECK DIR"; ?>
+    <?php readfile("./sidebar.inc") ?>
     <div class="column span-24 footer">
       <hr/>
         <p>Copyright &#169; 2009-2016 The Apache Software Foundation, Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br/>
