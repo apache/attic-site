@@ -138,10 +138,10 @@ ${Name} on behalf of ${project} + the Attic.
      You can get the source for the site from Subversion: </p>
   <pre>svn co https://svn.apache.org/repos/asf/attic/site</pre>
 
-  <p>Create directory to signal project is moved to Attic:</p>
+  <p>Signal that <i>retired</i> banners must be added to ${project}.a.o. :</p>
   <ul>
     <li><code>mkdir docs/flagged/${project}.apache.org ;</code></li>
-    <li><code>touch docsflagged/${project}.apache.org/${project}.apache.org</code></li>
+    <li><code>touch docs/flagged/${project}.apache.org/${project}.apache.org</code></li>
   </ul>
 
   <p>To create a project page do:</p>
