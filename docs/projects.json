@@ -123,7 +123,7 @@
    "source code": "",
    "issues":      "",
    "wiki":        "",
-   "maillists":   {,
+   "maillists":   {},
    "description": "Apache Crimson was a Java XML parser which supports XML 1.0 via various APIs."
 },
 {
@@ -387,7 +387,7 @@
                    "dev":     "http://mail-archives.apache.org/mod_mbox/oltu-dev",
                    "user":    "http://mail-archives.apache.org/mod_mbox/oltu-user"
                   },
-   "description": "Apache Oltu was an OAuth protocol implementation in Java. It also covers others "OAuth family" related implementations such as JWT, JWS and OpenID Connect"
+   "description": "Apache Oltu was an OAuth protocol implementation in Java. It also covers others \"OAuth family\" related implementations such as JWT, JWS and OpenID Connect"
 },
 {
    "name":        "Onami",
@@ -412,7 +412,7 @@
    "maillists":   {"commits": "http://mail-archives.apache.org/mod_mbox/quetz-mod_python-commits",
                    "dev":     "http://mail-archives.apache.org/mod_mbox/quetz-mod_python-dev/"
                   },
-   "description": "Quetzalcoatl, or Quetz as it was more commonly known, was a project charged with the creation and maintenance of open-source software related to <a href="http://www.modpython.org">mod_python</a> and the Python programming language.  Mainly formed around the mod_python subproject, it didn't have activity in the mod_python community to drive the larger project along."
+   "description": "Quetzalcoatl, or Quetz as it was more commonly known, was a project charged with the creation and maintenance of open-source software related to <a href=\"http://www.modpython.org\">mod_python</a> and the Python programming language.  Mainly formed around the mod_python subproject, it didn't have activity in the mod_python community to drive the larger project along."
 },
 {
    "name":        "Rave",
@@ -439,7 +439,7 @@
                    "issues":  "http://mail-archives.apache.org/mod_mbox/shale-issues",
                    "user":    "http://mail-archives.apache.org/mod_mbox/shale-user"
                   },
-   "description": "Shale was a web application framework, fundamentally based on JavaServer Faces. This blog entry from Kito Mann is an excellent discussion of Shale's retirement: <a href="http://blogs.jsfcentral.com/editorsdesk/entry/shale_in_the_attic">http://blogs.jsfcentral.com/editorsdesk/entry/shale_in_the_attic</a>."
+   "description": "Shale was a web application framework, fundamentally based on JavaServer Faces. This blog entry from Kito Mann is an excellent discussion of Shale's retirement: <a href=\"http://blogs.jsfcentral.com/editorsdesk/entry/shale_in_the_attic\">http://blogs.jsfcentral.com/editorsdesk/entry/shale_in_the_attic</a>."
 },
 {
    "name":        "Shindig",
@@ -479,7 +479,7 @@
                    "notification": "http://mail-archives.apache.org/mod_mbox/tuscany-notification",
                    "user":    "http://mail-archives.apache.org/mod_mbox/tuscany-user"
                   },
-   "description": "Tuscany simplified the task of developing service-oriented architectured solutions by providing a comprehensive infrastructure for development and management, based on the <a href="https://en.wikipedia.org/wiki/Service_Component_Architecture">Service Component Architecture</a> standard."
+   "description": "Tuscany simplified the task of developing service-oriented architectured solutions by providing a comprehensive infrastructure for development and management, based on the <a href=\"https://en.wikipedia.org/wiki/Service_Component_Architecture\">Service Component Architecture</a> standard."
 },
 {
    "name":        "Whirr",
