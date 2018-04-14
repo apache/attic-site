@@ -462,6 +462,7 @@
    "source code": "http://svn.apache.org/repos/asf/stdcxx",
    "issues":      "https://issues.apache.org/jira/projects/STDCXX",
    "wiki":        "",
+   "board_id":    "Cxx_Standard_Library",
    "maillists":   {"commits": "http://mail-archives.apache.org/mod_mbox/stdcxx-commits",
                    "dev":     "http://mail-archives.apache.org/mod_mbox/stdcxx-dev",
                    "issues":  "http://mail-archives.apache.org/mod_mbox/stdcxx-issues",
