@@ -456,6 +456,20 @@
    "description": "Apache Shindig was an OpenSocial container to help you to start hosting OpenSocial apps quickly."
 },
 {
+   "name":        "STDCXX",
+   "website":     "http://stdcxx.apache.org",
+   "retired":     "07/2013",
+   "source code": "http://svn.apache.org/repos/asf/stdcxx",
+   "issues":      "https://issues.apache.org/jira/projects/STDCXX",
+   "wiki":        "",
+   "maillists":   {"commits": "http://mail-archives.apache.org/mod_mbox/stdcxx-commits",
+                   "dev":     "http://mail-archives.apache.org/mod_mbox/stdcxx-dev",
+                   "issues":  "http://mail-archives.apache.org/mod_mbox/stdcxx-issues",
+                   "user":    "http://mail-archives.apache.org/mod_mbox/stdcxx-user"
+                  },
+   "description": "The Apache C++ Standard Library project was a collection of algorithms, containers, iterators, and other fundamental components of every piece of software, implemented as C++ classes, templates, and functions essential for writing C++ programs."
+},
+{
    "name":        "Stratos",
    "website":     "http://stratos.apache.org",
    "retired":     "01/2017",
