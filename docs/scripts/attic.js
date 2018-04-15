@@ -44,6 +44,7 @@ var jsonObj = JSON.parse(`
    "source code": "http://svn.apache.org/repos/asf/axis/axis2/c/sandesha",
    "issues":      "https://issues.apache.org/jira/projects/SANDESHA2C",
    "wiki":        "",
+   "board":       "",
    "maillists":   {},
    "description": "Sandesha2/C was a C implementation of the WS-ReliableMessaging specification. Sandesha2/C was built on top of Apache Axis2/C Web services engine, as a module. Therefore by using Sandesha2/C you could add reliable messaging capability to Web services hosted using Axis2/C. Sandesha2/C could also be used with Axis2/C client to interact with an already hosted Web services in a reliable manner."
 },
@@ -54,6 +55,7 @@ var jsonObj = JSON.parse(`
    "source code": "http://svn.apache.org/repos/asf/axis/axis2/c/savan",
    "issues":      "https://issues.apache.org/jira/browse/AXIS2C",
    "wiki":        "",
+   "board":       "",
    "maillists":   {},
    "description": "Savan/C was a C implementation of WS-Eventing specification. Savan/C was built on top of Axis2/C. Therefore by using Savan/C you could add WS-Eventing capability to Web services hosted using Axis2/C. Savan/C was designed as a general publisher/subscriber tool. The arcitecture was designed to abstract the general publisher/subscriber features so that people could support more than one publisher/subscriber mechanisms within the same infrastructure."
 },
@@ -64,6 +66,7 @@ var jsonObj = JSON.parse(`
    "source code": "",
    "issues":      "https://issues.apache.org/jira/projects/SAVAN",
    "wiki":        "",
+   "board":       "",
    "maillists":   {},
    "description": "Savan/Java was a Java implementation of WS-Eventing specification. Savan/Java was built on top of Axis2/Java. Therefore by using Savan/Java you could add WS-Eventing capability to Web services hosted using Axis2/Java. Savan/Java was designed as a general publisher/subscriber tool. The arcitecture was designed to abstract the general publisher/subscriber features so that people could support more than one publisher/subscriber mechanisms within the same infrastructure."
 },
@@ -74,6 +77,7 @@ var jsonObj = JSON.parse(`
    "source code": "",
    "issues":      "",
    "wiki":        "",
+   "board":       "",
    "maillists":   {},
    "description": "Apache AxKit was an XML Application Server for Apache. It provided on-the-fly conversion from XML to any format, such as HTML, WAP or text using either W3C standard techniques, or flexible custom code."
 },
@@ -125,6 +129,7 @@ var jsonObj = JSON.parse(`
    "source code": "",
    "issues":      "",
    "wiki":        "",
+   "board":       "crimson",
    "maillists":   {},
    "description": "Apache Crimson was a Java XML parser which supports XML 1.0 via various APIs."
 },
@@ -251,6 +256,7 @@ var jsonObj = JSON.parse(`
    "source code": "http://svn.apache.org/repos/asf/jakarta/cactus",
    "issues":      "https://issues.apache.org/jira/projects/CACTUS",
    "wiki":        "",
+   "board":       "",
    "maillists":   {"dev":     "http://mail-archives.apache.org/mod_mbox/jakarta-cactus-dev",
                    "user":    "http://mail-archives.apache.org/mod_mbox/jakarta-cactus-user"
                   },
@@ -263,6 +269,7 @@ var jsonObj = JSON.parse(`
    "source code": "http://svn.apache.org/repos/asf/jakarta/ecs",
    "issues":      "",
    "wiki":        "",
+   "board":       "",
    "maillists":   {"dev":     "http://mail-archives.apache.org/mod_mbox/jakarta-ecs-dev",
                    "user":    "http://mail-archives.apache.org/mod_mbox/jakarta-ecs-user"
                   },
@@ -275,6 +282,7 @@ var jsonObj = JSON.parse(`
    "source code": "http://svn.apache.org/repos/asf/jakarta/oro",
    "issues":      "",
    "wiki":        "",
+   "board":       "",
    "maillists":   {"dev":     "http://mail-archives.apache.org/mod_mbox/jakarta-oro-dev",
                    "user":    "http://mail-archives.apache.org/mod_mbox/jakarta-oro-user"
                   },
@@ -287,6 +295,7 @@ var jsonObj = JSON.parse(`
    "source code": "http://svn.apache.org/repos/asf/jakarta/regexp",
    "issues":      "",
    "wiki":        "",
+   "board":       "",
    "maillists":   {"dev":     "http://mail-archives.apache.org/mod_mbox/jakarta-regexp-dev",
                    "user":    "http://mail-archives.apache.org/mod_mbox/jakarta-regexp-user/"
                   },
@@ -299,6 +308,7 @@ var jsonObj = JSON.parse(`
    "source code": "http://svn.apache.org/repos/asf/jakarta/taglibs",
    "issues":      "",
    "wiki":        "",
+   "board":       "",
    "maillists":   {"dev":     "http://mail-archives.apache.org/mod_mbox/jakarta-taglibs-dev"
                   },
    "description": "Jakarta hosted the Jakarta Taglibs project, a large collection of JSP Tag Libraries. They ranged from simple utility libraries and UI libraries, to Dreamweaver extensions and an implementation of the JSP Standard Tag Library (JSTL) specification."
@@ -342,25 +352,13 @@ var jsonObj = JSON.parse(`
    "description": "Apache MRUnit was a Java library that helped developers unit test Apache Hadoop map reduce jobs."
 },
 {
-   "name":        "WS Muse",
-   "website":     "",
-   "retired":     "01/2013",
-   "source code": "",
-   "issues":      "",
-   "wiki":        "",
-   "maillists":   {"commits": "http://mail-archives.apache.org/mod_mbox/ws-muse-commits",
-                   "dev":     "http://mail-archives.apache.org/mod_mbox/ws-muse-dev",
-                   "user":    "http://mail-archives.apache.org/mod_mbox/ws-muse-user"
-                  },
-   "description": "Muse was a Java-based implementation of the WS-ResourceFramework (WSRF), WS-BaseNotification (WSN), and WS-DistributedManagement (WSDM) specifications."
-},
-{
    "name":        "OJB",
    "website":     "http://db.apache.org/ojb",
    "retired":     "01/2011",
    "source code": "http://svn.apache.org/repos/asf/db/ojb",
    "issues":      "https://issues.apache.org/jira/projects/OJB",
    "wiki":        "https://wiki.apache.org/db-ojb",
+   "board":       "",
    "maillists":   {"dev":     "http://mail-archives.apache.org/mod_mbox/db-ojb-dev",
                    "user":    "http://mail-archives.apache.org/mod_mbox/db-ojb-user"
                   },
@@ -464,7 +462,7 @@ var jsonObj = JSON.parse(`
    "source code": "http://svn.apache.org/repos/asf/stdcxx",
    "issues":      "https://issues.apache.org/jira/projects/STDCXX",
    "wiki":        "",
-   "board_id":    "Cxx_Standard_Library",
+   "board":       "Cxx_Standard_Library",
    "maillists":   {"commits": "http://mail-archives.apache.org/mod_mbox/stdcxx-commits",
                    "dev":     "http://mail-archives.apache.org/mod_mbox/stdcxx-dev",
                    "issues":  "http://mail-archives.apache.org/mod_mbox/stdcxx-issues",
@@ -536,6 +534,20 @@ var jsonObj = JSON.parse(`
                    "user":    "http://mail-archives.apache.org/mod_mbox/wookie-user"
                   },
    "description": "Wookie was a Java server application that allowed you to upload and deploy W3C/OpenSocial/Google Wave widgets to your applications."
+},
+{
+   "name":        "WS Muse",
+   "website":     "",
+   "retired":     "01/2013",
+   "source code": "",
+   "issues":      "",
+   "wiki":        "",
+   "board":       "",
+   "maillists":   {"commits": "http://mail-archives.apache.org/mod_mbox/ws-muse-commits",
+                   "dev":     "http://mail-archives.apache.org/mod_mbox/ws-muse-dev",
+                   "user":    "http://mail-archives.apache.org/mod_mbox/ws-muse-user"
+                  },
+   "description": "Muse was a Java-based implementation of the WS-ResourceFramework (WSRF), WS-BaseNotification (WSN), and WS-DistributedManagement (WSDM) specifications."
 },
 {
    "name":        "Xang",
@@ -638,15 +650,48 @@ function addSidebar()
 
 function addProject()
 {
-   var id = parseInt(window.location.search.substr(1));
-   var jsonProj = jsonObj[id];
+   var jsonProj = jsonObj[parseInt(window.location.search.substr(1))];
    var title    = "Apache " + jsonProj["name"];
    var website  = "<a href=\"" + jsonProj["website"] +"\">" + title + "</a>";
-   var desc     = "<p>" + website + " moved into the Attic in " +
-                  jsonProj["retired"] + ".<br>" + jsonProj["description"] + "</p>";
+
    document.title = title + " - Apache Attic";
    document.getElementById("header").innerHTML = "<h1>" + title + "</h1>";
-   document.getElementById("description").innerHTML = desc;
    document.getElementById("website").innerHTML = website;
+
+   document.getElementById("description").innerHTML = 
+     "<p>" + website + " moved into the Attic in " +
+     jsonProj["retired"] + ".<br>" + jsonProj["description"] + "</p>";
+
+   var mails    = "";
+   for (var key in jsonProj["maillists"])
+   {
+     if (mails.length > 0) { mails += " | "; }
+     mails += "<a href=\""  + jsonProj["maillists"][key] + "\">" + key + "</a>";
+   }
+   document.getElementById("mails").innerHTML = mails;
+
+   if (jsonProj["issues"] != "")
+   {
+      document.getElementById("issue").innerHTML =
+         "<a href=\"" + jsonProj["issues"] +"\">Issues</a>";
+   }
+
+   if (jsonProj["wiki"] != "")
+   {
+      document.getElementById("wiki").innerHTML =
+         "<a href=\"" + jsonProj["wiki"] +"\">Wiki</a>";
+   }
+
+   var board = jsonProj["name"]
+   if ("board" in jsonProj)
+   {
+     board = jsonProj["board"]
+   }
+   if (board != "")
+   {
+      document.getElementById("board").innerHTML =
+         "<a href=\"https://whimsy.apache.org/board/minutes/" +
+         board +".html\">Minutes</a>";
+   }
 }
 
