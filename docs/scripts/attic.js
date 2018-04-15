@@ -648,11 +648,16 @@ function addSidebar()
    document.getElementById("projList").innerHTML = projText;
 }
 
+function addHref(ref, title)
+{
+  return "<a href=\"" + ref +"\">" + title + "</a>";
+}
+
 function addProject()
 {
    var jsonProj = jsonObj[parseInt(window.location.search.substr(1))];
    var title    = "Apache " + jsonProj["name"];
-   var website  = "<a href=\"" + jsonProj["website"] +"\">" + title + "</a>";
+   var website  = addHref(jsonProj["website"],title);
 
    document.title = title + " - Apache Attic";
    document.getElementById("header").innerHTML = "<h1>" + title + "</h1>";
@@ -666,20 +671,20 @@ function addProject()
    for (var key in jsonProj["maillists"])
    {
      if (mails.length > 0) { mails += " | "; }
-     mails += "<a href=\""  + jsonProj["maillists"][key] + "\">" + key + "</a>";
+     mails += addHref(jsonProj["maillists"][key],key);
    }
    document.getElementById("mails").innerHTML = mails;
 
    if (jsonProj["issues"] != "")
    {
       document.getElementById("issue").innerHTML =
-         "<a href=\"" + jsonProj["issues"] +"\">Issues</a>";
+         addHref(jsonProj["issues"],"Issues");
    }
 
    if (jsonProj["wiki"] != "")
    {
       document.getElementById("wiki").innerHTML =
-         "<a href=\"" + jsonProj["wiki"] +"\">Wiki</a>";
+         addHref(jsonProj["wiki"],"Wiki");
    }
 
    var board = jsonProj["name"]
@@ -690,8 +695,10 @@ function addProject()
    if (board != "")
    {
       document.getElementById("board").innerHTML =
-         "<a href=\"https://whimsy.apache.org/board/minutes/" +
-         board +".html\">Minutes</a>";
+         addHref("https://whimsy.apache.org/board/minutes/" +
+         board +".html","Minutes");
    }
+
+   document.getElementById("source").innerHTML = addHref(jsonProj["source code"], "Repo");
 }
 
