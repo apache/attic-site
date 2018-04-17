@@ -32,7 +32,6 @@ Apache Oltu is an OAuth protocol implementation in Java. It also covers others "
 
   <resource_table project="oltu">
     <mail name="user"/>
-    <mail name="dev"/>
     <mail name="commits"/>
     <jira key="OLTU"/>
     <svn key="OLTU"/>
