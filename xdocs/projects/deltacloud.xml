@@ -36,7 +36,6 @@
     <mail name="user"/>
     <jira key="DTACLOUD"/>
     <git/>
-    <svn/>
   </resource_table>
 
   <p>As with any project in the Attic - if you should choose to fork Deltacloud outside of Apache, 
