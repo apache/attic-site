@@ -95,11 +95,11 @@
       <td>Issue Tracker</td>
 #if ($elem.getChild("jira").getAttributeValue("key"))
 #set ($key = $elem.getChild("jira").getAttributeValue("key"))
-      <td><a href="https://issues.apache.org/jira/browse/${key}/">JIRA</a></td>
+      <td><a href="https://issues.apache.org/jira/browse/${key.toUpperCase()}/">JIRA</a></td>
 #elseif ($elem.getAttributeValue("subproject"))
-      <td><a href="https://issues.apache.org/jira/browse/${subproj}/">JIRA</a></td>
+      <td><a href="https://issues.apache.org/jira/browse/${subproj.toUpperCase()}/">JIRA</a></td>
 #else
-      <td><a href="https://issues.apache.org/jira/browse/${proj}/">JIRA</a></td>
+      <td><a href="https://issues.apache.org/jira/browse/${proj.toUpperCase()}/">JIRA</a></td>
 #end
     </tr>
 #end
