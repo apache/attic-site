@@ -39,6 +39,7 @@
     <resource_table project="jakarta" subproject="taglibs">
       <bugzilla/>
       <svn/>
+      <no_website/>
     </resource_table>
 
     <p>In 2008 and 2009, the majority of these libraries were deprecated and have now been retired. The remaining work has 
