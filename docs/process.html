@@ -175,14 +175,22 @@ ${Name} on behalf of ${project} + the Attic.
 <p>To create a project page do:</p>
 <ul>
     <li>in xdocs/projects/ copy one of the files to the new project name (eg. devicemap.xml)</li>
+    <li>TBA: how to determine the file name</li>
     <li>Add the new file as a link in the xdocs/stylesheets/project.xml navigation</li>
     <li>Run 'ant' from the root (ie: the attic/site/ directory you checked out)</li>
     <li>Review the generated files in docs/** in your browser</li>
-    <li>SVN commit all changes. Remember to add both the new xdocs/ project file and the new generated docs/ project file
-    N.B. the buildbot will detect any changes to the source and build/commit the outout.
-    So it's important to checkin all the changes at once. Or just checkin the source changes and let buildbot do the rest.
+    <li>SVN commit *all* changes. Remember to add both the new xdocs/ project file and the new generated docs/ project file
     </li>
     <li>The new pages should go live quickly</li>
+  </ul>
+<p>To make minor edits to existing pages:</p>
+<ul>
+    <li>edit the page(s)</li>
+    <li>Commit the updated pages</li>
+    <li>The buildbot will build the site and commit the result which will be published soon after</li>
+    <li>This is most suitable for minor changes when there is no need to review the output before committing.
+    Otherwise use the process described previously.
+    </li>
   </ul>
 </div>
                  
