@@ -142,8 +142,8 @@ ${Name} on behalf of ${project} + the Attic.
 
   <p>Signal that <i>retired</i> banners must be added to ${project}.a.o. :</p>
   <ul>
-    <li><code>mkdir docs/flagged/${project}.apache.org ;</code></li>
-    <li><code>touch docs/flagged/${project}.apache.org/${project}.apache.org</code></li>
+    <li><code>mkdir xdocs/flagged/${project}.apache.org ;</code></li>
+    <li><code>touch xdocs/flagged/${project}.apache.org/${project}.apache.org</code></li>
   </ul>
 
   <p>To create a project page do:</p>
