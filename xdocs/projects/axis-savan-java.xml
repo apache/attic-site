@@ -33,7 +33,7 @@
      issue tracker is read-only. No downloads were made available. See the website at
      <a href="http://axis.apache.org/axis2/java/savan/">http://axis.apache.org/axis2/java/savan</a> 
      for limited additional information on Savan/Java. Note that the website is incorrect with regards to where 
-     the source code is. You can find the source code at <a href="http://svn.apache.org/viewvc/axis/axis2/java/savan/">http://svn.apache.org/viewvc/axis/axis2/java/savan/</a>. Also note the issue tracker was <a href="https://issues.apache.org/jira/browse/SAVAN">https://issues.apache.org/jira/browse/SAVAN</a>. </p>
+     the source code is. You can find the source code at <a href="http://svn.apache.org/repos/asf/axis/axis2/java/savan/">http://svn.apache.org/repos/asf/axis/axis2/java/savan/</a>. Also note the issue tracker was <a href="https://issues.apache.org/jira/browse/SAVAN">https://issues.apache.org/jira/browse/SAVAN</a>. </p>
 
   <p>As with any project in the Attic - if you should choose to fork Savan/Java outside of Apache, 
      please let us know so we can link to your project. </p>

@@ -128,7 +128,7 @@
 #if($elem.getChild("svn"))
     <tr>
       <td>Source Code (Subversion)</td>
-      <td><a href="http://svn.apache.org/viewvc/${proj}/${subproj}">svn.apache.org/repos/asf/${proj}/${subproj}</a></td>
+      <td><a href="http://svn.apache.org/repos/asf/${proj}/${subproj}">svn.apache.org/repos/asf/${proj}/${subproj}</a></td>
     </tr>
 #end
 #if($elem.getChild("git"))
