@@ -2,4 +2,4 @@
 
 # Script to build the Attic site under docs/ 
 
-ant
+ant -Danakia.check.date=false
