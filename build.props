@@ -10,4 +10,3 @@ file.resource.loader.class = org.apache.velocity.runtime.resource.loader.FileRes
 file.resource.loader.path = .,xdocs/stylesheets/
 file.resource.loader.cache = true
 file.resource.loader.modificationCheckInterval = 10
-
