@@ -27,12 +27,15 @@
 <section id="xmlbeans">
   <title>Apache XMLBeans</title>
 
-  <p><a href="http://xmlbeans.apache.org/">Apache XMLBeans</a> moved into the Attic in July 2013. 
-     Apache XMLBeans was a technology for accessing XML by binding it to Java types. </p>
-     
-  <p>
-  <a href="http://xmlbeans.apache.org/">Apache XMLBeans</a>
-  moved out of the Attic in June 2018. 
+  <p>Project <a href="http://xmlbeans.apache.org/">Apache XMLBeans</a>
+    moved into the Attic in July 2013. 
+    <br>
+    <a href="http://xmlbeans.apache.org/">Apache XMLBeans</a>
+    moved out of the Attic in June 2018. 
+  </p>
+
+  <p>Apache XMLBeans is a technology for accessing XML by binding it
+    to Java types.
   </p>
 
   <p>
