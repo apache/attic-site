@@ -34,7 +34,7 @@
     moved out of the Attic in June 2018. 
   </p>
 
-  <p>Apache XMLBeans is a technology for accessing XML by binding it
+  <p>Apache XMLBeans was/is a technology for accessing XML by binding it
     to Java types.
   </p>
 
@@ -42,16 +42,6 @@
   Apache XMLBeans is now a project of
   <a href="http://poi.apache.org/">Apache Poi</a>.
   </p>
-
-<!--
-  <p>The website, issue tracker and downloads remain and are read-only. See the website at 
-     <a href="http://xmlbeans.apache.org/">http://xmlbeans.apache.org</a> for more information on XMLBeans. </p>
-
-  <p>Archived versions of XMLBeans may be downloaded from the 
-     <a href="http://archive.apache.org/dist/xmlbeans/">Apache Archives</a>. </p>
-
-  <p>Alternatives are discussed on this StackOverflow question: <a href="http://stackoverflow.com/questions/27727546/what-to-use-instead-of-xmlbeans-now-that-it-has-been-retired">What to use instead of XMLBeans now that it has been retired?</a></p>
--->
 
 </section>
 
