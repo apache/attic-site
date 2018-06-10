@@ -27,20 +27,18 @@
 <section id="xmlbeans">
   <title>Apache XMLBeans</title>
 
-  <p>Project <a href="http://xmlbeans.apache.org/">Apache XMLBeans</a>
-    moved into the Attic in July 2013. 
-    <br>
-    <a href="http://xmlbeans.apache.org/">Apache XMLBeans</a>
-    moved out of the Attic in June 2018. 
+  <p>
+    Project <a href="http://xmlbeans.apache.org/">Apache XMLBeans</a>
+    was in the Attic between July 2013 and June 2018.
   </p>
 
-  <p>Apache XMLBeans was/is a technology for accessing XML by binding it
+  <p>Apache XMLBeans is a technology for accessing XML by binding it
     to Java types.
   </p>
 
   <p>
-  Apache XMLBeans is now a project of
-  <a href="http://poi.apache.org/">Apache Poi</a>.
+    <a href="http://xmlbeans.apache.org/">Apache XMLBeans</a>
+    is now a project of <a href="http://poi.apache.org/">Apache Poi</a>.
   </p>
 
 </section>
