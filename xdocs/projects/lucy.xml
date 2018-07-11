@@ -34,7 +34,7 @@
     It is a "loose C" port of the Apache Lucene™ search engine library
     for Java.
   </p>
-     
+
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
      <a href="http://lucy.apache.org/">http://lucy.apache.org</a>
@@ -46,7 +46,6 @@
 
   <resource_table project="lucy">
   <mail name="commits"/>
-  <mail name="dev"/>
   <mail name="issues"/>
   <mail name="user"/>
   <jira/>
