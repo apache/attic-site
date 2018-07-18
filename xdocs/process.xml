@@ -82,7 +82,7 @@
          (see <a href="https://svn.apache.org/repos/infra/infrastructure/buildbot/aegis/buildmaster/master1/projects/attic-site.conf">attic-site.conf</a>),
          <a href="https://github.com/apache/infrastructure-puppet/blob/deployment/modules/svnwcsub/files/svnwcsub.conf#L36">svnwcsub configuration</a> to update generated html from svn to webserver</li>
      <li>jira <a href="https://issues.apache.org/jira/browse/ATTIC">https://issues.apache.org/jira/browse/ATTIC</a></li>
-     <li>committees.xml <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees.xml">https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees.xml</a></li>
+     <li>committees.xml <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/committees.xml">https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/committees.xml</a></li>
     </ul>
   </p>
 </section>
@@ -177,7 +177,10 @@ ${Name} on behalf of ${project} + the Attic.
 
     <p>follow the workflow <a href="https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo">https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo</a>,<br />
 sometimes it helps chatting with infra <a href="https://www.hipchat.com/gIjVtYcNy">https://www.hipchat.com/gIjVtYcNy</a>,<br />
-all work are done in "{infra-repo}/modules/subversion_server/files/authorization/"</p>
+all work is done in
+<a href="https://github.com/apache/infrastructure-puppet/tree/deployment/modules/subversion_server/files/authorization">
+{infra-repo}/modules/subversion_server/files/authorization/</a>
+</p>
     <ul>
         <li>Change "asf-authorization-template" so that the attic-pmc has karma instead of the defunct project. </li>
         <li>Change "asf-mailer.conf" so that the attic-pmc has karma instead of the defunct project. Add project to attic regex, and if there are a project entry remove it</li>
@@ -199,10 +202,10 @@ new category:  &lt;category rdf:resource="http://projects.apache.org/category/re
 
     <p>If committee appears in <a href="https://projects.apache.org/committees.html">committees list</a>, moving data to retired will remove it from the list.
        Notice that <a href="https://issues.apache.org/jira/browse/COMDEV-182">this task is being automated</a>, then not necessary to track any more in the future...</p>
-    <p>Comment PMC data files index entry (see the <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees.xml">committees.xml</a> file
+    <p>Comment PMC data files index entry (see the <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/committees.xml">committees.xml</a> file
        and old <a href="https://svn.apache.org/repos/asf/infrastructure/site-tools/trunk/projects/pmc_list.xml">pmc_list.xml</a> file) and move PMC data file
-       from <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees">committees/</a> directory
-       to <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/data/committees-retired">committees-retired/</a>.
+       from <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/committees">committees/</a> directory
+       to <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/committees-retired">committees-retired/</a>.
     </p>
 </section>
 
