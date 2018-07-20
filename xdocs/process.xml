@@ -40,7 +40,7 @@
         <li>If the PMC can't get enough people to vote to dissolve the PMC (and there are not three -1 votes), then that is grounds for moving the project to the Attic. They should inform the board as above, noting that the vote failed to get enough votes. </li>
       </ul>
     </li>
-    <li>If the board approve the resolution, open a JIRA item - 'Move ${project} to the Attic'.<br /> Copy/paste the following items to the details (see "How to" below for a description of each step): 
+    <li>If the board approve the resolution, open a JIRA item - 'Move ${project} to the Attic'.<br /> Copy/paste the following items to the details (see "How to") below for a description of each step): 
       <ol type="1">
         <li>Confirm Board Resolution (if TLP)</li>
         <li>Delete from committee-info.txt (if TLP)</li>
@@ -55,6 +55,7 @@
         <li>Remove from <a href="http://www.apache.org/#projects-list">http://www.apache.org/#projects-list</a> navigation (if TLP)</li>
         <li>Announce on <a href="http://mail-archives.apache.org/mod_mbox/www-announce/">announce at apache.org</a></li>
       </ol>
+      see <a href="http://attic.apache.org/process.html#howto">http://attic.apache.org/process.html#howto</a> for detailed instructions
     </li>
     <li>Open an <a href="https://issues.apache.org/jira/browse/INFRA">Infrastructure JIRA</a> issue identifying the resources that need turning off/making read only. Typically:
       <ul>
@@ -73,8 +74,9 @@
 
 <section id="General-pointers">
   <title>How to: General pointers</title>
+  <a name="howto"/>
 
-  <p>The following are useful svn/https locations:
+  <p>The following are useful svn/https locations:</p>
     <ul>
      <li>svn site <a href="http://svn.apache.org/viewvc/attic">http://svn.apache.org/repos/asf/attic</a>: sources in <code>xdocs</code>, generated html in <code>docs</code></li>
      <li>site <a href="http://attic.apache.org">http://attic.apache.org</a></li>
@@ -84,7 +86,6 @@
      <li>jira <a href="https://issues.apache.org/jira/browse/ATTIC">https://issues.apache.org/jira/browse/ATTIC</a></li>
      <li>committees.xml <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/committees.xml">https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/committees.xml</a></li>
     </ul>
-  </p>
 </section>
 
 <section id="confirm-resolution">
