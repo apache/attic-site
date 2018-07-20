@@ -96,7 +96,7 @@
    How to: General pointers
 </h4>
 <div class="section-content">
-<p>The following are usefull svn/https locations:
+<p>The following are useful svn/https locations:
     <ul>
      <li>svn site <a href="http://svn.apache.org/viewvc/attic">http://svn.apache.org/repos/asf/attic</a>: sources in <code>xdocs</code>, generated html in <code>docs</code></li>
      <li>site <a href="http://attic.apache.org">http://attic.apache.org</a></li>
@@ -200,15 +200,18 @@ ${Name} on behalf of ${project} + the Attic.
 </h4>
 <div class="section-content">
 <p>follow the workflow <a href="https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo">https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo</a>,<br />
-sometimes it helps chatting with infra <a href="https://www.hipchat.com/gIjVtYcNy">https://www.hipchat.com/gIjVtYcNy</a>,<br />
-all work is done in
+sometimes it helps chatting with infra <a href="https://www.hipchat.com/gIjVtYcNy">https://www.hipchat.com/gIjVtYcNy</a>,</p>
+<ul>
+<li>Subversion: all work for svn is done in
 <a href="https://github.com/apache/infrastructure-puppet/tree/deployment/modules/subversion_server/files/authorization">
 {infra-repo}/modules/subversion_server/files/authorization/</a>
-</p>
-<ul>
+    <ul>
         <li>Change "asf-authorization-template" so that the attic-pmc has karma instead of the defunct project. </li>
         <li>Change "asf-mailer.conf" so that the attic-pmc has karma instead of the defunct project. Add project to attic regex, and if there are a project entry remove it</li>
     </ul>
+</li>
+<li>Git: check also if there are any Git repositories to update (TODO: define what to do with Git repositories)</li>
+</ul>
 </div>
                  
 <h4 id="doap">
