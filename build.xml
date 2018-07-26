@@ -125,7 +125,7 @@
 	</target>
 
 	  <target name="clean-docs">
-	    <delete> 
+	    <delete includeEmptyDirs="true"> 
 	    	<fileset dir="${docs.dest}" excludes=".svn/**"/>
 	    </delete>
 	  </target>
