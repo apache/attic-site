@@ -41,6 +41,14 @@
       <svn/>
     </resource_table>
 
+    <p>
+    For information on <i>Jakarta EE</i> (project under
+    the Eclipse Foundation, named in February 2018),
+    please visit <a href="https://jakarta.ee/">jakarta.ee</a> ;
+    for some background, see
+    <a href="https://javaee-guardians.io/2018/03/02/java-ee-is-officially-retired-its-now-called-jakarta-ee/">Java EE is Now Called Jakarta EE</a>
+    at <a href="https://javaee-guardians.io/">javaee-guardians.io</a>.
+    </p>
 
   </section>
 
