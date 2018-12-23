@@ -147,7 +147,7 @@ ${Name} on behalf of ${project} + the Attic.
   <p>To create a project page do:</p>
 
   <ul>
-    <li>in xdocs/projects/ copy one of the files to the new project name (eg. devicemap.xml)</li>
+    <li>in <code>xdocs/projects/</code> copy one of the files to the new project name (eg. devicemap.xml)</li>
     <li>TBA: how to determine the file name</li>
     <li>Add the new entry as a link in the <code>xdocs/stylesheets/project.xml</code> navigation</li>
     <li>Run 'ant' from the root (ie: the attic/site/ directory you checked out)</li>
@@ -173,7 +173,7 @@ ${Name} on behalf of ${project} + the Attic.
     <title>How to: 6. Obtain source control karma and point source control mails to general at attic</title>
 
     <p>follow the workflow <a href="https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo">https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo</a>,<br />
-sometimes it helps chatting with infra <a href="https://www.hipchat.com/gIjVtYcNy">https://www.hipchat.com/gIjVtYcNy</a>,</p>
+sometimes it helps chatting with infra <a href="https://the-asf.slack.com/messages/CBX4TSBQ8/">https://the-asf.slack.com/messages/CBX4TSBQ8/</a>,</p>
 <ul>
 <li>Subversion: all work for svn is done in
 <a href="https://github.com/apache/infrastructure-puppet/tree/deployment/modules/subversion_server/files/authorization">
