@@ -142,7 +142,7 @@ ${Name} on behalf of ${project} + the Attic.
      You can get the source for the site from Subversion: </p>
   <pre>svn co https://svn.apache.org/repos/asf/attic/site</pre>
 
-  <p>Signal that <i>retired</i> banners must be added to ${project}.a.o: <code>mkdir xdocs/flagged/${project}</code>
+  <p>Signal that <i>retired</i> banners must be added to ${project}.a.o: <code>mkdir xdocs/flagged/${project}</code></p>
 
   <p>To create a project page do:</p>
 
