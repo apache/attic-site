@@ -142,18 +142,14 @@ ${Name} on behalf of ${project} + the Attic.
      You can get the source for the site from Subversion: </p>
   <pre>svn co https://svn.apache.org/repos/asf/attic/site</pre>
 
-  <p>Signal that <i>retired</i> banners must be added to ${project}.a.o. :</p>
-  <ul>
-    <li><code>mkdir xdocs/flagged/${project}.apache.org ;</code></li>
-    <li><code>touch xdocs/flagged/${project}.apache.org/${project}.apache.org</code></li>
-  </ul>
+  <p>Signal that <i>retired</i> banners must be added to ${project}.a.o: <code>mkdir xdocs/flagged/${project}</code>
 
   <p>To create a project page do:</p>
 
   <ul>
     <li>in xdocs/projects/ copy one of the files to the new project name (eg. devicemap.xml)</li>
     <li>TBA: how to determine the file name</li>
-    <li>Add the new file as a link in the xdocs/stylesheets/project.xml navigation</li>
+    <li>Add the new entry as a link in the <code>xdocs/stylesheets/project.xml</code> navigation</li>
     <li>Run 'ant' from the root (ie: the attic/site/ directory you checked out)</li>
     <li>Review the generated files in docs/** in your browser</li>
     <li>SVN commit *all* changes. Remember to add both the new xdocs/ project file and the new generated docs/ project file
@@ -163,9 +159,9 @@ ${Name} on behalf of ${project} + the Attic.
 
   <p>To make minor edits to existing pages:</p>
   <ul>
-    <li>edit the page(s)</li>
+    <li>edit the page(s) source in <code>xdocs/</code></li>
     <li>Commit the updated pages</li>
-    <li>The buildbot will build the site and commit the result which will be published soon after</li>
+    <li>The <a href="https://ci.apache.org/builders/attic-site">buildbot job</a> will build the site and commit the result which will be published soon after</li>
     <li>This is most suitable for minor changes when there is no need to review the output before committing.
     Otherwise use the process described previously.
     </li>
