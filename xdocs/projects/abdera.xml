@@ -40,17 +40,6 @@ Apache Abdera was a project to build a functionally-complete, high-performance i
   <p>As with any project in the Attic - if you should choose to fork Abdera outside of Apache, 
      please let us know so we can link to your project. </p>
 
-  <p>Some related projects to Abdera are: </p>
-  <ul>
-    <li><a href="http://openddr.mobi/">OpenDDR</a> - this is a new version of OpenDDR, parts of which were migrated to Apache Devicemap, and now have been merged back to OpenDDR. </li>
-
-    <li><a href="https://github.com/nielsbasjes/yauaa">YAUAA: Yet Another UserAgent Analyzer</a> is an Apache licensed alternative to DeviceMap. Rather than employing a fixed collection of User-Agent (UA) strings as in DeviceMap, YAUAA performs a semantic analysis to determine certain attributes of the UA. </li>
-
-    <li><a href="http://devicedetector.net/">DeviceDetector</a> is an LGPL 3.0 licensed PHP project that parses YAML based device data in a similar way as DeviceMap/OpenDDR do with W3C compatible data. </li>
-
-    <li><a href="http://mobiledetect.net/">mobiledetect</a> is an MIT licensed PHP project for detecting mobile devices. </li>
-  </ul>
-
 </section>
 
 </body>
