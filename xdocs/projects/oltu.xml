@@ -30,6 +30,8 @@
   <p><a href="http://oltu.apache.org">Apache Oltu</a> moved into the Attic in April 2018. 
 Apache Oltu is an OAuth protocol implementation in Java. It also covers others "OAuth family" related implementations such as JWT, JWS and OpenID Connect </p>
 
+  <p>Originally known as <a href="http://incubator.apache.org/projects/amber.html">Amber</a></p>
+
   <resource_table project="oltu">
     <mail name="user"/>
     <mail name="commits"/>
