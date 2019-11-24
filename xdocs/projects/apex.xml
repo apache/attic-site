@@ -20,35 +20,34 @@
 <document>
   <properties>
     <author email="general.AT.attic.apache.DOT.org">The Apache Software Foundation</author>
-    <title>Apache ODE (Orchestration Director Engine)</title>
+    <title>Apache Apex</title>
   </properties>
 <body>
 
-<section id="ode">
-  <title>Apache ODE (Orchestration Director Engine)</title>
+<section id="apex">
+  <title>Apache Apex</title>
 
-  <p><a href="http://ode.apache.org/">Apache ODE (Orchestration Director Engine)</a>
-     moved into the Attic in August 2019.
-     Apache ODE executed business processes
-     written following the WS-BPEL standard.</p>
+  <p><a href="http://apex.apache.org/">Apache Apex</a>
+     moved into the Attic in June 2019.
+     Apache Apex was a unified platform for big data stream and batch processing. Use cases included ingestion, ETL, real-time analytics, alerts and real-time actions.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
-     <a href="http://ode.apache.org/">http://ode.apache.org</a>
-     for more information on ODE.</p>
+     <a href="http://apex.apache.org/">http://apex.apache.org</a>
+     for more information on Apex.</p>
 
-  <p>As with any project in the Attic - if you should choose to fork ODE
+  <p>As with any project in the Attic - if you should choose to fork Apex
      outside of Apache, please let us know so we can link to your project.
   </p>
 
-  <resource_table project="ode">
-  <mail name="user"/>
+  <resource_table project="apex">
+  <mail name="users"/>
   <mail name="commits"/>
   <jira/>
   </resource_table>
 
-  <p>Archived versions of ODE may be downloaded from the 
-     <a href="http://archive.apache.org/dist/ode/">Apache Archives</a>.
+  <p>Archived versions of Apex may be downloaded from the 
+     <a href="http://archive.apache.org/dist/apex/">Apache Archives</a>.
   </p>
  
 </section>
