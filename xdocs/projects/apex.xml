@@ -28,7 +28,7 @@
   <title>Apache Apex</title>
 
   <p><a href="http://apex.apache.org/">Apache Apex</a>
-     moved into the Attic in June 2019.
+     moved into the Attic in September 2019.
      Apache Apex was a unified platform for big data stream and batch processing. Use cases included ingestion, ETL, real-time analytics, alerts and real-time actions.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
@@ -43,7 +43,7 @@
   <resource_table project="apex">
   <mail name="users"/>
   <mail name="commits"/>
-  <jira/>
+  <jira key="APEXCORE"/>
   </resource_table>
 
   <p>Archived versions of Apex may be downloaded from the 

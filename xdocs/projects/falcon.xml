@@ -42,7 +42,6 @@
   </p>
 
   <resource_table project="falcon">
-  <mail name="user"/>
   <mail name="commits"/>
   <jira/>
   </resource_table>
