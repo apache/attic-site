@@ -57,12 +57,13 @@
   <title>Attic Move Done</title>
 
   <p><table>
-    <tr><th>Retirement month</th><th>Project</th><th>tracking</th></tr>
-    <tr><td>2017-12</td><td>Apache ACE</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-167">ATTIC-167</a></td></tr>
-    <tr><td>2018-03</td><td>Apache Ottu</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-168">ATTIC-168</a></td></tr>
-    <tr><td>2018-06</td><td>Apache Lucy</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-171">ATTIC-171</a></td></tr>
-    <tr><td>2018-12</td><td>Apache Polygene</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-174">ATTIC-174</a></td></tr>
-    <tr><td>2018-12</td><td>Apache Tiles</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-173">ATTIC-173</a></td></tr>
+    <tr><th>Retirement month</th><th>finish</th></th><th>Project</th><th>tracking</th></tr>
+    <tr><td>2017-12</td><td></td><td>Apache ACE</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-167">ATTIC-167</a></td></tr>
+    <tr><td>2018-03</td><td></td><td>Apache Ottu</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-168">ATTIC-168</a></td></tr>
+    <tr><td>2018-06</td><td></td><td>Apache Lucy</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-171">ATTIC-171</a></td></tr>
+    <tr><td>2018-12</td><td></td><td>Apache Polygene</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-174">ATTIC-174</a></td></tr>
+    <tr><td>2018-12</td><td></td><td>Apache Tiles</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-173">ATTIC-173</a></td></tr>
+    <tr><td>2019-08</td><td>2020-01</td><td>Apache ODE</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-175">ATTIC-175</a></td></tr>
   </table></p>
 </section>
 
