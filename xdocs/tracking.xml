@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<!--
+  Licensed to the Apache Software Foundation (ASF) under one
+  or more contributor license agreements.  See the NOTICE file
+  distributed with this work for additional information
+  regarding copyright ownership.  The ASF licenses this file
+  to you under the Apache License, Version 2.0 (the
+  "License"); you may not use this file except in compliance
+  with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing,
+  software distributed under the License is distributed on an
+  "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied.  See the License for the
+  specific language governing permissions and limitations
+  under the License. 
+-->
+<document>
+  <properties>
+    <author email="general.AT.attic.apache.DOT.org">The Apache Software Foundation</author>
+    <title>The Apache Attic Process Tracking</title>
+  </properties>
+<body>
+
+<section id="tracking">
+  <title>The Apache Attic Process Tracking</title>
+
+  <p>Useful links:
+    <ul>
+    <li><a href="https://www.apache.org/foundation/board/calendar.html">Board Minutes</a> to find resolutions</li>
+    <li><a href="https://projects.apache.org/">Projects Directory</a> to check</li>
+    <li><a href="http://issues.apache.org/jira/browse/ATTIC">Detailed process tracking</a></li>
+    <li><a href="/process.html">Process</a></li>
+    </ul>
+  </p>
+</section>
+
+<section id="wip">
+  <title>Attic Work In Progress</title>
+
+  <p><table>
+    <tr><th>Retirement month</th><th>Project</th><th>tracking</th></tr>
+    <tr><td>2019-08</td><td>Apache ODE</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-175">ATTIC-175</a></td></tr>
+    <tr><td>2019-09</td><td>Apache Falcon</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-176">ATTIC-176</a></td></tr>
+    <tr><td>2019-09</td><td>Apache Apex</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-177">ATTIC-177</a></td></tr>
+    <tr><td>2020-01</td><td>Apache VXQuery</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-">ATTIC-</a></td></tr>
+    <tr><td>2020-02</td><td>Apache Aurora</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-">ATTIC-</a></td></tr>
+    <tr><td>2020-02</td><td>Apache Forrest</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-">ATTIC-</a></td></tr>
+    <tr><td>2020-03</td><td>Apache Chuwka?</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-">ATTIC-</a></td></tr>
+    <tr><td>2020-04</td><td>Apache Hama</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-">ATTIC-</a></td></tr>
+    <tr><td>2020-04</td><td>Apache Stanbol</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-">ATTIC-</a></td></tr>
+  </table></p>
+</section>
+
+<section id="done">
+  <title>Attic Move Done</title>
+
+  <p><table>
+    <tr><th>Retirement month</th><th>Project</th><th>tracking</th></tr>
+    <tr><td>2017-12</td><td>Apache ACE</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-167">ATTIC-167</a></td></tr>
+    <tr><td>2018-03</td><td>Apache Ottu</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-168">ATTIC-168</a></td></tr>
+    <tr><td>2018-06</td><td>Apache Lucy</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-171">ATTIC-171</a></td></tr>
+    <tr><td>2018-12</td><td>Apache Polygene</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-174">ATTIC-174</a></td></tr>
+    <tr><td>2018-12</td><td>Apache Tiles</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-173">ATTIC-173</a></td></tr>
+  </table></p>
+</section>
+
+</body>
+</document>
