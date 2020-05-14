@@ -27,13 +27,13 @@
 <section id="aurora">
   <title>Apache Aurora</title>
 
-  <p><a href="http://Aurora.apache.org/">Apache Aurora</a>
+  <p><a href="http://aurora.apache.org/">Apache Aurora</a>
      moved into the Attic in January 2020.
      Apache Aurora implemented a parallel XML Query processor.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
-     <a href="http://Aurora.apache.org/">http://Aurora.apache.org</a>
+     <a href="http://aurora.apache.org/">http://aurora.apache.org</a>
      for more information on Aurora.</p>
 
   <p>As with any project in the Attic - if you should choose to fork Aurora
@@ -46,7 +46,7 @@
   </resource_table>
 
   <p>Archived versions of Aurora may be downloaded from the 
-     <a href="http://archive.apache.org/dist/Aurora/">Apache Archives</a>.
+     <a href="http://archive.apache.org/dist/aurora/">Apache Archives</a>.
   </p>
  
 </section>
