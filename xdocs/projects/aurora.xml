@@ -41,14 +41,18 @@
   </p>
 
   <resource_table project="aurora">
+  <mail name="announcements"/>
   <mail name="commits"/>
+  <mail name="issues"/>
+  <mail name="reviews"/>
+  <mail name="user"/>
   <jira/>
   </resource_table>
 
   <p>Some related projects to Aurora are:</p>
 
   <ul>
-    <li><a href=" https://github.com/aurora-scheduler/">aurora-scheduler</a> is a continuation of the project outside the ASF</li>
+    <li><a href="https://github.com/aurora-scheduler/">aurora-scheduler</a> is a continuation of the project outside the ASF</li>
   </ul>
 
   <p>Archived versions of Aurora may be downloaded from the 
