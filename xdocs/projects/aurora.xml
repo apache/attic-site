@@ -40,7 +40,7 @@
      outside of Apache, please let us know so we can link to your project.
   </p>
 
-  <resource_table project="Aurora">
+  <resource_table project="aurora">
   <mail name="commits"/>
   <jira/>
   </resource_table>
