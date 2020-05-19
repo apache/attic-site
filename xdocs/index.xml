@@ -61,7 +61,14 @@
      Project Management Committee (PMC) decides it would like to move the project, or The 
      Apache Software Foundation's board dissolves the PMC and chooses to move the project. </p>
 
-  <p>In either case, the following may be useful: <a href="resolution.html">Template Board Resolution</a>. </p>
+  <p>Whimsy provides a tool to add a suitable resolution to the next board agenda:</p>
+  <ul>
+  <li>Go to https://whimsy.apache.org/board/agenda/</li>
+  <li>Select the 'add item' button at the bottom</li>
+  <li>Select the 'Terminate Project' button from the list</li>
+  <li>Enter the project details</li>
+  </ul>
+  <p>Alternatively, the following may be useful: <a href="resolution.html">Template Board Resolution</a>. </p>
 </section>
 
 <section id="candidates">
