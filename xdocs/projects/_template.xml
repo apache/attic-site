@@ -41,10 +41,12 @@
   </p>
 
   <resource_table project="{tlpid}">
-  <!-- by default only dev is generated -->
-  <mail name="user"/>
-   <!-- use attribute key="" to override default JIRA -->
-  <jira/>
+    <!-- by default only dev is generated
+     To remove 'dev', use the attribute replace_dev="xxx" in the resource_table tag above
+    -->
+    <mail name="user"/>
+    <!-- use attribute key="" to override default JIRA -->
+    <jira/>
   </resource_table>
 
   <p>Archived versions of {FullName} may be downloaded from the 
