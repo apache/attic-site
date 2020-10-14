@@ -41,6 +41,7 @@
     <mail name="commits"/>
     <!-- use attribute key="" to override default JIRA -->
     <jira/>
+    <no_downloads/>
   </resource_table>
 
 </section>
