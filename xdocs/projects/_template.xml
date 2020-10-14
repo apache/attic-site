@@ -47,12 +47,11 @@
     <mail name="user"/>
     <!-- use attribute key="" to override default JIRA -->
     <jira/>
+    <!-- use the tag
+    <no_downloads/>
+    to suppress the Downloads links -->
   </resource_table>
 
-  <p>Archived versions of {FullName} may be downloaded from the 
-     <a href="http://archive.apache.org/dist/{tlpid}/">Apache Archives</a>.
-  </p>
- 
 </section>
 
 </body>
