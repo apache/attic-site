@@ -9,9 +9,6 @@
   
   Note: This filter was introduced in April 2018, so not all projects in the Attic use this filter. 
   Previously the project websites themselves were changed.
-  
-  The following describes how to code Lua filters:
-  https://httpd.apache.org/docs/trunk/mod/mod_lua.html#modifying_buckets
 ]]--
 
 function output_filter(r)
@@ -25,18 +22,15 @@ function output_filter(r)
     local name = host:gsub("^%l", string.upper)
     local sty1 = 'font-size:x-large;padding:15px;color:white;background:red;' ;
     local sty2 = 'color:white;text-decoration:underline' ;
-    local bodydiv = ([[<body>
-    <div style='%s'>
-      Project <i>%s</i> has retired. For details please refer to its
-      <a style='%s' href="https://attic.apache.org/projects/%s.html">
-      Attic page</a>.
-    </div>
-    ]]):format(sty1, name, sty2, host)
-    -- intial output
-    coroutine.yield('') -- required
+    coroutine.yield ( ([[
+      <div style='%s'>
+        Project <i>%s</i> has retired. For details please refer to its
+        <a style='%s' href="https://attic.apache.org/projects/%s.html">
+        Attic page</a>.
+      </div>]]):format(sty1, name, sty2, host) )
     -- spit out the actual page
     while bucket do
-        local output=bucket:gsub("<body>", bodydiv, 1)
-        coroutine.yield(output)
+        coroutine.yield(bucket)
     end
+
 end
