@@ -22,15 +22,29 @@ function output_filter(r)
     local name = host:gsub("^%l", string.upper)
     local sty1 = 'font-size:x-large;padding:15px;color:white;background:red;' ;
     local sty2 = 'color:white;text-decoration:underline' ;
-    coroutine.yield ( ([[
+    local div = ([[
       <div style='%s'>
         Project <i>%s</i> has retired. For details please refer to its
         <a style='%s' href="https://attic.apache.org/projects/%s.html">
         Attic page</a>.
-      </div>]]):format(sty1, name, sty2, host) )
+      </div>]]):format(sty1, name, sty2, host)
+    -- special processing needed for predictionio
+    if host == 'predictionio'
+    then
+        coroutine.yield('')
+    else
+        coroutine.yield(div)
+    end
     -- spit out the actual page
     while bucket do
-        coroutine.yield(bucket)
+        -- special processing needed for predictionio
+        if host == 'predictionio'
+        then    
+            local output = bucket:gsub('<header>', '<header>'..div, 1)
+            coroutine.yield(output)
+        else
+            coroutine.yield(bucket)
+        end
     end
 
 end
