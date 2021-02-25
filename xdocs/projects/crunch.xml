@@ -20,30 +20,31 @@
 <document>
   <properties>
     <author email="general.AT.attic.apache.DOT.org">The Apache Software Foundation</author>
-    <title>Apache ${FullName}</title>
+    <title>Apache Crunch</title>
   </properties>
 <body>
 
-<section id="${tlpid}">
-  <title>Apache ${FullName}</title>
+<section id="crunch">
+  <title>Apache Crunch</title>
 
-  <p><a href="http://${tlpid}.apache.org/">Apache ${FullName}</a>
-     moved into the Attic in ${Month_Year}.
-     Apache ${FullName} mission was ${description}.</p>
+  <p><a href="http://crunch.apache.org/">Apache Crunch</a>
+     moved into the Attic in 2020-06.
+     Apache Crunch mission was Simple and Efficient MapReduce Pipelines.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
-     <a href="http://${tlpid}.apache.org/">http://${tlpid}.apache.org</a>
-     for more information on ${FullName}.</p>
+     <a href="http://crunch.apache.org/">http://crunch.apache.org</a>
+     for more information on Crunch.</p>
 
-  <p>As with any project in the Attic - if you should choose to fork ${FullName}
+  <p>As with any project in the Attic - if you should choose to fork Crunch
      outside of Apache, please let us know so we can link to your project.
   </p>
 
-  <resource_table project="${tlpid}">
+  <resource_table project="crunch">
     <!-- by default only dev is generated
      To remove 'dev', use the attribute replace_dev="xxx" in the resource_table tag above
     -->
+    <mail name="commits"/>
     <mail name="user"/>
     <!-- use attribute key="" to override default JIRA -->
     <jira/>
