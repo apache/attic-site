@@ -27,7 +27,6 @@ import os
 import re
 import yaml
 from urllib.request import urlopen, Request
-from urllib.error import HTTPError
 
 if len(sys.argv) == 1:
     print("Please provide a list of project ids")
@@ -39,9 +38,9 @@ stylesheets = join((MYHOME), 'xdocs', 'stylesheets')
 flagged = join((MYHOME), 'xdocs', 'flagged')
 
 def loadyaml(url):
-  req = Request(url)
-  resp = urlopen(req)
-  return yaml.safe_load(resp.read())
+    req = Request(url)
+    resp = urlopen(req)
+    return yaml.safe_load(resp.read())
 
 #  get details of the retired projects
 retirees = loadyaml('https://whimsy.apache.org/public/committee-retired.json')['retired']
@@ -56,16 +55,16 @@ def update_stylesheet(pid):
     with open(xmlfile,'r') as r, open(xmlfilet,'w') as w:
         for l in r:
             if not found:
-                m = re.search('^(\s+<li><a href="/projects/)([^.]+)(.html">)[^<]+(</a></li>)', l)
+                m = re.search(r'^(\s+<li><a href="/projects/)([^.]+)(.html">)[^<]+(</a></li>)', l)
                 if m:
-                    id = m.group(2)                
-                    if id == pid:
+                    stem = m.group(2)                
+                    if stem == pid:
                         print("Already present in projects.xml")
                         print(l)
                         w.close()
                         os.remove(xmlfilet)
                         return
-                    if id > pid: # Found insertion point
+                    if stem > pid: # Found insertion point
                         found = True
                         name = retirees[pid]['display_name']
                         w.write("%s%s%s%s%s\n" % (m.group(1), pid, m.group(3), name, m.group(4)))
