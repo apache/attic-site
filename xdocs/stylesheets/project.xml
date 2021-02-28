@@ -51,12 +51,15 @@ limitations under the License.
       <li><a href="/projects/beehive.html">Beehive</a></li>
       <li><a href="/projects/chukwa.html">Chukwa</a></li>
       <li><a href="/projects/click.html">Click</a></li>
+      <li><a href="/projects/climate.html">Open Climate Workbench</a></li>
       <li><a href="/projects/crimson.html">Crimson</a></li>
       <li><a href="/projects/continuum.html">Continuum</a></li>
       <li><a href="/projects/crunch.html">Crunch</a></li>
       <li><a href="/projects/deltacloud.html">Deltacloud</a></li>
       <li><a href="/projects/devicemap.html">DeviceMap</a></li>
       <li><a href="/projects/directmemory.html">DirectMemory</a></li>
+      <li><a href="/projects/drat.html">DRAT</a></li>
+      <li><a href="/projects/eagle.html">Eagle</a></li>
       <li><a href="/projects/esme.html">ESME</a></li>
       <li><a href="/projects/etch.html">Etch</a></li>
       <li><a href="/projects/excalibur.html">Excalibur</a></li>
@@ -77,6 +80,7 @@ limitations under the License.
       <li><a href="/projects/lens.html">Lens</a></li>
       <li><a href="/projects/lenya.html">Lenya</a></li>
       <li><a href="/projects/lucy.html">Lucy</a></li>
+      <li><a href="/projects/marmotta.html">Marmotta</a></li>
       <li><a href="/projects/metron.html">Metron</a></li>
       <li><a href="/projects/mrunit.html">MRUnit</a></li>
       <li><a href="/projects/ode.html">ODE</a></li>
@@ -87,11 +91,13 @@ limitations under the License.
       <li><a href="/projects/predictionio.html">PredictionIO</a></li>
       <li><a href="/projects/quetzalcoatl.html">Quetzalcoatl</a></li>
       <li><a href="/projects/rave.html">Rave</a></li>
+      <li><a href="/projects/sentry.html">Sentry</a></li>
       <li><a href="/projects/shale.html">Shale</a></li>
       <li><a href="/projects/shindig.html">Shindig</a></li>
       <li><a href="/projects/stdcxx.html">Standard C++ Library (STDCXX)</a></li>
       <li><a href="/projects/stanbol.html">Stanbol</a></li>
       <li><a href="/projects/stratos.html">Stratos</a></li>
+      <li><a href="/projects/tajo.html">Tajo</a></li>
       <li><a href="/projects/tiles.html">Tiles</a></li>
       <li><a href="/projects/tuscany.html">Tuscany</a></li>
       <li><a href="/projects/twill.html">Twill</a></li>
