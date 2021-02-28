@@ -76,7 +76,16 @@ def update_stylesheet(pid):
     else:
         print("Could not find where to add %s" % pid)
 
-
+# create JIRA template
+def create_jira_template(pid):
+    outfile = join(MYHOME, "%s.jira.tmp" % pid)
+    print("Creating %s" % outfile)
+    with open(join(MYHOME, '_template.jira'), 'r') as t:
+        template = Template(t.read())
+    out = template.substitute(tlpid = pid)
+    with open(outfile, 'w') as o:
+        o.write(out)
+    
 # create the project.xml file from the template
 def create_project(pid):
     outfile = join(projects, "%s.xml" % pid)
@@ -103,6 +112,7 @@ for arg in sys.argv[1:]:
         if os.path.exists(flagdir):
             print("flagged/%s already exists" % arg)
             continue        
+        create_jira_template(arg)
         try:
             os.mkdir(flagdir)
             os.system("svn add %s" % flagdir)

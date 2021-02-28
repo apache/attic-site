@@ -1,0 +1,16 @@
+# Confirm Board Resolution
+# Inform users of the move to the Attic
+# Create project page on Attic site: [http://attic.apache.org/projects/${tlpid}|http://attic.apache.org/projects/${tlpid}.html]
+# Update the project DOAP file (if any) or copy to [projects-override|https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects-override/]:
+# Announce on [announce at apache.org|http://mail-archives.apache.org/mod_mbox/www-announce/]
+
+See [http://attic.apache.org/process.html#howto] for detailed instructions
+
+Open an Infrastructure JIRA issue identifying the resources that need turning off/making read only.
+ Typically:
+ * Make source control Git|Svn read-only (requested)
+ * Remove files from [release|https://dist.apache.org/repos/dist/release/${tlpid}] and [staging|https://dist.apache.org/repos/dist/dev/${tlpid}] areas
+ * Closing down of [mailing lists|http://mail-archives.apache.org/mod_mbox/]
+ * Make JIRA|Bugzilla|Github issues read-only
+ * Make the wiki (Confluence|Moinmoin) read-only
+ * Delete unix/ldap group
