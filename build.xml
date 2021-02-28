@@ -75,7 +75,7 @@
 		<anakia basedir="${docs.src}" destdir="${docs.dest}/"
              extension=".html" style="./site.vsl"
              projectFile="stylesheets/project.xml"
-             excludes="**/stylesheets/**"
+             excludes="**/stylesheets/**,**/_template.xml"
              includes="**/*.xml"
              lastModifiedCheck="${anakia.check.date}"
              templatePath="${docs.src}/stylesheets"
