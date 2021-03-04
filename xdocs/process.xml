@@ -78,7 +78,7 @@
      <li>site <a href="http://attic.apache.org">http://attic.apache.org</a></li>
      <li>internals: <a href="https://ci.apache.org/builders/attic-site">Buildbot job</a> to build from source and commit generated html
          (see <a href="https://svn.apache.org/repos/infra/infrastructure/buildbot/aegis/buildmaster/master1/projects/attic-site.conf">attic-site.conf</a>),
-         <a href="https://github.com/apache/infrastructure-puppet/blob/deployment/modules/svnwcsub/files/svnwcsub.conf#L36">svnwcsub configuration</a> to update generated html from svn to webserver</li>
+         <a href="https://github.com/apache/infrastructure-p6/blob/production/modules/svnwcsub/files/svnwcsub.conf">svnwcsub configuration</a> to update generated html from svn to webserver</li>
      <li>jira <a href="https://issues.apache.org/jira/browse/ATTIC">https://issues.apache.org/jira/browse/ATTIC</a></li>
      <li>committees.xml <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/committees.xml">https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/committees.xml</a></li>
     </ul>
@@ -170,8 +170,8 @@ ${Name} on behalf of ${project} + the Attic.
     <p>follow the workflow <a href="https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo">https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo</a>,<br />
 sometimes it helps chatting with infra <a href="https://the-asf.slack.com/messages/CBX4TSBQ8/">https://the-asf.slack.com/messages/CBX4TSBQ8/</a>,</p>
 <ul>
-<li>Subversion: all work for svn is done in
-<a href="https://github.com/apache/infrastructure-puppet/tree/deployment/modules/subversion_server/files/authorization">
+<li>Subversion: all work for SVN is done in the private Git repo:
+<a href="https://github.com/apache/infrastructure-p6/tree/production/modules/subversion_server/files/authorization">
 {infra-repo}/modules/subversion_server/files/authorization/</a>
     <ul>
         <li>Change "asf-authorization-template" so that the attic-pmc has karma instead of the defunct project. </li>
