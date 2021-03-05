@@ -46,7 +46,7 @@
         <li>Delete from committee-info.txt (if TLP)</li>
         <li>Inform users of the move to the Attic</li>
         <li>Create project page on Attic site: http://attic.apache.org/projects/${project}.html</li>
-        <li>Update <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk">projects.apache.org data</a> (can be done using scripts/project2attic.py):
+        <li>Update <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk">projects.apache.org data</a> (can be done using scripts/project2attic.py):</li>
         <ul>
             <li>Update the project DOAP file (if any) or copy to <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects-override/">projects-override</a>: https://projects.apache.org/project.html?${project}</li>
             <li>Move committee's PMC data file to retired (if TLP)</li>
