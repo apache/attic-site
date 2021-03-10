@@ -31,7 +31,7 @@
 	<link rel="stylesheet" href="/style/attic.css" type="text/css" media="screen, projection"/>
 	<!--[if IE]><link rel="stylesheet" href="/style/ie.css" type="text/css" media="screen, projection"/><![endif]-->
      <meta name="author" content="The Apache Software Foundation" /><meta name="email" content="general.AT.attic.apache.DOT.org" />
-    <title>Moving a project to the Attic - Apache Attic</title>
+    <title>Moving a PMC to the Attic - Apache Attic</title>
   
  </head>
  <body id="sub">
@@ -41,7 +41,7 @@
 		<div class="column span-24">
       <div id="header">
                           <!-- Add 'default' header section here. -->
-                                <h1>Moving a project to the Attic</h1>
+                                <h1>Moving a PMC to the Attic</h1>
                          </div>
       </div>
 	</div>
@@ -50,42 +50,42 @@
 		<div class="column span-15 colborder">
                             
 <div class="section-content">
-<p>At some point a project will vote to join the Attic. The following defines a process 
-     to move that project into the Attic and gently close it down. </p>
+<p>At some point a PMC may vote to join the Attic. The following defines a process 
+     to move that PMC into the Attic and gently close it down. </p>
 <ol>
-    <li>A Project PMC decides to move to the Attic. 
+    <li>A PMC decides to move to the Attic. 
       <ul>
-        <li>Conduct a discussion on whether to dissolve the PMC and move the project to the Attic on the public dev list. Do not conduct it on the private PMC list. </li>
-        <li>Consider an appeal to the user list for interested users to provide their interest in helping out more. </li>
+        <li>Conduct a discussion on the public developer list whether to dissolve the PMC. Do not conduct it on the private PMC list.</li>
+        <li>Consider an appeal to the user list for interested users to provide their interest in helping out more.</li>
         <li>Conduct a PMC vote on the public dev list. </li>
-        <li>If the PMC votes to dissolve the PMC and move the project to the Attic, inform the board of the successful vote (linking or forwarding the 'successful' vote) and add a <a href="resolution.html">resolution</a> to dissolve the PMC to the next board meeting agenda. </li>
-        <li>If the PMC can't get enough people to vote to dissolve the PMC (and there are not three -1 votes), then that is grounds for moving the project to the Attic. They should inform the board as above, noting that the vote failed to get enough votes. </li>
+        <li>If the PMC votes to dissolve the PMC and move to the Attic, inform the board of the successful vote (linking or forwarding the 'successful' vote) and add a <a href="resolution.html">resolution</a> to dissolve the PMC to the next board meeting agenda. </li>
+        <li>If the PMC can't get enough people to vote to dissolve the PMC (and there are not three -1 votes), then that is grounds for moving to the Attic. They should inform the board as above, noting that the vote failed to get enough votes. </li>
       </ul>
     </li>
-    <li>If the board approve the resolution, open a JIRA item - 'Move ${project} to the Attic'.<br /> Copy/paste the following items to the details (see "How to") below for a description of each step): 
+    <li>If the board approve the resolution, open an <a href="https://issues.apache.org/jira/browse/ATTIC">Attic JIRA</a> item - 'Move ${project} to the Attic'.<br /> Copy/paste the following items to the details (see "How to") below for a description of each step): 
       <ol type="1">
-        <li>Confirm Board Resolution (if TLP)</li>
-        <li>Delete from committee-info.txt (if TLP)</li>
+        <li>Confirm Board Resolution</li>
+        <li>Delete from committee-info.txt (done by Secretary)</li>
         <li>Inform users of the move to the Attic</li>
         <li>Create project page on Attic site: http://attic.apache.org/projects/${project}.html</li>
         <li>Update <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk">projects.apache.org data</a> (can be done using scripts/project2attic.py):</li>
         <ul>
-            <li>Update the project DOAP file (if any) or copy to <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects-override/">projects-override</a>: https://projects.apache.org/project.html?${project}</li>
-            <li>Move committee's PMC data file to retired (if TLP)</li>
+            <li>Update the project DOAP files (if any) or copy to <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects-override/">projects-override</a>: https://projects.apache.org/project.html?${project}</li>
+            <li>Move committee's PMC data file to retired</li>
         </ul>        
         <li>Announce on <a href="http://mail-archives.apache.org/mod_mbox/www-announce/">announce at apache.org</a></li>
       </ol>
-      see <a href="http://attic.apache.org/process.html#howto">http://attic.apache.org/process.html#howto</a> for detailed instructions
+      See <a href="http://attic.apache.org/process.html#howto">http://attic.apache.org/process.html#howto</a> for detailed instructions
     </li>
     <li>Open an <a href="https://issues.apache.org/jira/browse/INFRA">Infrastructure JIRA</a> issue identifying the resources that need turning off/making read only.<br /> Typically:
       <ul>
         <li>Make source control Git|Svn read-only</li>
-        <li>Remove files from <a href="http://www.apache.org/dist/">www.apache.org/dist</a></li>
-        <li>Closing down of dev@, commits@ and private@ <a href="http://mail-archives.apache.org/mod_mbox/">mailing lists</a></li>
+        <li>Remove files from <a href="https://dist.apache.org/repos/dist/">dist.apache.org/repos/dist/[release|dev]</a></li>
+        <li>Closing down of dev@, commits@ and private@ etc. <a href="http://mail-archives.apache.org/mod_mbox/">mailing lists</a></li>
         <li>Close down the user mailing list (unless still active - in which case propose a moderator to Infra)</li>
         <li>Make JIRA|Bugzilla read-only</li>
-        <li>Make the wiki (Confluence|Moinmoin) read-only</li>
-        <li>Delete unix/ldap group</li>
+        <li>Make the wiki (if any) read-only</li>
+        <li>Delete LDAP group(s)</li>
         <li>Turn off automated builds</li>
       </ul>
     </li>
@@ -110,14 +110,20 @@
 </div>
                  
 <h4 id="confirm-resolution">
-   How to: 1. Confirm Board Resolution (if TLP)
+   How to: 1. Confirm Board Resolution
 </h4>
 <div class="section-content">
-<p>Check previous Board minutes (in SVN or to committers@) to confirm project was retired.</p>
+<p>Check previous Board minutes to confirm retirement. The minutes are available from the following sources:</p>
+<ul>
+  <li>The private <a href="https://lists.apache.org/list.html?committers@apache.org:lte=2M:ASF%20Board%20Meeting">committers@ list</a> (requires login)</li>
+  <li>Previously published <a href="https://www.apache.org/foundation/board/calendar.html">Board meeting minutes</a></li>
+  <li>Whimsy has a public list of <a href="https://whimsy.apache.org/board/minutes/">Board Minutes by topic</a></li>
+  </ul>
+<p>However note that the most recent meeting minutes are not published until the following meeting at the earliest</p>
 </div>
                  
 <h4 id="delete-pmc">
-   How to: 2. Delete from committee-info.txt  (if TLP)
+   How to: 2. Delete from committee-info.txt
 </h4>
 <div class="section-content">
 <p>Remove the PMC from <a href="https://svn.apache.org/repos/private/committers/board/committee-info.txt">https://svn.apache.org/repos/private/committers/board/committee-info.txt</a></p>
@@ -135,9 +141,9 @@
    How to: 4. Inform users of the move to the Attic
 </h4>
 <div class="section-content">
-<p>Let the users know that the project is moving into the Attic. Use the following template: </p>
+<p>Let the users know that the PMC is moving into the Attic. Use the following template: </p>
 <pre>
-A heads up for the ${project} user community that the ${project} project has 
+A heads up for the ${project} user community that the ${project} PMC has 
 been 'moved to the Attic'. This means that the ${project} developers (more 
 formally its Project Management Committee) have voted to retire ${project} 
 and move the responsibility for its oversight over to the Attic project.
@@ -220,7 +226,7 @@ new category:  &lt;category rdf:resource="http://projects.apache.org/category/re
 </div>
                  
 <h4 id="PMCdata">
-   How to: 7. Move committee's PMC data file to retired (if TLP)
+   How to: 7. Move committee's PMC data file to retired
 </h4>
 <div class="section-content">
 <p>If committee appears in <a href="https://projects.apache.org/committees.html">committees list</a>, moving data to retired will remove it from the list:</p>
@@ -234,7 +240,7 @@ new category:  &lt;category rdf:resource="http://projects.apache.org/category/re
 </div>
                  
 <h4 id="www.apache">
-   How to: 8. Remove from http://www.apache.org/#projects-list navigation (if TLP)
+   How to: 8. Remove from http://www.apache.org/#projects-list navigation
 </h4>
 <div class="section-content">
 <p>No longer needed; happens automatically</p>
