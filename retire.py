@@ -44,6 +44,11 @@ def loadyaml(url):
 
 #  get details of the retired projects
 retirees = loadyaml('https://whimsy.apache.org/public/committee-retired.json')['retired']
+lists = {}
+for host,names in loadyaml('https://lists.apache.org/api/preferences.lua')['lists'].items():
+    proj = host.replace('.apache.org','')
+    if proj in retirees: 
+        lists[proj] = list(names.keys())
 
 # updates xdocs/stylesheets/project.xml
 #    <li><a href="/projects/abdera.html">Abdera</a></li>
@@ -93,7 +98,13 @@ def create_project(pid):
     with open(join(projects, '_template.xml'), 'r') as t:
         template = Template(t.read())
     meta = retirees[pid]
-    out = template.substitute(tlpid = pid, FullName = meta['display_name'], Month_Year = meta['retired'], description = meta['description'])
+    names = lists[pid]
+    names.remove('dev')
+    out = template.substitute(tlpid = pid, 
+        FullName = meta['display_name'],
+        Month_Year = meta['retired'],
+        mail_names = ",".join(sorted(names)),
+        description = meta['description'])
     with open(outfile, 'w') as o:
         o.write(out)
     os.system("svn add %s" % outfile)
