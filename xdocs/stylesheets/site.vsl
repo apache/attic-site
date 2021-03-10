@@ -86,7 +86,9 @@
 #set ($mail_links = $elem.getChildren("mail"))
 #foreach ( $mail_link in $mail_links )
 #set ($mail_name = $mail_link.getAttributeValue('name'))
-        | <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-${mail_name}/">${mail_name}</a>
+#foreach ($name in $mail_name.split(","))
+        | <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-${name}/">${name}</a>
+#end
 #end
       </td>
     </tr>
