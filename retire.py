@@ -25,8 +25,7 @@ from inspect import getsourcefile
 from string import Template
 import os
 import re
-import yaml
-from urllib.request import urlopen, Request
+from urlutils import loadyaml
 
 if len(sys.argv) == 1:
     print("Please provide a list of project ids")
@@ -36,11 +35,6 @@ MYHOME = dirname(abspath(getsourcefile(lambda:0)))
 projects =    join((MYHOME), 'xdocs', 'projects')
 stylesheets = join((MYHOME), 'xdocs', 'stylesheets')
 flagged = join((MYHOME), 'xdocs', 'flagged')
-
-def loadyaml(url):
-    req = Request(url)
-    resp = urlopen(req)
-    return yaml.safe_load(resp.read())
 
 #  get details of the retired projects
 retirees = loadyaml('https://whimsy.apache.org/public/committee-retired.json')['retired']
@@ -98,12 +92,12 @@ def create_project(pid):
     with open(join(projects, '_template.xml'), 'r') as t:
         template = Template(t.read())
     meta = retirees[pid]
-    names = lists[pid]
-    names.remove('dev')
+    mnames = lists[pid]
+    mnames.remove('dev')
     out = template.substitute(tlpid = pid, 
         FullName = meta['display_name'],
         Month_Year = meta['retired'],
-        mail_names = ",".join(sorted(names)),
+        mail_names = ",".join(sorted(mnames)),
         description = meta['description'])
     with open(outfile, 'w') as o:
         o.write(out)

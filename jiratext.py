@@ -12,19 +12,9 @@ Find project resources for retired projects and generate JIRA issue text:
 
 """
 
-import re
 import sys
-import json
 import subprocess
-import errno
-import time
-
-# from contextlib import redirect_stdout
-from os.path import getmtime, basename, join
-from os import environ
-
-from urllib.request import urlopen, Request
-from urllib.error import HTTPError
+from urlutils import loadjson, urlexists
 
 DEV="https://dist.apache.org/repos/dist/dev/"
 REL="https://dist.apache.org/repos/dist/release/"
@@ -33,43 +23,6 @@ CWIKI='https://cwiki.apache.org/confluence/display/'
 EMAIL='https://whimsy.apache.org/public/committee-retired.json'
 GITBOX='https://gitbox.apache.org/repositories.json' # ['projects']
 
-CACHE=environ.get('CACHE')
-
-def isFileStale(filename):
-    try:
-        t = getmtime(filename)
-    except OSError as e:
-        if not e.errno == errno.ENOENT:
-            raise e
-        return True
-    diff = time.time() - t
-    return diff > 600 # 5 min in seconds
-
-def urlcache(url):
-    if CACHE:
-        # basename seems to work OK with URLs
-        cache = join(CACHE,basename(url)+".tmp")
-        if isFileStale(cache):
-#             print("Caching %s" % url, file=sys.stderr)
-            req = Request(url)
-            resp = urlopen(req)
-            with open(cache,'wb') as w:
-                w.write(resp.read())
-        else:
-#             print("Using cache for %s" % url, file=sys.stderr)
-            pass
-        with open(cache,'r') as r:
-            return r.read()
-    else:
-#         print("Fetching %s" % url, file=sys.stderr)
-        req = Request(url)
-        resp = urlopen(req)
-        return resp.read()
-
-def loadjson(url):
-#     req = Request(url)
-#     resp = urlopen(req)
-    return json.loads(urlcache(url))
 
 # =====================================
 
@@ -78,12 +31,8 @@ gitbox = loadjson(GITBOX)['projects']
 
 def check_wiki(pid):
     url = CWIKI + pid.upper()
-    req = Request(url)
-    try:
-        urlopen(req)
+    if urlexists(url):
         print("Make CWIKI readonly: %s" % url)
-    except HTTPError:
-        pass
 
 def check_mail(pid):
     try:
@@ -135,7 +84,7 @@ def check_ldap(pid):
         print(res.stderr)
     
 def check_jira(pid):
-    jira = json.loads(urlcache(JIRA))
+    jira = loadjson(JIRA)
     for project in jira:
         key = project['key']
         catname = ''
