@@ -116,7 +116,7 @@ def create_project(pid):
         Month_Year = meta['retired'],
         mail_names = ",".join(sorted(mnames)),
         jira_names = ",".join(sorted(jiras)),
-        description = meta['description'])
+        description = meta.get('description', 'TBA'))
     with open(outfile, 'w') as o:
         o.write(out)
     os.system("svn add %s" % outfile)
