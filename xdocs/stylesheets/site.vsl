@@ -33,8 +33,8 @@
 ## ** resource_table macro **
 ##
 ##    <resource_table project="NAME_OF_PROJECT" subproject="OPTIONAL_NAME_OF_SUBPROJECT" hide_keys="true|false" replace_dev="alternate_list" board_report_id="OPTIONAL_ALTERNATIVE_BOARD_REPORT_ID">
-##      <mail name='MAIL_NAME: eg user/dev/commits'/>
-##      <jira key="OPTIONAL_KEY"/>  OR  <bugzilla/>
+##      <mail name='MAIL_NAME(s): eg user[,issues,commits]'/>
+##      <jira key="OPTIONAL_KEY[,key2,...]"/>  OR  <bugzilla/>
 ##      <moin/>  OR  <cwiki/>
 ##      <svn/>  OR  <git/>
 ##      <no_website/>
@@ -93,17 +93,24 @@
       </td>
     </tr>
 #if($elem.getChild("jira"))
+#if ($elem.getChild("jira").getAttributeValue("key"))
+#set ($keys = $elem.getChild("jira").getAttributeValue("key"))
+#foreach ($key in $keys.split(","))
     <tr>
       <td>Issue Tracker</td>
-#if ($elem.getChild("jira").getAttributeValue("key"))
-#set ($key = $elem.getChild("jira").getAttributeValue("key"))
       <td><a href="https://issues.apache.org/jira/browse/${key.toUpperCase()}/">JIRA</a></td>
-#elseif ($elem.getAttributeValue("subproject"))
+    </tr>
+#end
+#else
+    <tr>
+      <td>Issue Tracker</td>
+#if ($elem.getAttributeValue("subproject"))
       <td><a href="https://issues.apache.org/jira/browse/${subproj.toUpperCase()}/">JIRA</a></td>
 #else
       <td><a href="https://issues.apache.org/jira/browse/${proj.toUpperCase()}/">JIRA</a></td>
 #end
     </tr>
+#end
 #end
 #if($elem.getChild("bugzilla"))
     <tr>
