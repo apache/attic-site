@@ -97,28 +97,28 @@
 #set ($keys = $elem.getChild("jira").getAttributeValue("key"))
 #foreach ($key in $keys.split(","))
     <tr>
-      <td>Issue Tracker</td>
-      <td><a href="https://issues.apache.org/jira/browse/${key.toUpperCase()}/">JIRA</a></td>
+      <td>Issue Tracker (JIRA)</td>
+      <td><a href="https://issues.apache.org/jira/browse/${key.toUpperCase()}/">${key.toUpperCase()}</a></td>
     </tr>
 #end
 #else
     <tr>
-      <td>Issue Tracker</td>
+      <td>Issue Tracker (JIRA)</td>
 #if ($elem.getAttributeValue("subproject"))
-      <td><a href="https://issues.apache.org/jira/browse/${subproj.toUpperCase()}/">JIRA</a></td>
+      <td><a href="https://issues.apache.org/jira/browse/${subproj.toUpperCase()}/">${subproj.toUpperCase()}</a></td>
 #else
-      <td><a href="https://issues.apache.org/jira/browse/${proj.toUpperCase()}/">JIRA</a></td>
+      <td><a href="https://issues.apache.org/jira/browse/${proj.toUpperCase()}/">${proj.toUpperCase()}</a></td>
 #end
     </tr>
 #end
 #end
 #if($elem.getChild("bugzilla"))
     <tr>
-      <td>Issue Tracker</td>
+      <td>Issue Tracker (Bugzilla)</td>
 #if ($elem.getAttributeValue("subproject"))
-      <td><a href="https://bz.apache.org/bugzilla/buglist.cgi?product=${subproj}">Bugzilla</a></td>
+      <td><a href="https://bz.apache.org/bugzilla/buglist.cgi?product=${subproj}">${subproj}</a></td>
 #else
-      <td><a href="https://bz.apache.org/bugzilla/buglist.cgi?product=${proj}">Bugzilla</a></td>
+      <td><a href="https://bz.apache.org/bugzilla/buglist.cgi?product=${proj}">${proj}</a></td>
 #end
     </tr>
 #end
