@@ -107,20 +107,17 @@ def create_project(pid):
 
 for arg in sys.argv[1:]:
     print("Processing "+arg)
-    if not re.search("^[-a-z0-9]+$",arg):
-        print("Expecting lower-case, '-' or digits only")
-    else:
-        if not arg in retirees:
-            print("%s does not appear to be a retired project" % arg)
-            continue
-        flagdir = join(flagged, arg)
-        if os.path.exists(flagdir):
-            print("flagged/%s already exists" % arg)
-            continue        
-        create_jira_template(arg)
-        try:
-            os.mkdir(flagdir)
-            os.system("svn add %s" % flagdir)
-            create_project(arg)
-        except Exception as e:
-            print(e)
+    if not arg in retirees:
+        print("%s does not appear to be a retired project" % arg)
+        continue
+    flagdir = join(flagged, arg)
+    if os.path.exists(flagdir):
+        print("flagged/%s already exists" % arg)
+        continue        
+    create_jira_template(arg)
+    try:
+        os.mkdir(flagdir)
+        os.system("svn add %s" % flagdir)
+        create_project(arg)
+    except Exception as e:
+        print(e)
