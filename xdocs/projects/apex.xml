@@ -43,7 +43,7 @@
   <resource_table project="apex">
   <mail name="users"/>
   <mail name="commits"/>
-  <jira key="APEXCORE"/>
+  <jira key="APEXCORE,APEXMALHAR"/>
   </resource_table>
 
   <p>Archived versions of Apex may be downloaded from the 

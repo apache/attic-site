@@ -33,6 +33,7 @@ Apache Abdera was a project to build a functionally-complete, high-performance i
   <resource_table project="abdera">
     <mail name="commits"/>
     <mail name="user"/>
+    <jira>
     <svn/>
     <cwiki/>
   </resource_table>
