@@ -25,11 +25,13 @@ from inspect import getsourcefile
 from string import Template
 import os
 import re
-from urlutils import loadyaml
+from urlutils import loadyaml, loadjson
 
 if len(sys.argv) == 1:
     print("Please provide a list of project ids")
     sys.exit(1)
+
+JIRA='https://issues.apache.org/jira/rest/api/2/project'
 
 MYHOME = dirname(abspath(getsourcefile(lambda:0)))
 projects =    join((MYHOME), 'xdocs', 'projects')
@@ -43,6 +45,20 @@ for host,names in loadyaml('https://lists.apache.org/api/preferences.lua')['list
     proj = host.replace('.apache.org','')
     if proj in retirees: 
         lists[proj] = list(names.keys())
+
+def list_jira(pid):
+    jira = loadjson(JIRA)
+    jiras = []
+    for project in jira:
+        key = project['key']
+        catname = ''
+        if 'projectCategory' in project:
+            catname = project['projectCategory']['name']
+        if pid.upper() == key:
+            jiras.append(key)
+        elif catname.lower() == pid:
+            jiras.append(key)
+    return jiras
 
 # updates xdocs/stylesheets/project.xml
 #    <li><a href="/projects/abdera.html">Abdera</a></li>
@@ -94,16 +110,17 @@ def create_project(pid):
     meta = retirees[pid]
     mnames = lists[pid]
     mnames.remove('dev')
+    jiras = list_jira(pid)
     out = template.substitute(tlpid = pid, 
         FullName = meta['display_name'],
         Month_Year = meta['retired'],
         mail_names = ",".join(sorted(mnames)),
+        jira_names = ",".join(sorted(jiras)),
         description = meta['description'])
     with open(outfile, 'w') as o:
         o.write(out)
     os.system("svn add %s" % outfile)
     print("Check XML file for customisations such as JIRA and mailing lists")
-    update_stylesheet(pid)
 
 for arg in sys.argv[1:]:
     print("Processing "+arg)
@@ -113,11 +130,12 @@ for arg in sys.argv[1:]:
     flagdir = join(flagged, arg)
     if os.path.exists(flagdir):
         print("flagged/%s already exists" % arg)
-        continue        
+        continue
     create_jira_template(arg)
     try:
         os.mkdir(flagdir)
         os.system("svn add %s" % flagdir)
         create_project(arg)
+        update_stylesheet(arg)
     except Exception as e:
         print(e)
