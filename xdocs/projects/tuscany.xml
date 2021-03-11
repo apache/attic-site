@@ -33,6 +33,7 @@
   <resource_table project="tuscany">
     <mail name="user"/>
     <mail name="commits"/>
+    <mail name="notification"/>
     <jira/>
     <cwiki/>
     <svn/>

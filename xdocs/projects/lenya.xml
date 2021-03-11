@@ -32,9 +32,13 @@
      multi-site management, scheduling, search, WYSIWYG editors, and workflow.
   </p>
      
-  <p>The website, downloads and issue tracker all remain open, though 
-     the issue tracker is read-only. See the website at 
-     <a href="http://lenya.apache.org/">http://lenya.apache.org</a> for more information on Lenya. </p>
+  <resource_table project="lenya">
+    <mail name="user"/>
+    <mail name="commits"/>
+    <jira/>
+    <cwiki/>
+    <svn/>
+  </resource_table>
 
   <p>As with any project in the Attic - if you should choose to fork Lenya outside of Apache, 
      please let us know so we can link to your project. </p>

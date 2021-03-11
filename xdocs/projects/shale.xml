@@ -37,8 +37,7 @@
      were the natural successors to Shale. </p>
 
   <resource_table project="shale">
-    <mail name="user"/>
-    <mail name="commits"/>
+    <mail name="commits,issues,notifications,user"/>
     <jira/>
     <moin/>
     <svn/>

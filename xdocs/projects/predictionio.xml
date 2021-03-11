@@ -46,7 +46,7 @@
     <!-- by default only dev is generated
      To remove 'dev', use the attribute replace_dev="xxx" in the resource_table tag above
     -->
-    <mail name="user"/>
+    <mail name="commits,user"/>
     <!-- use attribute key="" to override default JIRA -->
     <jira/>
     <!-- use the tag

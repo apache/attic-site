@@ -31,12 +31,15 @@
      Apache Excalibur was a Java Inversion of Control container. 
      </p>
      
-  <p>The user mailing list, issue tracker, website, and downloads all remain open. See the website at 
-     <a href="http://excalibur.apache.org/">http://excalibur.apache.org</a> for more information on Excalibur. </p>
-
   <p>We do not know of any natural successors or potential forks for Excalibur. As with 
      any project in the Attic - if you should choose to fork Excalibur outside of Apache, 
      please let us know so we can link to your project. </p>
+
+  <resource_table project="excalibur">
+  <mail name="scm,user"/>
+  <jira key="EXLBR,FORTRESS"/>
+  <svn/>
+  </resource_table>
 
   <p>Archived versions of Excalibur may be downloaded from the 
      <a href="http://archive.apache.org/dist/excalibur/">Apache Archives</a>. </p>

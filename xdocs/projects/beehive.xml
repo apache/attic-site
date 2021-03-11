@@ -31,16 +31,18 @@
      Apache Beehive was a simple object model built on J2EE and Struts that used annotations to reduce 
      the amount of required code. </p>
      
-  <p>The user mailing list, website, downloads and issue tracker all remain open, though 
-     the issue tracker is read-only. See the website at 
-     <a href="http://beehive.apache.org/">http://beehive.apache.org</a> for more information on Beehive. </p>
-
   <p>If you are looking for a project to use in place of Beehive, the following have been suggested for its components: </p>
   <ul>
     <li>Beehive NetUI / Page Flow - Struts 2 or Spring Web Flow</li>
     <li>Beehive Controls - Spring Beans</li>
     <li>Beehive WSM (web service metadata) - Axis2's implementation of JSR-181</li>
   </ul>
+
+  <resource_table project="beehive">
+  <mail name="commits,user"/>
+  <jira/>
+  <svn/>
+  </resource_table>
 
   <p>As with any project in the Attic - if you should choose to fork Beehive outside of Apache, 
      please let us know so we can link to your project. </p>

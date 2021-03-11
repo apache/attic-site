@@ -42,8 +42,9 @@
   </p>
 
   <resource_table project="falcon">
-  <mail name="commits"/>
+  <mail name="commits,user"/>
   <jira/>
+  <git/>
   </resource_table>
 
   <p>Archived versions of Falcon may be downloaded from the 

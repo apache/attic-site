@@ -38,7 +38,7 @@
 
   <resource_table project="labs" replace_dev="labs">
     <!-- by default only dev is generated -->
-    <mail name="commits"/>
+    <mail name="commits,tech"/>
     <!-- use attribute key="" to override default JIRA -->
     <jira/>
     <no_downloads/>

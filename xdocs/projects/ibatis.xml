@@ -31,16 +31,17 @@
      iBATIS was a data mapper framework that made it easier to use a relational database 
      with object-oriented applications. There were both Java and .Net implementations. </p>
 
-  <p>The user mailing list, website, downloads and issue tracker all remain, but are read-only. 
-     See the website at 
-     <a href="http://ibatis.apache.org/">http://ibatis.apache.org</a> for more information on iBATIS. </p>
-
   <p>The iBATIS committers moved over to 
      <a href="http://www.mybatis.org/">MyBatis</a>
      which is the natural successor to iBATIS. </p>
 
   <p>As with any project in the Attic - if you should choose to fork iBATIS outside of Apache, 
      please let us know so we can link to your project. </p>
+
+  <resource_table project="ibatis">
+  <mail name="commits,user-cs,user-java"/>
+  <jira/>
+  </resource_table>
 
   <p>Archived versions of iBATIS may be downloaded from the 
      <a href="http://archive.apache.org/dist/ibatis/">Apache Archives</a>. </p>

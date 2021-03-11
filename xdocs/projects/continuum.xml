@@ -31,8 +31,7 @@
      Continuum was an enterprise-ready continuous integration server with features such as automated builds, release management, role-based security, and integration with popular build tools and source control management systems. </p>
      
   <resource_table project="continuum">
-    <mail name="users"/>
-    <mail name="commits"/>
+    <mail name="commits,issues,notifications,users"/>
     <jira/>
     <cwiki/>
     <svn/>
