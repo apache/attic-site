@@ -1,20 +1,22 @@
 #!/usr/bin/env python3
 
 """
-Sample script to create retirement files for a project.
+
+Script to create retirement files for a project.
 
 Input:
 - https://whimsy.apache.org/public/committee-retired.json
+- https://lists.apache.org/api/preferences.lua
+- xdocs/projects/_template.xml
+- _template.jira
 
 Output:
 - xdocs/flagged/<pid> (created)
 - xdocs/projects/<pid>.xml (created)
 - xdocs/stylesheets/project.xml (updated)
+- <pid>.jira.tmp (created) - this is for pasting into an Attic JIRA issue
 
-N.B. The generated pid.xml file will generally need tweaking to adjust the mailing
-list names and the JIRA link
-
-TODO: how to determine mail lists and issue tracker etc
+N.B. The generated pid.xml file may need tweaking
 
 """
 
