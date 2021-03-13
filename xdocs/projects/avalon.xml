@@ -33,7 +33,7 @@
      <a href="http://avalon.apache.org/">http://avalon.apache.org</a>. </p>
 
   <resource_table project="avalon">
-    <jira/>
+    <mail name="apps-dev,cvs,phoenix-dev"/>
     <moin/>
     <svn/>
   </resource_table>
