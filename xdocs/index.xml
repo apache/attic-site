@@ -121,7 +121,11 @@ project's activities, and publish project releases in the PMC's dist area.
 <section id="incubator">
   <title>Retired Incubator Projects</title>
 
-  <p>The Apache Incubator project is the entry path into The Apache Software Foundation for projects and codebases wishing to become part of the Foundation's efforts. Not all projects 'graduate' out of the Incubator and are instead retired. Those retired projects may be found on the Incubator's <a href="http://incubator.apache.org/projects/index.html#retired">Project page</a>. </p>
+  <p>The Apache Incubator project is the entry path into The Apache Software Foundation for projects
+   and codebases wishing to become part of the Foundation's efforts.
+   Not all projects 'graduate' out of the Incubator; some are retired instead.
+   Those retired projects may be found on the Incubator's 
+   <a href="http://incubator.apache.org/projects/index.html#retired">Project page</a>. </p>
 
 </section>
 
