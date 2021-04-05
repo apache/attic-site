@@ -29,7 +29,7 @@
 
   <p>Useful links:
     <ul>
-    <li><a href="https://www.apache.org/foundation/board/calendar.html">Board Minutes</a> to find resolutions</li>
+    <li><a href="https://www.apache.org/foundation/board/calendar.html">Board Minutes Calendar</a> to find "Terminate" resolutions</li>
     <li><a href="https://projects.apache.org/">Projects Directory</a> to check</li>
     <li><a href="http://issues.apache.org/jira/browse/ATTIC">Detailed process tracking</a></li>
     <li><a href="/process.html">Process</a></li>
@@ -42,25 +42,19 @@
 
   <p><table>
     <tr><th>Retirement month</th><th>Project</th><th>Tracking</th></tr>
-    <tr><td>2019-09</td><td>Apache Apex</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-177">ATTIC-177</a></td></tr>
-    <tr><td>2020-01</td><td>Apache VXQuery</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-178">ATTIC-178</a></td></tr>
-    <tr><td>2020-02</td><td>Apache Aurora</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-179">ATTIC-179</a></td></tr>
-    <tr><td>2020-02</td><td>Apache Forrest</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-180">ATTIC-180</a></td></tr>
-    <tr><td>2020-04</td><td>Apache Hama</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-181">ATTIC-181</a></td></tr>
-    <tr><td>2020-04</td><td>Apache Stanbol</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-182">ATTIC-182</a></td></tr>
     <tr><td>2020-05</td><td>Apache Chukwa</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-183">ATTIC-183</a></td></tr>
     <tr><td>2020-05</td><td>Apache Twill</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-184">ATTIC-184</a></td></tr>
     <tr><td>2020-06</td><td>Apache Crunch</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-185">ATTIC-185</a></td></tr>
-    <tr><td>2020-08</td><td>Apache DRAT</td><td><a href="https://issues.apache.org/jira/projects/ATTIC/ATTIC-192">ATTIC-192</a></td></tr>
+    <tr><td>2020-08</td><td>Apache DRAT</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-192">ATTIC-192</a></td></tr>
     <tr><td>2020-08</td><td>Apache Labs</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-188">ATTIC-188</a></td></tr>
     <tr><td>2020-08</td><td>Apache Lens</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-186">ATTIC-186</a></td></tr>
     <tr><td>2020-09</td><td>Apache PredictionIO</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-187">ATTIC-187</a></td></tr>
-    <tr><td>2020-09</td><td>Apache Tajo</td><td><a href="https://issues.apache.org/jira/projects/ATTIC/ATTIC-196">ATTIC-196</a></td></tr>
-    <tr><td>2020-10</td><td>Apache Open Climate Workbench</td><td><a href="https://issues.apache.org/jira/projects/ATTIC/ATTIC-195">ATTIC-195</a></td></tr>
-    <tr><td>2020-11</td><td>Apache Marmotta</td><td><a href="https://issues.apache.org/jira/projects/ATTIC/ATTIC-194">ATTIC-194</a></td></tr>
-    <tr><td>2020-11</td><td>Apache Eagle</td><td><a href="https://issues.apache.org/jira/projects/ATTIC/ATTIC-193/">ATTIC-193</a></td></tr>
+    <tr><td>2020-09</td><td>Apache Tajo</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-196">ATTIC-196</a></td></tr>
+    <tr><td>2020-10</td><td>Apache Open Climate Workbench</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-195">ATTIC-195</a></td></tr>
+    <tr><td>2020-11</td><td>Apache Marmotta</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-194">ATTIC-194</a></td></tr>
+    <tr><td>2020-11</td><td>Apache Eagle</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-193/">ATTIC-193</a></td></tr>
     <tr><td>2020-12</td><td>Apache Metron</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-190">ATTIC-190</a></td></tr>
-    <tr><td>2020-12</td><td>Apache Sentry</td><td><a href="https://issues.apache.org/jira/projects/ATTIC/ATTIC-191">ATTIC-191</a></td></tr>
+    <tr><td>2020-12</td><td>Apache Sentry</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-191">ATTIC-191</a></td></tr>
   </table></p>
 </section>
 
@@ -76,6 +70,12 @@
     <tr><td>2018-12</td><td>2019-11</td><td>Apache Tiles</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-173">ATTIC-173</a></td></tr>
     <tr><td>2019-06</td><td>2021-04</td><td>Apache Falcon</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-176">ATTIC-176</a></td></tr>
     <tr><td>2019-08</td><td>2020-01</td><td>Apache ODE</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-175">ATTIC-175</a></td></tr>
+    <tr><td>2019-09</td><td>2021-04</td><td>Apache Apex</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-177">ATTIC-177</a></td></tr>
+    <tr><td>2020-01</td><td>2021-04</td><td>Apache VXQuery</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-178">ATTIC-178</a></td></tr>
+    <tr><td>2020-02</td><td>2021-04</td><td>Apache Aurora</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-179">ATTIC-179</a></td></tr>
+    <tr><td>2020-02</td><td>2021-04</td><td>Apache Forrest</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-180">ATTIC-180</a></td></tr>
+    <tr><td>2020-04</td><td>2021-04</td><td>Apache Hama</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-181">ATTIC-181</a></td></tr>
+    <tr><td>2020-04</td><td>2021-04</td><td>Apache Stanbol</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-182">ATTIC-182</a></td></tr>
   </table></p>
 </section>
 
