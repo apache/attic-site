@@ -29,7 +29,7 @@
 
   <p><a href="http://twill.apache.org/">Apache Twill</a>
      moved into the Attic in 2020-05.
-     Apache Twill mission was Use Apache Hadoop YARN's distributed capabilities with a programming model that is similar to running threads.</p>
+     Apache Twill mission was to use Apache Hadoop YARN's distributed capabilities with a programming model that is similar to running threads.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
