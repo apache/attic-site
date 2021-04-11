@@ -29,7 +29,7 @@
 
   <p><a href="http://sentry.apache.org/">Apache Sentry</a>
      moved into the Attic in 2020-12.
-     Apache Sentry mission was Fine grained authorization to data and metadata in Apache Hadoop.</p>
+     Apache Sentry was a system for enforcing fine grained authorization to data and metadata in Apache Hadoop.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
