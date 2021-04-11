@@ -37,28 +37,19 @@
   </p>
 </section>
 
-<section id="wip">
-  <title>Attic Work In Progress</title>
-
-  <p><table>
-    <tr><th>Retirement month</th><th>Project</th><th>Tracking</th></tr>
-    <!--tr><td>2021-04</td><td>Apache </td><td><a href="https://issues.apache.org/jira/browse/ATTIC-">ATTIC-</a></td></tr-->
-  </table></p>
-</section>
-
-<section id="done">
-  <title>Attic Move Done</title>
+<section id="2021">
+  <title>Attic 2021</title>
 
   <p><table>
     <tr><th>Retirement month</th><th>Completed</th><th>Project</th><th>Tracking</th></tr>
-    <tr><td>2017-12</td><td>2018-02</td><td>Apache ACE</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-167">ATTIC-167</a></td></tr>
-    <tr><td>2018-03</td><td>2018-07</td><td>Apache Ottu</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-168">ATTIC-168</a></td></tr>
-    <tr><td>2018-06</td><td>2019-11</td><td>Apache Lucy</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-171">ATTIC-171</a></td></tr>
-    <tr><td>2018-12</td><td>2019-04</td><td>Apache Polygene</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-174">ATTIC-174</a></td></tr>
-    <tr><td>2018-12</td><td>2019-11</td><td>Apache Tiles</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-173">ATTIC-173</a></td></tr>
-    <tr><td>2019-06</td><td>2021-04</td><td>Apache Falcon</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-176">ATTIC-176</a></td></tr>
-    <tr><td>2019-08</td><td>2020-01</td><td>Apache ODE</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-175">ATTIC-175</a></td></tr>
-    <tr><td>2019-09</td><td>2021-04</td><td>Apache Apex</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-177">ATTIC-177</a></td></tr>
+  </table></p>
+</section>
+
+<section id="2020">
+  <title>Attic 2020</title>
+
+  <p><table>
+    <tr><th>Retirement month</th><th>Completed</th><th>Project</th><th>Tracking</th></tr>
     <tr><td>2020-01</td><td>2021-04</td><td>Apache VXQuery</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-178">ATTIC-178</a></td></tr>
     <tr><td>2020-02</td><td>2021-04</td><td>Apache Aurora</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-179">ATTIC-179</a></td></tr>
     <tr><td>2020-02</td><td>2021-04</td><td>Apache Forrest</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-180">ATTIC-180</a></td></tr>
@@ -77,6 +68,58 @@
     <tr><td>2020-11</td><td>2021-04</td><td>Apache Eagle</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-193/">ATTIC-193</a></td></tr>
     <tr><td>2020-12</td><td>2021-04</td><td>Apache Metron</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-190">ATTIC-190</a></td></tr>
     <tr><td>2020-12</td><td>2021-04</td><td>Apache Sentry</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-191">ATTIC-191</a></td></tr>
+  </table></p>
+</section>
+
+<section id="2019">
+  <title>Attic 2019</title>
+
+  <p><table>
+    <tr><th>Retirement month</th><th>Completed</th><th>Project</th><th>Tracking</th></tr>
+    <tr><td>2019-06</td><td>2021-04</td><td>Apache Falcon</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-176">ATTIC-176</a></td></tr>
+    <tr><td>2019-08</td><td>2020-01</td><td>Apache ODE</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-175">ATTIC-175</a></td></tr>
+    <tr><td>2019-09</td><td>2021-04</td><td>Apache Apex</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-177">ATTIC-177</a></td></tr>
+  </table></p>
+</section>
+
+<section id="2018">
+  <title>Attic 2018</title>
+
+  <p><table>
+    <tr><th>Retirement month</th><th>Completed</th><th>Project</th><th>Tracking</th></tr>
+    <tr><td>2017-12</td><td>2018-02</td><td>Apache ACE</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-167">ATTIC-167</a></td></tr>
+    <tr><td>2018-03</td><td>2018-07</td><td>Apache Ottu</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-168">ATTIC-168</a></td></tr>
+    <tr><td>2018-06</td><td>2019-11</td><td>Apache Lucy</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-171">ATTIC-171</a></td></tr>
+    <tr><td>2018-12</td><td>2019-04</td><td>Apache Polygene</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-174">ATTIC-174</a></td></tr>
+    <tr><td>2018-12</td><td>2019-11</td><td>Apache Tiles</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-173">ATTIC-173</a></td></tr>
+  </table></p>
+</section>
+
+<section id="2017">
+  <title>Attic 2017</title>
+
+  <p><table>
+    <tr><th>Retirement month</th><th>Completed</th><th>Project</th><th>Tracking</th></tr>
+    <tr><td>2017-01</td><td>2017-02</td><td>Apache Stratos</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-162">ATTIC-162</a></td></tr>
+    <tr><td>2017-02</td><td>2017-04</td><td>Apache Abdera</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-163">ATTIC-163</a></td></tr>
+    <tr><td>2017-04</td><td>2017-04</td><td>Apache Wink</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-166">ATTIC-166</a></td></tr>
+    <tr><td>2017-12</td><td>2018-02</td><td>Apache ACE</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-167">ATTIC-167</a></td></tr>
+  </table></p>
+</section>
+
+<section id="2016">
+  <title>Attic 2016</title>
+
+  <p><table>
+    <tr><th>Retirement month</th><th>Completed</th><th>Project</th><th>Tracking</th></tr>
+    <tr><td>2016-01</td><td>2016-02</td><td>Apache Onami</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-147">ATTIC-147</a></td></tr>
+    <tr><td>2016-01</td><td>2016-02</td><td>Apache Rave</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-148">ATTIC-148</a></td></tr>
+    <tr><td>2016-03</td><td>2016-04</td><td>Apache Wookie</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-151">ATTIC-151</a></td></tr>
+    <tr><td>2016-04</td><td>2016-05</td><td>Apache MRUnit</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-154">ATTIC-154</a></td></tr>
+    <tr><td>2016-05</td><td>2016-08</td><td>Apache Continuum</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-155">ATTIC-155</a></td></tr>
+    <tr><td>2016-05</td><td>2016-08</td><td>Apache Tuscany</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-156">ATTIC-156</a></td></tr>
+    <tr><td>2016-06</td><td>2016-12</td><td>Apache Etch</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-158">ATTIC-158</a></td></tr>
+    <tr><td>2016-12</td><td>2017-01</td><td>Apache DeviceMap</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-161">ATTIC-161</a></td></tr>
   </table></p>
 </section>
 
