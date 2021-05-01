@@ -108,6 +108,7 @@ def check_scs(pid):
         print("Make the following git repos read-only:")
         for repo in gitbox[pid]['repositories']:
             print("- %s" % repo)
+        print("Please do NOT rename the repos.")
             
 if len(sys.argv) == 1:
     print("Please provide a list of project ids")
