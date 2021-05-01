@@ -43,16 +43,16 @@
     <li>If the board approves the resolution, open an <a href="https://issues.apache.org/jira/browse/ATTIC">Attic JIRA</a> item - 'Move ${project} to the Attic'.<br />
       Copy/paste the following items to the issue description (see <a href="#howto">"How to"</a> below for a description of each step): 
       <ol type="1">
-        <li><a href="#confirm-resolution">#</a> Confirm Board Resolution</li>
-        <li><a href="#delete-pmc">#</a> Confirm delete from committee-info.txt (done by Secretary)</li>
-        <li><a href="#informing">#</a> Inform users of the move to the Attic</li>
-        <li><a href="#atticsite">#</a> Create project page on Attic site: http://attic.apache.org/projects/${project}.html</li>
-        <li><a href="#svnkarma">#</a> Update <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk">projects.apache.org data</a> (can be done using scripts/project2attic.py):</li>
+        <li><a href="#confirm-resolution">#</a> Confirm Board Resolution (!)</li>
+        <li><a href="#delete-pmc">#</a> Confirm delete from committee-info.txt (done by Secretary) (!)</li>
+        <li><a href="#informing">#</a> Inform users of the move to the Attic (!)</li>
+        <li><a href="#atticsite">#</a> Create project page on Attic site: http://attic.apache.org/projects/$project.html (!)</li>
+        <li><a href="#svnkarma">#</a> Update <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk">projects.apache.org data</a> (can be done using scripts/project2attic.py): (!)</li>
         <ul>
             <li>Update the project DOAP files (if any) or copy to <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects-override/">projects-override</a>: https://projects.apache.org/project.html?${project}</li>
             <li>Move committee's PMC data file to retired</li>
         </ul>        
-        <li><a href="#announce">#</a> Announce on <a href="http://mail-archives.apache.org/mod_mbox/www-announce/">announce at apache.org</a></li>
+        <li><a href="#announce">#</a> Announce on <a href="http://mail-archives.apache.org/mod_mbox/www-announce/">announce at apache.org</a> (!)</li>
       </ol>
     </li>
     <li>Open an <a href="https://issues.apache.org/jira/browse/INFRA">Infrastructure JIRA</a> issue identifying the resources that need turning off/making read only.<br/>
