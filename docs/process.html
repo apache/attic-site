@@ -62,10 +62,11 @@
         <li>If the PMC can't get enough people to vote to dissolve the PMC (and there are not three -1 votes), then that is grounds for moving to the Attic. They should inform the board as above, noting that the vote failed to get enough votes. </li>
       </ul>
     </li>
-    <li>If the board approve the resolution, open an <a href="https://issues.apache.org/jira/browse/ATTIC">Attic JIRA</a> item - 'Move ${project} to the Attic'.<br /> Copy/paste the following items to the details (see "How to") below for a description of each step): 
+    <li>If the board approves the resolution, open an <a href="https://issues.apache.org/jira/browse/ATTIC">Attic JIRA</a> item - 'Move ${project} to the Attic'.<br />
+      Copy/paste the following items to the issue description, in Jira "Visual" mode (see <a href="#howto">"How to"</a> below for a description of each step): 
       <ol type="1">
         <li>Confirm Board Resolution</li>
-        <li>Delete from committee-info.txt (done by Secretary)</li>
+        <li>Confirm delete from committee-info.txt (done by Secretary)</li>
         <li>Inform users of the move to the Attic</li>
         <li>Create project page on Attic site: http://attic.apache.org/projects/${project}.html</li>
         <li>Update <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk">projects.apache.org data</a> (can be done using scripts/project2attic.py):</li>
@@ -77,7 +78,8 @@
       </ol>
       See <a href="http://attic.apache.org/process.html#howto">http://attic.apache.org/process.html#howto</a> for detailed instructions
     </li>
-    <li>Open an <a href="https://issues.apache.org/jira/browse/INFRA">Infrastructure JIRA</a> issue identifying the resources that need turning off/making read only.<br /> Typically:
+    <li>Open an <a href="https://issues.apache.org/jira/browse/INFRA">Infrastructure JIRA</a> issue identifying the resources that need turning off/making read only.<br />
+      Typically:
       <ul>
         <li>Make source control Git|Svn read-only</li>
         <li>Remove files from <a href="https://dist.apache.org/repos/dist/">dist.apache.org/repos/dist/[release|dev]</a></li>
@@ -127,18 +129,12 @@
 </h4>
 <div class="section-content">
 <p>Remove the PMC from <a href="https://svn.apache.org/repos/private/committers/board/committee-info.txt">https://svn.apache.org/repos/private/committers/board/committee-info.txt</a></p>
-<p>This is normally done by the Secretary</p>
-</div>
-                 
-<h4 id="update-foundation-site">
-   How to: 3. Remove VP entry on http://www.apache.org/foundation/
-</h4>
-<div class="section-content">
-<p>No longer needed; happens automatically (from committee-info.txt)</p>
+<p>This is normally done by the Secretary.</p>
+<p>This automatically removes VP entry on <a href="http://www.apache.org/foundation/">http://www.apache.org/foundation/</a> and project from <a href="http://www.apache.org/#projects-list">http://www.apache.org/#projects-list</a> navigation</p>
 </div>
                  
 <h4 id="informing">
-   How to: 4. Inform users of the move to the Attic
+   How to: 3. Inform users of the move to the Attic
 </h4>
 <div class="section-content">
 <p>Let the users know that the PMC is moving into the Attic. Use the following template: </p>
@@ -167,7 +163,7 @@ ${Name} on behalf of ${project} + the Attic.
 </div>
                  
 <h4 id="atticsite">
-   How to: 5. Create project page on Attic site: http://attic.apache.org/projects/${project}.html
+   How to: 4. Create project page on Attic site: http://attic.apache.org/projects/${project}.html
 </h4>
 <div class="section-content">
 <p>The Attic website is built using Anakia. Anakia is an old site technology built on top of Apache Velocity. 
@@ -197,7 +193,7 @@ ${Name} on behalf of ${project} + the Attic.
 </div>
                  
 <h4 id="svnkarma">
-   How to: 6. Obtain source control karma and point source control mails to general at attic
+   How to: 5. Obtain source control karma and point source control mails to general at attic
 </h4>
 <div class="section-content">
 <p>follow the workflow <a href="https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo">https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo</a>,<br />
@@ -216,7 +212,7 @@ sometimes it helps chatting with infra <a href="https://the-asf.slack.com/messag
 </div>
                  
 <h4 id="doap">
-   How to: 6.ii Update the project DOAP file (if any): https://projects.apache.org/project.html?${project}
+   How to: 5.ii Update the project DOAP file (if any): https://projects.apache.org/project.html?${project}
 </h4>
 <div class="section-content">
 <p>The files referenced are in <a href="https://svn.apache.org/repos/asf/comdev">https://svn.apache.org/repos/asf/comdev</a></p>
@@ -226,7 +222,7 @@ new category:  &lt;category rdf:resource="http://projects.apache.org/category/re
 </div>
                  
 <h4 id="PMCdata">
-   How to: 7. Move committee's PMC data file to retired
+   How to: 5.iii Move committee's PMC data file to retired
 </h4>
 <div class="section-content">
 <p>If committee appears in <a href="https://projects.apache.org/committees.html">committees list</a>, moving data to retired will remove it from the list:</p>
@@ -239,15 +235,8 @@ new category:  &lt;category rdf:resource="http://projects.apache.org/category/re
     </ul>
 </div>
                  
-<h4 id="www.apache">
-   How to: 8. Remove from http://www.apache.org/#projects-list navigation
-</h4>
-<div class="section-content">
-<p>No longer needed; happens automatically</p>
-</div>
-                 
 <h4 id="announce">
-   How to: 9. Announce on announce@apache.org
+   How to: 6. Announce on announce@apache.org
 </h4>
 <div class="section-content">
 <p>Announce that the project is now retired. Consider the following template. </p>
