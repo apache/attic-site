@@ -39,6 +39,7 @@
   <resource_table project="polygene">
   <mail name="commits,users"/>
   <jira/>
+  <git/>
   </resource_table>
 
   <p>Archived versions of the Polygene may be downloaded from the 

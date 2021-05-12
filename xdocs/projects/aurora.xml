@@ -47,6 +47,7 @@
   <mail name="reviews"/>
   <mail name="user"/>
   <jira/>
+  <git/>
   </resource_table>
 
   <p>Some related projects to Aurora are:</p>

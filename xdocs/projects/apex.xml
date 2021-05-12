@@ -44,6 +44,7 @@
   <mail name="users"/>
   <mail name="commits"/>
   <jira key="APEXCORE,APEXMALHAR"/>
+  <git/>
   </resource_table>
 
   <p>Archived versions of Apex may be downloaded from the 

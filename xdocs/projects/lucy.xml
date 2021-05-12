@@ -50,6 +50,7 @@
   <mail name="user"/>
   <jira/>
   <moin/>
+  <git/>
   </resource_table>
 
   <p>Archived versions of the Lucy may be downloaded from the 

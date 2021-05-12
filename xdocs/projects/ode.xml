@@ -45,6 +45,7 @@
   <mail name="user"/>
   <mail name="commits"/>
   <jira/>
+  <git/>
   </resource_table>
 
   <p>Archived versions of ODE may be downloaded from the 

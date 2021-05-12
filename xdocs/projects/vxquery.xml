@@ -43,6 +43,7 @@
   <resource_table project="vxquery">
   <mail name="commits"/>
   <jira/>
+  <git/>
   </resource_table>
 
   <p>Archived versions of VXQuery may be downloaded from the 

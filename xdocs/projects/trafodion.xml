@@ -43,6 +43,7 @@
   <resource_table project="trafodion">
     <mail name="codereview,commits,issues,user"/>
     <jira key="TRAFODION"/>
+    <git/>
   </resource_table>
 
 </section>

@@ -33,6 +33,7 @@ Apache Wink was a simple yet solid framework for building RESTful Web services. 
     <mail name="commits"/>
     <mail name="user"/>
     <svn/>
+    <git/>
     <cwiki/>
   </resource_table>
 

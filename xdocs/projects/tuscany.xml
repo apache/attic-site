@@ -37,6 +37,7 @@
     <jira/>
     <cwiki/>
     <svn/>
+    <git/>
   </resource_table>
 
   <p>As with any project in the Attic - if you should choose to fork Tuscany outside of Apache, 

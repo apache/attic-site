@@ -52,6 +52,7 @@
     <!-- use the tag
     <no_downloads/>
     to suppress the Downloads links -->
+    <git/>
   </resource_table>
 
 </section>
