@@ -63,22 +63,19 @@
       </ul>
     </li>
     <li>If the board approves the resolution, open an <a href="https://issues.apache.org/jira/browse/ATTIC">Attic JIRA</a> item - 'Move ${project} to the Attic'.<br />
-      Copy/paste the following items to the issue description (see <a href="#howto">"How to"</a> below for a description of each step): 
+      The Attic PMC will step in and create a detailed issue description using <a href="http://svn.apache.org/viewvc/attic/site/retire.py?view=markup"><code>retire.py</code></a>, with other generated parts to move the project to the Attic.<br />
+      Generated issue content typically contains following steps (see <a href="#howto">"How to"</a> below for a description of each step): 
       <ol type="1">
-        <li><a href="#confirm-resolution">#</a> Confirm Board Resolution (!)</li>
-        <li><a href="#delete-pmc">#</a> Confirm delete from committee-info.txt (done by Secretary) (!)</li>
-        <li><a href="#informing">#</a> Inform users of the move to the Attic (!)</li>
-        <li><a href="#atticsite">#</a> Create project page on Attic site: http://attic.apache.org/projects/$project.html (!)</li>
-        <li><a href="#svnkarma">#</a> Update <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk">projects.apache.org data</a> (can be done using scripts/project2attic.py): (!)</li>
-        <ul>
-            <li>Update the project DOAP files (if any) or copy to <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects-override/">projects-override</a>: https://projects.apache.org/project.html?${project}</li>
-            <li>Move committee's PMC data file to retired</li>
-        </ul>        
-        <li><a href="#announce">#</a> Announce on <a href="http://mail-archives.apache.org/mod_mbox/www-announce/">announce at apache.org</a> (!)</li>
+        <li><a href="#confirm-resolution">#</a> Confirm Board Resolution</li>
+        <li><a href="#informing">#</a> Inform users of the move to the Attic</li>
+        <li><a href="#atticsite">#</a> Create project page on Attic site: http://attic.apache.org/projects/$project.html</li>
+        <li>Update the project DOAP files (if any) or copy to <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects-override/">projects-override</a></li>
+        <li><a href="#announce">#</a> Announce on <a href="http://mail-archives.apache.org/mod_mbox/www-announce/">announce at apache.org</a></li>
       </ol>
     </li>
     <li>Open an <a href="https://issues.apache.org/jira/browse/INFRA">Infrastructure JIRA</a> issue identifying the resources that need turning off/making read only.<br />
-      Typically:
+      The Attic PMC will create a base issue description using <a href="http://svn.apache.org/viewvc/attic/site/infrajiratext.py?view=markup"><code>infrajiratext.py</code></a>.<br />
+      Typically, it contains steps like following, that need to be tweaked based on assets of the retired project:
       <ul>
         <li>Make source control Git|Svn read-only</li>
         <li>Remove files from <a href="https://dist.apache.org/repos/dist/">dist.apache.org/repos/dist/[release|dev]</a></li>
@@ -106,7 +103,6 @@
          (see <a href="https://svn.apache.org/repos/infra/infrastructure/buildbot/aegis/buildmaster/master1/projects/attic-site.conf">attic-site.conf</a>),
          <a href="https://github.com/apache/infrastructure-p6/blob/production/modules/svnwcsub/files/svnwcsub.conf">svnwcsub configuration</a> to update generated html from svn to webserver</li>
      <li>jira <a href="https://issues.apache.org/jira/browse/ATTIC">https://issues.apache.org/jira/browse/ATTIC</a></li>
-     <li>committees.xml <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/committees.xml">https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/committees.xml</a></li>
     </ul>
 </div>
                  
@@ -121,19 +117,12 @@
   <li>Whimsy has a public list of <a href="https://whimsy.apache.org/board/minutes/">Board Minutes by topic</a></li>
   </ul>
 <p>However note that the most recent meeting minutes are not published until the following meeting at the earliest</p>
-</div>
-                 
-<h4 id="delete-pmc">
-   How to: 2. Delete from committee-info.txt
-</h4>
-<div class="section-content">
-<p>Remove the PMC from <a href="https://svn.apache.org/repos/private/committers/board/committee-info.txt">https://svn.apache.org/repos/private/committers/board/committee-info.txt</a></p>
-<p>This is normally done by the Secretary.</p>
+<p>Check that Secretary removed the PMC from <a href="https://svn.apache.org/repos/private/committers/board/committee-info.txt">https://svn.apache.org/repos/private/committers/board/committee-info.txt</a></p>
 <p>This automatically removes VP entry on <a href="http://www.apache.org/foundation/">http://www.apache.org/foundation/</a> and project from <a href="http://www.apache.org/#projects-list">http://www.apache.org/#projects-list</a> navigation</p>
 </div>
                  
 <h4 id="informing">
-   How to: 3. Inform users of the move to the Attic
+   How to: 2. Inform users of the move to the Attic
 </h4>
 <div class="section-content">
 <p>Let the users know that the PMC is moving into the Attic. Use the following template: </p>
@@ -162,80 +151,18 @@ ${Name} on behalf of ${project} + the Attic.
 </div>
                  
 <h4 id="atticsite">
-   How to: 4. Create project page on Attic site: http://attic.apache.org/projects/${project}.html
+   How to: 3. Create project page on Attic site: http://attic.apache.org/projects/${project}.html
 </h4>
 <div class="section-content">
 <p>The Attic website is built using Anakia. Anakia is an old site technology built on top of Apache Velocity. 
      You can get the source for the site from Subversion: </p>
 <pre>svn co https://svn.apache.org/repos/asf/attic/site</pre>
-<p>Signal that <i>retired</i> banners must be added to ${project}.a.o: <code>mkdir xdocs/flagged/${project}</code></p>
-<p>To create a project page do:</p>
-<ul>
-    <li>in <code>xdocs/projects/</code> copy _template.xml to the new project name</li>
-    <li>TBA: how to determine the file name</li>
-    <li>Add the new entry as a link in the <code>xdocs/stylesheets/project.xml</code> navigation</li>
-    <li>Run 'ant' from the root (ie: the attic/site/ directory you checked out)</li>
-    <li>Review the generated files in docs/** in your browser</li>
-    <li>SVN commit *all* changes. Remember to add both the new xdocs/ project file and the new generated docs/ project file
-    </li>
-    <li>The new pages should go live quickly</li>
-  </ul>
-<p>To make minor edits to existing pages:</p>
-<ul>
-    <li>edit the page(s) source in <code>xdocs/</code></li>
-    <li>Commit the updated pages</li>
-    <li>The <a href="https://ci.apache.org/builders/attic-site">buildbot job</a> will build the site and commit the result which will be published soon after</li>
-    <li>This is most suitable for minor changes when there is no need to review the output before committing.
-    Otherwise use the process described previously.
-    </li>
-  </ul>
-</div>
-                 
-<h4 id="svnkarma">
-   How to: 5. Obtain source control karma and point source control mails to general at attic
-</h4>
-<div class="section-content">
-<p>follow the workflow <a href="https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo">https://cwiki.apache.org/confluence/display/INFRA/Git+workflow+for+infrastructure-puppet+repo</a>,<br />
-sometimes it helps chatting with infra <a href="https://the-asf.slack.com/messages/CBX4TSBQ8/">https://the-asf.slack.com/messages/CBX4TSBQ8/</a>,</p>
-<ul>
-<li>Subversion: all work for SVN is done in the private Git repo:
-<a href="https://github.com/apache/infrastructure-p6/tree/production/modules/subversion_server/files/authorization">
-{infra-repo}/modules/subversion_server/files/authorization/</a>
-    <ul>
-        <li>Change "asf-authorization-template" so that the attic-pmc has karma instead of the defunct project. </li>
-        <li>Change "asf-mailer.conf" so that the attic-pmc has karma instead of the defunct project. Add project to attic regex, and if there are a project entry remove it</li>
-    </ul>
-</li>
-<li>Git: check also if there are any Git repositories to update (TODO: define what to do with Git repositories)</li>
-</ul>
-</div>
-                 
-<h4 id="doap">
-   How to: 5.ii Update the project DOAP file (if any): https://projects.apache.org/project.html?${project}
-</h4>
-<div class="section-content">
-<p>The files referenced are in <a href="https://svn.apache.org/repos/asf/comdev">https://svn.apache.org/repos/asf/comdev</a></p>
-<p>Identify whether the project has a DOAP file (see the &lt;comdev repo&gt;/projects.apache.org/data/projects.xml file if update the rdf file with PMC to the Attic and add a category of <em>retired</em>: </p>
-<pre>pmc change:    &lt;asfext:pmc rdf:resource="http://attic.apache.org" /&gt;
-new category:  &lt;category rdf:resource="http://projects.apache.org/category/retired" /&gt;</pre>
-</div>
-                 
-<h4 id="PMCdata">
-   How to: 5.iii Move committee's PMC data file to retired
-</h4>
-<div class="section-content">
-<p>If committee appears in <a href="https://projects.apache.org/committees.html">committees list</a>, moving data to retired will remove it from the list:</p>
-<ul>
-      <li>comment PMC data files index entry (see the <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/committees.xml">committees.xml</a> file
-       and old <a href="https://svn.apache.org/repos/asf/infrastructure/site-tools/trunk/projects/pmc_list.xml">pmc_list.xml</a> file)</li>
-      <li>move PMC data file
-       from <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/committees">committees/</a> directory
-       to <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/committees-retired">committees-retired/</a></li>
-    </ul>
+<p>Review content generated and updated in <code>xdocs/</code> by <a href="http://svn.apache.org/viewvc/attic/site/retire.py?view=markup"><code>retire.py</code></a> script, then commit to svn.</p>
+<p>The <a href="https://ci.apache.org/builders/attic-site">buildbot job</a> will build the site and commit the result which will be published soon after</p>
 </div>
                  
 <h4 id="announce">
-   How to: 6. Announce on announce@apache.org
+   How to: 4. Announce on announce@apache.org
 </h4>
 <div class="section-content">
 <p>Announce that the project is now retired. Consider the following template. </p>
