@@ -46,8 +46,11 @@
     -->
     <mail name="${mail_names}"/>
     <!-- use attribute key="" to override default JIRA -->
+    <!-- N.B. some projects may use GitHub issues instead of JIRA -->
     <jira key="${jira_names}"/>
-    <!--moin/>  OR  <cwiki/-->
+    <!--
+    <cwiki/>
+    -->
     <!--svn/>  OR  <git/-->
     <!-- use the tag
     <no_downloads/>
