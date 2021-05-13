@@ -47,6 +47,8 @@
     <mail name="${mail_names}"/>
     <!-- use attribute key="" to override default JIRA -->
     <jira key="${jira_names}"/>
+    <!--moin/>  OR  <cwiki/-->
+    <!--svn/>  OR  <git/-->
     <!-- use the tag
     <no_downloads/>
     to suppress the Downloads links -->
