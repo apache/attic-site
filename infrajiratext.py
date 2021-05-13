@@ -2,7 +2,7 @@
 
 """
 
-Find project resources for retired projects and generate JIRA issue text:
+Find project resources for retired projects and generate JIRA issue text for INFRA:
 - source control system (SVN or Git)
 - dist.apache.org releases and dev
 - mailing lists (Whimsy)
