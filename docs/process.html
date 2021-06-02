@@ -69,7 +69,7 @@
         <li><a href="#confirm-resolution">#</a> Confirm Board Resolution</li>
         <li><a href="#informing">#</a> Inform users of the move to the Attic</li>
         <li><a href="#atticsite">#</a> Create project page on Attic site: http://attic.apache.org/projects/$project.html</li>
-        <li>Update the project DOAP files (if any) or copy to <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects-override/">projects-override</a></li>
+        <li><a href="#doap">#</a>Update the project DOAP files (if any) or copy to <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects-override/">projects-override</a></li>
         <li><a href="#announce">#</a> Announce on <a href="http://mail-archives.apache.org/mod_mbox/www-announce/">announce at apache.org</a></li>
       </ol>
     </li>
@@ -161,8 +161,18 @@ ${Name} on behalf of ${project} + the Attic.
 <p>The <a href="https://ci.apache.org/builders/attic-site">buildbot job</a> will build the site and commit the result which will be published soon after</p>
 </div>
                  
+<h4 id="doap">
+   How to: 4. Update the project DOAP file (if any): https://projects.apache.org/project.html?${project}
+</h4>
+<div class="section-content">
+<p>The files referenced are in <a href="https://svn.apache.org/repos/asf/comdev">https://svn.apache.org/repos/asf/comdev</a>, which every Apache committer can update.</p>
+<p>Identify whether the project has a DOAP file (see the &lt;comdev repo&gt;/projects.apache.org/data/projects.xml file if update the rdf file with PMC to the Attic and add a category of <em>retired</em>: </p>
+<pre>pmc change:    &lt;asfext:pmc rdf:resource="http://attic.apache.org" /&gt;
+new category:  &lt;category rdf:resource="http://projects.apache.org/category/retired" /&gt;</pre>
+</div>
+                 
 <h4 id="announce">
-   How to: 4. Announce on announce@apache.org
+   How to: 5. Announce on announce@apache.org
 </h4>
 <div class="section-content">
 <p>Announce that the project is now retired. Consider the following template.</p>
