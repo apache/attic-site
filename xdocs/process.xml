@@ -133,7 +133,10 @@ ${Name} on behalf of ${project} + the Attic.
      You can get the source for the site from Subversion: </p>
   <pre>svn co https://svn.apache.org/repos/asf/attic/site</pre>
 
-  <p>Review content generated and updated in <code>xdocs/</code> by <a href="http://svn.apache.org/viewvc/attic/site/retire.py?view=markup"><code>retire.py</code></a> script, then commit to svn.</p>
+  <p>You can generate the required changes using the <code>retire.py</code></a> script as follows:</p>
+  <pre>./retire.py id1 [id2...]</pre>
+  <p>This should generate two files for each id, as well as updating xdocs/stylesheets/project.xml</p>
+  <p>Review the changes in <code>xdocs/</code>, then commit to svn.</p>
   <p>The <a href="https://ci.apache.org/builders/attic-site">buildbot job</a> will build the site and commit the result which will be published soon after</p>
 </section>
 
