@@ -135,8 +135,14 @@ ${Name} on behalf of ${project} + the Attic.
 
   <p>You can generate the required changes using the <code>retire.py</code></a> script as follows:</p>
   <pre>./retire.py id1 [id2...]</pre>
-  <p>This should generate two files for each id, as well as updating xdocs/stylesheets/project.xml</p>
+  <p>This should generate the following files for each ID, as well as updating xdocs/stylesheets/project.xml:</p>
+  <ul>
+    <li>ID.jira.tmp</li>
+    <li>xdocs/flagged/ID</li>
+    <li>xdocs/projects/ID.xml</li>
+  </ul>
   <p>Review the changes in <code>xdocs/</code>, then commit to svn.</p>
+  <p>The <code>ID.jira.tmp</code> file is text that can be copy-pasted into a JIRA description. It should be deleted after use, and not committed to SVN</p>
   <p>The <a href="https://ci.apache.org/builders/attic-site">buildbot job</a> will build the site and commit the result which will be published soon after</p>
 </section>
 
