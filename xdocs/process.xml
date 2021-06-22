@@ -133,7 +133,7 @@ ${Name} on behalf of ${project} + the Attic.
      You can get the source for the site from Subversion: </p>
   <pre>svn co https://svn.apache.org/repos/asf/attic/site</pre>
 
-  <p>You can generate the required changes using the <code>retire.py</code></a> script as follows:</p>
+  <p>You can generate the required changes using the Python3 <code>retire.py</code></a> script as follows:</p>
   <pre>./retire.py id1 [id2...]</pre>
   <p>This should generate the following files for each ID, as well as updating xdocs/stylesheets/project.xml:</p>
   <ul>
