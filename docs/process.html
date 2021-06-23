@@ -157,7 +157,16 @@ ${Name} on behalf of ${project} + the Attic.
 <p>The Attic website is built using Anakia. Anakia is an old site technology built on top of Apache Velocity. 
      You can get the source for the site from Subversion: </p>
 <pre>svn co https://svn.apache.org/repos/asf/attic/site</pre>
-<p>Review content generated and updated in <code>xdocs/</code> by <a href="http://svn.apache.org/viewvc/attic/site/retire.py?view=markup"><code>retire.py</code></a> script, then commit to svn.</p>
+<p>You can generate the required changes using the Python3 <a href="http://svn.apache.org/viewvc/attic/site/retire.py?view=markup"><code>retire.py</code></a> script as follows:</p>
+<pre>./retire.py id1 [id2...]</pre>
+<p>This should generate the following files for each ID, as well as updating xdocs/stylesheets/project.xml:</p>
+<ul>
+    <li>ID.jira.tmp</li>
+    <li>xdocs/flagged/ID</li>
+    <li>xdocs/projects/ID.xml</li>
+  </ul>
+<p>Review the changes in <code>xdocs/</code>, then commit to svn.</p>
+<p>The <code>ID.jira.tmp</code> file is text that can be copy-pasted into a JIRA description. It should be deleted after use, and not committed to SVN</p>
 <p>The <a href="https://ci.apache.org/builders/attic-site">buildbot job</a> will build the site and commit the result which will be published soon after</p>
 </div>
                  
