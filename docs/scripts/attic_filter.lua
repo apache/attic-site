@@ -28,8 +28,8 @@ function output_filter(r)
         <a style='%s' href="https://attic.apache.org/projects/%s.html">
         Attic page</a>.
       </div>]]):format(sty1, name, sty2, host)
-    -- special processing needed for predictionio and eagle
-    if host == 'predictionio' or host == 'eagle'
+    -- special processing needed for some hosts
+    if host == 'predictionio' or host == 'eagle' or host == 'metamodel'
     then
         coroutine.yield('')
     else
@@ -37,7 +37,7 @@ function output_filter(r)
     end
     -- spit out the actual page
     while bucket do
-        -- special processing needed for predictionio
+        -- special processing needed for hosts as above
         if host == 'predictionio'
         then    
             local output = bucket:gsub('<header>', '<header>'..div, 1)
@@ -45,6 +45,10 @@ function output_filter(r)
         elseif host == 'eagle'
         then
             local output = bucket:gsub('</nav>', '</nav>'..div, 1)
+            coroutine.yield(output)
+        elseif host == 'metamodel'
+        then
+            local output = bucket:gsub('</nav>', div..'</nav>', 1)
             coroutine.yield(output)
         else
             coroutine.yield(bucket)
