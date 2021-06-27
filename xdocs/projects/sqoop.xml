@@ -29,7 +29,8 @@
 
   <p><a href="http://sqoop.apache.org/">Apache Sqoop</a>
      moved into the Attic in 2021-06.
-     Apache Sqoop mission was Bulk Data Transfer for Apache Hadoop and Structured Datastores.</p>
+     Apache Sqoop mission was the creation and maintenance of software related to
+Bulk Data Transfer for Apache Hadoop and Structured Datastores.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
