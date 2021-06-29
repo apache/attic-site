@@ -65,12 +65,13 @@ def check_dist(pid):
     dev = svnfiles(DEV + pid)
     rel = svnfiles(REL + pid)
     if dev > 0 or rel > 0:
-        print("Remove the distribution SVN directories:")
         if dev > 0:
+            print("Remove the distribution SVN developer directory:")
             print('- ' + DEV + pid)
         if rel > 0:
+            print("Remove the distribution SVN release directory contents, and")
+            print("set up redirection to https://attic.apache.org/projects/%s.html" % pid)
             print('- ' + REL + pid)
-#             print("Set up redirection to https://attic.apache.org/projects/%s.html" % pid)
         print()
 
 # Whimsy json may be stale, so use ldapsearch for now
