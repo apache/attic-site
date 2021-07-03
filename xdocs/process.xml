@@ -149,11 +149,12 @@ ${Name} on behalf of ${project} + the Attic.
 <section id="doap">
     <title>How to: 4. Update the project DOAP file (if any): https://projects.apache.org/project.html?${project}</title>
 
-    <p>The files referenced are in <a href="https://svn.apache.org/repos/asf/comdev">https://svn.apache.org/repos/asf/comdev</a>, which every Apache committer can update.</p>
+    <p>The files referenced are in <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk">https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk</a>, which every Apache committer can update.</p>
 
     <p>Identify whether the project has a DOAP file (see the &lt;comdev repo&gt;/projects.apache.org/data/projects.xml file if update the rdf file with PMC to the Attic and add a category of <em>retired</em>: </p>
      <pre>pmc change:    &lt;asfext:pmc rdf:resource="http://attic.apache.org" /&gt;
 new category:  &lt;category rdf:resource="http://projects.apache.org/category/retired" /&gt;</pre>
+    <p>You can use <code>script/project2attic.py</code> to prepare the update that you'll just need to review and commit</p>
 </section>
 
 <!--section id="PMCdata">
