@@ -18,16 +18,16 @@ function output_filter(r)
     -- add header:
     -- get TLP part of hostname
     local host = r.hostname:match("^([^.]+)")
-    -- Prettify (TODO: look up real name)
-    local name = host:gsub("^%l", string.upper)
+
     local sty1 = 'font-size:x-large;padding:15px;color:white;background:red;' ;
     local sty2 = 'color:white;text-decoration:underline' ;
     local div = ([[
       <div style='%s'>
-        Project <i>%s</i> has retired. For details please refer to its
+        This project has retired. For details please refer to its
         <a style='%s' href="https://attic.apache.org/projects/%s.html">
         Attic page</a>.
-      </div>]]):format(sty1, name, sty2, host)
+      </div>]]):format(sty1, sty2, host)
+
     -- special processing needed for some hosts
     if host == 'predictionio' or host == 'eagle' or host == 'metamodel'
     then
