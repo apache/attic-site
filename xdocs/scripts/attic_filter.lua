@@ -13,7 +13,7 @@
 
 function output_filter(r)
     -- We only filter text/html types
-    if not r.content_type:match(".*text/html.*") then return end
+    if not r.content_type:match("text/html") then return end
 
     -- add header:
     -- get TLP part of hostname
