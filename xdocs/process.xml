@@ -143,7 +143,7 @@ ${Name} on behalf of ${project} + the Attic.
   </ul>
   <p>Review the changes in <code>xdocs/</code>, then commit to svn.</p>
   <p>The <code>ID.jira.tmp</code> file is text that can be copy-pasted into a JIRA description. It should be deleted after use, and not committed to SVN</p>
-  <p>The <a href="https://ci.apache.org/builders/attic-site">buildbot job</a> will build the site and commit the result which will be published soon after</p>
+  <p>The <a href="https://ci2.apache.org/">buildbot job</a> will build the site and commit the result which will be published soon after</p>
 </section>
 
 <section id="doap">
