@@ -96,6 +96,7 @@
     <li>Recreating a PMC for the project</li>
     <li>Transfering to an existing PMC</li>
   </ul>
+
 <p>
 A receiving PMC must be willing to assume all responsibilities that come
 with running a project : maintain code, answer questions, fix bugs,
