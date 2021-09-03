@@ -77,7 +77,7 @@
     <ul>
      <li>svn site <a href="http://svn.apache.org/viewvc/attic">http://svn.apache.org/repos/asf/attic</a>: sources in <code>xdocs</code>, generated html in <code>docs</code></li>
      <li>site <a href="http://attic.apache.org">http://attic.apache.org</a></li>
-     <li>internals: <a href="https://ci.apache.org/builders/attic-site">Buildbot job</a> to build from source and commit generated html
+     <li>internals: <a href="https://ci2.apache.org/#/builders/16">Buildbot job</a> to build from source and commit generated html
          (see <a href="https://svn.apache.org/repos/infra/infrastructure/buildbot/aegis/buildmaster/master1/projects/attic-site.conf">attic-site.conf</a>),
          <a href="https://github.com/apache/infrastructure-p6/blob/production/modules/svnwcsub/files/svnwcsub.conf">svnwcsub configuration</a> to update generated html from svn to webserver</li>
      <li>jira <a href="https://issues.apache.org/jira/browse/ATTIC">https://issues.apache.org/jira/browse/ATTIC</a></li>
