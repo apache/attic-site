@@ -39,7 +39,7 @@ def check_mail(pid):
     try:
         mlists = retired[pid]['mlists']
         if len(mlists) > 0:
-            print("Mailing lists:")
+            print("Mailing lists https://lists.apache.org/list.html?%s.apache.org :" % pid)
             for mlist in mlists:
                 print("- %s@%s.apache.org" % (mlist,pid))
             print()
@@ -96,9 +96,9 @@ def check_jira(pid):
             if '(Retired)' in project['name'] or catname == 'Retired':
                 pass
             else:
-                print("Make the JIRA project %s read-only and flag as retired" % key)
+                print("Make the JIRA project https://issues.apache.org/jira/projects/%s read-only and flag as retired" % key)
         elif catname.lower() == pid:
-            print("Make the JIRA project %s read-only and flag as retired" % key)
+            print("Make the JIRA project https://issues.apache.org/jira/projects/%s read-only and flag as retired" % key)
             
 # check for SVN and Git            
 def check_scs(pid):
@@ -107,7 +107,7 @@ def check_scs(pid):
         print("Make SVN readonly: %s" % svn) # TODO what if this is the site SVN?
 #         print("Update config file so commits go to attic ???")
     if pid in gitbox:
-        print("Make the following git repos read-only:")
+        print("Make the following git repos read-only https://gitbox.apache.org/repos/asf#%s :" % pid)
         for repo in gitbox[pid]['repositories']:
             print("- %s" % repo)
         print("Please do NOT rename the repos.")
