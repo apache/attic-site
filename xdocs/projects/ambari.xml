@@ -41,20 +41,10 @@
   </p>
 
   <resource_table project="ambari">
-    <!-- by default only dev is generated
-     To remove 'dev', use the attribute replace_dev="xxx" in the resource_table tag above
-    -->
     <mail name="commits,issues,reviews,user"/>
-    <!-- use attribute key="" to override default JIRA -->
-    <!-- N.B. some projects may use GitHub issues instead of JIRA -->
     <jira key="AMBARI"/>
-    <!--
     <cwiki/>
-    -->
-    <!--svn/>  OR  <git/-->
-    <!-- use the tag
-    <no_downloads/>
-    to suppress the Downloads links -->
+    <git/>
   </resource_table>
 
 </section>
