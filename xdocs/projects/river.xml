@@ -29,7 +29,8 @@
 
   <p><a href="http://river.apache.org/">Apache River</a>
      moved into the Attic in 2022-02.
-     Apache River mission was Jini service oriented architecture.</p>
+     Apache River mission was the creation and maintenance of software related to
+     Jini service oriented architecture.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
@@ -41,20 +42,10 @@
   </p>
 
   <resource_table project="river">
-    <!-- by default only dev is generated
-     To remove 'dev', use the attribute replace_dev="xxx" in the resource_table tag above
-    -->
     <mail name="commits,user"/>
-    <!-- use attribute key="" to override default JIRA -->
-    <!-- N.B. some projects may use GitHub issues instead of JIRA -->
     <jira key="RIVER"/>
-    <!--
-    <cwiki/>
-    -->
-    <!--svn/>  OR  <git/-->
-    <!-- use the tag
-    <no_downloads/>
-    to suppress the Downloads links -->
+    <svn/>
+    <git/>
   </resource_table>
 
 </section>

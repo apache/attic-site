@@ -29,7 +29,8 @@
 
   <p><a href="http://chemistry.apache.org/">Apache Chemistry</a>
      moved into the Attic in 2022-02.
-     Apache Chemistry mission was CMIS (Content Managment Interoperability Services) Clients and Servers.</p>
+     Apache Chemistry mission was the creation and maintenance of software related to
+     CMIS (Content Managment Interoperability Services) Clients and Servers.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
@@ -41,20 +42,10 @@
   </p>
 
   <resource_table project="chemistry">
-    <!-- by default only dev is generated
-     To remove 'dev', use the attribute replace_dev="xxx" in the resource_table tag above
-    -->
     <mail name="commits"/>
-    <!-- use attribute key="" to override default JIRA -->
-    <!-- N.B. some projects may use GitHub issues instead of JIRA -->
     <jira key="CMIS"/>
-    <!--
-    <cwiki/>
-    -->
-    <!--svn/>  OR  <git/-->
-    <!-- use the tag
-    <no_downloads/>
-    to suppress the Downloads links -->
+    <svn/>
+    <git/>
   </resource_table>
 
 </section>
