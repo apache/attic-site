@@ -61,6 +61,7 @@
         <li>Close down the user mailing list (unless still active - in which case propose a moderator to Infra)</li>
         <li>Make JIRA|Bugzilla read-only</li>
         <li>Make the wiki (if any) read-only</li>
+        <li>Add a banner to the wiki: this involves creating the Puppet file  modules/cwiki_asf/files/attic/WIKIID.txt. See also AAREADME.txt in that directory.</li>
         <li>Delete LDAP group(s)</li>
         <li>Turn off automated builds</li>
       </ul>
