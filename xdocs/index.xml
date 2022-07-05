@@ -90,16 +90,20 @@
 
   <p>Options are: </p>
   <ul>
-    <li>Forking the project - we'll link to any forks which have been
+    <li>Forking the project outside the Apache Software Foundation - we'll link to any forks which have been
       created so please let us know</li>
-    <li>Restarting the community in the Apache Incubator</li>
-    <li>Recreating a PMC for the project</li>
-    <li>Transfering to an existing PMC</li>
+    <li>Restarting the project at the Apache Software Foundation, with multiple ways to do so:
+      <ul>
+      <li>Restarting the community in the Apache Incubator</li>
+      <li>Recreating a PMC for the project</li>
+      <li>Transfering to an existing PMC</li>
+      </ul>
+    </li>
   </ul>
 
 <p>
 A receiving PMC must be willing to assume all responsibilities that come
-with running a project : maintain code, answer questions, fix bugs,
+with running a project: maintain code, answer questions, fix bugs,
 publish releases etc.
 <br/>
 If the Board does not object, PMC Attic will transfer the project's
