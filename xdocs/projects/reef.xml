@@ -29,7 +29,7 @@
 
   <p><a href="http://reef.apache.org/">Apache REEF</a>
      moved into the Attic in 2022-07.
-     Apache REEF (Retainable Evaluator Execution Frameworka) mission was to provide a library for developing portable applications for cluster resource managers such as Apache Hadoop™ YARN or Apache Mesos™.</p>
+     Apache REEF (Retainable Evaluator Execution Frameworks) mission was to provide a library for developing portable applications for cluster resource managers such as Apache Hadoop™ YARN or Apache Mesos™.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
