@@ -13,7 +13,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 -->
 <project name="Attic"
-        href="http://attic.apache.org/">
+        href="https://attic.apache.org/">
 
   <title>Apache Attic</title>
   <logo href="/images/apache-attic-logo.png">Apache Attic</logo>
@@ -26,16 +26,16 @@ limitations under the License.
       <li><a href="/process.html">Process</a></li>
       <li><a href="/tracking.html">Process tracking</a></li>
       <li><a href="https://whimsy.apache.org/board/minutes/Attic.html">Board Minutes</a></li>
-      <li><a href="http://www.apache.org/licenses/">License</a></li>
-      <li><a href="http://www.apache.org/security/">Security</a></li>
+      <li><a href="https://www.apache.org/licenses/">License</a></li>
+      <li><a href="https://www.apache.org/security/">Security</a></li>
     </projects>
 
     <projects><title>Related Apache Links</title>
-      <li><a href="http://www.apache.org/">Foundation</a></li>
-      <li><a href="http://www.apache.org/foundation/sponsorship.html">Donate</a></li>
-      <li><a href="http://www.apache.org/foundation/thanks.html">Thanks</a></li>
-      <li><a href="http://incubator.apache.org/">Incubator</a></li>
-      <li><a href="http://apachecon.com/">ApacheCon</a></li>
+      <li><a href="https://www.apache.org/">Foundation</a></li>
+      <li><a href="https://www.apache.org/foundation/sponsorship.html">Donate</a></li>
+      <li><a href="https://www.apache.org/foundation/thanks.html">Thanks</a></li>
+      <li><a href="https://incubator.apache.org/">Incubator</a></li>
+      <li><a href="https://apachecon.com/">ApacheCon</a></li>
     </projects>
 
     <menu><title>Projects in the Attic</title>

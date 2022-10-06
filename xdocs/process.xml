@@ -41,23 +41,23 @@
       </ul>
     </li>
     <li>If the board approves the resolution, open an <a href="https://issues.apache.org/jira/browse/ATTIC">Attic JIRA</a> item - 'Move ${project} to the Attic'.<br />
-      The Attic PMC will step in and create a detailed issue description using <a href="http://svn.apache.org/viewvc/attic/site/retire.py?view=markup"><code>retire.py</code></a>, with other generated parts to move the project to the Attic.<br />
+      The Attic PMC will step in and create a detailed issue description using <a href="https://svn.apache.org/viewvc/attic/site/retire.py?view=markup"><code>retire.py</code></a>, with other generated parts to move the project to the Attic.<br />
       Generated issue content typically contains following steps (see <a href="#howto">"How to"</a> below for a description of each step): 
       <ol type="1">
         <li><a href="#confirm-resolution">#</a> Confirm Board Resolution</li>
         <li><a href="#informing">#</a> Inform users of the move to the Attic</li>
-        <li><a href="#atticsite">#</a> Create project page on Attic site: http://attic.apache.org/projects/$project.html</li>
+        <li><a href="#atticsite">#</a> Create project page on Attic site: https://attic.apache.org/projects/$project.html</li>
         <li><a href="#doap">#</a>Update the project DOAP files (if any) or copy to <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk/data/projects-override/">projects-override</a></li>
-        <li><a href="#announce">#</a> Announce on <a href="http://mail-archives.apache.org/mod_mbox/www-announce/">announce at apache.org</a></li>
+        <li><a href="#announce">#</a> Announce on <a href="https://mail-archives.apache.org/mod_mbox/www-announce/">announce at apache.org</a></li>
       </ol>
     </li>
     <li>Open an <a href="https://issues.apache.org/jira/browse/INFRA">Infrastructure JIRA</a> issue identifying the resources that need turning off/making read only.<br/>
-      The Attic PMC will create a base issue description using <a href="http://svn.apache.org/viewvc/attic/site/infrajiratext.py?view=markup"><code>infrajiratext.py</code></a>.<br/>
+      The Attic PMC will create a base issue description using <a href="https://svn.apache.org/viewvc/attic/site/infrajiratext.py?view=markup"><code>infrajiratext.py</code></a>.<br/>
       Typically, it contains steps like following, that need to be tweaked based on assets of the retired project:
       <ul>
         <li>Make source control Git|Svn read-only</li>
         <li>Remove files from <a href="https://dist.apache.org/repos/dist/">dist.apache.org/repos/dist/[release|dev]</a></li>
-        <li>Closing down of dev@, commits@ and private@ etc. <a href="http://mail-archives.apache.org/mod_mbox/">mailing lists</a></li>
+        <li>Closing down of dev@, commits@ and private@ etc. <a href="https://mail-archives.apache.org/mod_mbox/">mailing lists</a></li>
         <li>Close down the user mailing list (unless still active - in which case propose a moderator to Infra)</li>
         <li>Make JIRA|Bugzilla read-only</li>
         <li>Make the wiki (if any) read-only</li>
@@ -78,7 +78,7 @@
     <ul>
      <li>svn site <a href="https://svn.apache.org/viewvc/attic">https://svn.apache.org/repos/asf/attic</a>: sources in <code>xdocs</code>, generated html in <code>docs</code><br/>
      git mirror <a href="https://github.com/apache/attic-site">https://github.com/apache/attic-site</a></li>
-     <li>site <a href="http://attic.apache.org">http://attic.apache.org</a></li>
+     <li>site <a href="https://attic.apache.org">https://attic.apache.org</a></li>
      <li>internals: <a href="https://ci2.apache.org/#/builders/16">Buildbot job</a> to build from source and commit generated html
          (see <a href="https://svn.apache.org/repos/infra/infrastructure/buildbot/aegis/buildmaster/master1/projects/attic-site.conf">attic-site.conf</a>),
          <a href="https://github.com/apache/infrastructure-p6/blob/production/modules/svnwcsub/files/svnwcsub.conf">svnwcsub configuration</a> to update generated html from svn to webserver</li>
@@ -96,7 +96,7 @@
   </ul>
   <p>However note that the most recent meeting minutes are not published until the following meeting at the earliest</p>
   <p>Check that Secretary removed the PMC from <a href="https://svn.apache.org/repos/private/committers/board/committee-info.txt">https://svn.apache.org/repos/private/committers/board/committee-info.txt</a></p>
-  <p>This automatically removes VP entry on <a href="http://www.apache.org/foundation/">http://www.apache.org/foundation/</a> and project from <a href="http://www.apache.org/#projects-list">http://www.apache.org/#projects-list</a> navigation</p>
+  <p>This automatically removes VP entry on <a href="https://www.apache.org/foundation/">https://www.apache.org/foundation/</a> and project from <a href="https://www.apache.org/#projects-list">https://www.apache.org/#projects-list</a> navigation</p>
 </section>
 
 <section id="informing">
@@ -113,7 +113,7 @@ Loosely speaking this means that the projects resources will be moved to a
 read-only state.
 
 You can read more about the Apache Attic and the process of moving to the 
-Attic at http://attic.apache.org.
+Attic at https://attic.apache.org.
 
 You can follow this process in JIRA: 
  
@@ -129,13 +129,13 @@ ${Name} on behalf of ${project} + the Attic.
 </section>
 
 <section id="atticsite">
-  <title>How to: 3. Create project page on Attic site: http://attic.apache.org/projects/${project}.html</title>
+  <title>How to: 3. Create project page on Attic site: https://attic.apache.org/projects/${project}.html</title>
 
   <p>The Attic website is built using Anakia. Anakia is an old site technology built on top of Apache Velocity. 
      You can get the source for the site from Subversion: </p>
   <pre>svn co https://svn.apache.org/repos/asf/attic/site</pre>
 
-  <p>You can generate the required changes using the Python3 <a href="http://svn.apache.org/viewvc/attic/site/retire.py?view=markup"><code>retire.py</code></a> script as follows:</p>
+  <p>You can generate the required changes using the Python3 <a href="https://svn.apache.org/viewvc/attic/site/retire.py?view=markup"><code>retire.py</code></a> script as follows:</p>
   <pre>./retire.py id1 [id2...]</pre>
   <p>This should generate the following files for each ID, as well as updating xdocs/stylesheets/project.xml:</p>
   <ul>
@@ -192,7 +192,7 @@ efforts.
 
 You can read more about ${project}'s retirement at:
 
-   http://attic.apache.org/projects/${project}.html
+   https://attic.apache.org/projects/${project}.html
 
 The project's resources will continue to be available in a read-only state -
 website, mailing lists, wikis, git, downloads and bug tracker with no 
@@ -202,7 +202,7 @@ Providing process and solutions to make it clear when an Apache
 project has reached its end of life is the role of the Apache Attic,
 and you can read more about that at:
 
-   http://attic.apache.org/
+   https://attic.apache.org/
 
 Thanks,
 

@@ -62,7 +62,7 @@ function change_loc()
           + 'of your browser.'
         return ;
       }
-    var url = '<a href="http://attic.apache.org/projects/!PROJ!.html">'
+    var url = '<a href="https://attic.apache.org/projects/!PROJ!.html">'
       + 'attic page</a>'
     top.innerHTML = "Project <i>!PROJ!</i> is retired ; "
       + "for details, see !PROJ!'s " + url + '.'

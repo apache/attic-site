@@ -69,7 +69,7 @@
 #if($elem.getChild("no_website"))
       <td>n/a</td>
 #else
-      <td><a href="http://${proj}.apache.org/${subproj}">${proj}.apache.org/${subproj}</a></td>
+      <td><a href="https://${proj}.apache.org/${subproj}">${proj}.apache.org/${subproj}</a></td>
 #end
     </tr>
     <tr>
@@ -79,15 +79,15 @@
       n/a
 #elseif($elem.getAttributeValue("replace_dev"))
 #set ($replacedev = $elem.getAttributeValue("replace_dev"))
-        <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-${replacedev}/">${replacedev}</a>
+        <a href="https://mail-archives.apache.org/mod_mbox/${full_dash}-${replacedev}/">${replacedev}</a>
 #else
-        <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-dev/">dev</a>
+        <a href="https://mail-archives.apache.org/mod_mbox/${full_dash}-dev/">dev</a>
 #end
 #set ($mail_links = $elem.getChildren("mail"))
 #foreach ( $mail_link in $mail_links )
 #set ($mail_name = $mail_link.getAttributeValue('name'))
 #foreach ($name in $mail_name.split(","))
-        | <a href="http://mail-archives.apache.org/mod_mbox/${full_dash}-${name}/">${name}</a>
+        | <a href="https://mail-archives.apache.org/mod_mbox/${full_dash}-${name}/">${name}</a>
 #end
 #end
       </td>
@@ -125,7 +125,7 @@
 #if($elem.getChild("moin"))
     <tr>
       <td>Wiki</td>
-      <td><a href="http://wiki.apache.org/${proj}/">wiki.apache.org/${proj}/</a></td>
+      <td><a href="https://wiki.apache.org/${proj}/">wiki.apache.org/${proj}/</a></td>
     </tr>
 #end
 #if($elem.getChild("cwiki"))
@@ -137,7 +137,7 @@
 #if($elem.getChild("svn"))
     <tr>
       <td>Source Code (Subversion)</td>
-      <td><a href="http://svn.apache.org/repos/asf/${proj}/${subproj}">svn.apache.org/repos/asf/${proj}/${subproj}</a></td>
+      <td><a href="https://svn.apache.org/repos/asf/${proj}/${subproj}">svn.apache.org/repos/asf/${proj}/${subproj}</a></td>
     </tr>
 #end
 #if($elem.getChild("git"))
@@ -162,11 +162,11 @@
 #if($elem.getChild("no_downloads"))
       <td>n/a</td>
 #else
-      <td><a href="http://archive.apache.org/dist/${full_slash}/">archive.apache.org/dist/${full_slash}/</a> 
+      <td><a href="https://archive.apache.org/dist/${full_slash}/">archive.apache.org/dist/${full_slash}/</a> 
 #if($elem.getAttributeValue("hide_keys"))
       <!-- hiding KEYS -->
 #else
-      | <a href="http://archive.apache.org/dist/${full_slash}/KEYS">KEYS</a>
+      | <a href="https://archive.apache.org/dist/${full_slash}/KEYS">KEYS</a>
 #end
       </td>
 #end
@@ -439,7 +439,7 @@ href="$title.getAttributeValue("href")">$menu.getChildText("title")</a></div>
 #macro ( getProjectImage )
 #if ($project.getChild("logo"))
 <td align="left" valign="top">
-<a href="http://www.apache.org/"><img src="$relativePath/images/asf_logo_wide.gif" alt="The Apache Software Foundation" title="The Apache Software Foundation" border="0"/></a>
+<a href="https://www.apache.org/"><img src="$relativePath/images/asf_logo_wide.gif" alt="The Apache Software Foundation" title="The Apache Software Foundation" border="0"/></a>
 </td>
 <td align="right">
 #set ( $logoString = $project.getChild("logo").getAttributeValue("href") )
@@ -451,20 +451,20 @@ href="$title.getAttributeValue("href")">$menu.getChildText("title")</a></div>
 </td>
 <td>
 <!-- Need to specify height otherwise iframe seems to grab extra -->
-<iframe src="http://www.apache.org/ads/halfbanner.html" height="65"
+<iframe src="https://www.apache.org/ads/halfbanner.html" height="65"
     style="border-width:0; float: right" frameborder="0" scrolling="no"></iframe>
 </td>
 #else
 <td align="left" valign="top">
-<a href="http://www.apache.org/"><img src="$relativePath/images/asf_logo_wide.gif" alt="The Apache Software Foundation" title="The Apache Software Foundation" align="left" border="0"/></a>
+<a href="https://www.apache.org/"><img src="$relativePath/images/asf_logo_wide.gif" alt="The Apache Software Foundation" title="The Apache Software Foundation" align="left" border="0"/></a>
 </td>
 <td>
 <!-- Need to specify height otherwise iframe seems to grab extra -->
-<iframe src="http://www.apache.org/ads/halfbanner.html" height="65"
+<iframe src="https://www.apache.org/ads/halfbanner.html" height="65"
     style="border-width:0; float: right" frameborder="0" scrolling="no"></iframe>
 </td>
 ##<td width="150" valign="middle" align="center">
-##  <p><strong><a href="http://www.apache.org/dyn/closer.cgi">Mirrored<br />
+##  <p><strong><a href="https://www.apache.org/dyn/closer.cgi">Mirrored<br />
 ##                                                       Worldwide</a></strong></p>
 ##</td>
 #end
@@ -568,7 +568,7 @@ href="$title.getAttributeValue("href")">$menu.getChildText("title")</a></div>
     </div>
     <div class="column span-24 footer">
       <hr/>
-        <p>Copyright &#169; 2009-2021 The Apache Software Foundation, Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br/>
+        <p>Copyright &#169; 2009-2021 The Apache Software Foundation, Licensed under the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.<br/>
         Apache and the Apache feather logo are trademarks of The Apache Software Foundation.</p>
       </div>
     </div>
