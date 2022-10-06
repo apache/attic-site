@@ -27,7 +27,7 @@
 <section id="ACE">
   <title>Apache ACE</title>
 
-  <p><a href="http://ace.apache.org">Apache ACE</a> moved into the Attic in December 2017. 
+  <p><a href="https://ace.apache.org">Apache ACE</a> moved into the Attic in December 2017. 
 Apache ACE was a software distribution framework that allows you to centrally manage and distribute software components, configuration data and other artifacts to target systems. It is built using OSGi and can be deployed in different topologies. The target systems are usually also OSGi based, but don't have to be. </p>
      
   <resource_table project="ace">

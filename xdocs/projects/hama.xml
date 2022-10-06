@@ -27,14 +27,14 @@
 <section id="hama">
   <title>Apache Hama</title>
 
-  <p><a href="http://hama.apache.org/">Apache Hama</a>
+  <p><a href="https://hama.apache.org/">Apache Hama</a>
      moved into the Attic in April 2020.
      Apache Hama was a framework for Big Data analytics based on the Bulk
      Synchronous Parallel paradigm.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
-     <a href="http://hama.apache.org/">http://hama.apache.org</a>
+     <a href="https://hama.apache.org/">http://hama.apache.org</a>
      for more information on Hama.</p>
 
   <p>As with any project in the Attic - if you should choose to fork Hama
@@ -50,7 +50,7 @@
   </resource_table>
 
   <p>Archived versions of Hama may be downloaded from the 
-     <a href="http://archive.apache.org/dist/hama/">Apache Archives</a>.
+     <a href="https://archive.apache.org/dist/hama/">Apache Archives</a>.
   </p>
  
 </section>

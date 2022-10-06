@@ -27,7 +27,7 @@
 <section id="beehive">
   <title>Apache Beehive</title>
 
-  <p><a href="http://beehive.apache.org/">Apache Beehive</a> moved into the Attic in January 2010. 
+  <p><a href="https://beehive.apache.org/">Apache Beehive</a> moved into the Attic in January 2010. 
      Apache Beehive was a simple object model built on J2EE and Struts that used annotations to reduce 
      the amount of required code. </p>
      
@@ -48,7 +48,7 @@
      please let us know so we can link to your project. </p>
 
   <p>Archived versions of Beehive may be downloaded from the 
-     <a href="http://archive.apache.org/dist/beehive/">Apache Archives</a>. </p>
+     <a href="https://archive.apache.org/dist/beehive/">Apache Archives</a>. </p>
 
 </section>
 

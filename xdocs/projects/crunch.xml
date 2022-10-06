@@ -27,13 +27,13 @@
 <section id="crunch">
   <title>Apache Crunch</title>
 
-  <p><a href="http://crunch.apache.org/">Apache Crunch</a>
+  <p><a href="https://crunch.apache.org/">Apache Crunch</a>
      moved into the Attic in 2020-06.
      Apache Crunch mission was Simple and Efficient MapReduce Pipelines.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
-     <a href="http://crunch.apache.org/">http://crunch.apache.org</a>
+     <a href="https://crunch.apache.org/">http://crunch.apache.org</a>
      for more information on Crunch.</p>
 
   <p>As with any project in the Attic - if you should choose to fork Crunch

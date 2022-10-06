@@ -27,7 +27,7 @@
 <section id="predictionio">
   <title>Apache PredictionIO</title>
 
-  <p><a href="http://predictionio.apache.org/">Apache PredictionIO</a>
+  <p><a href="https://predictionio.apache.org/">Apache PredictionIO</a>
      moved into the Attic in Sep 2020.
      Apache PredictionIO was a machine learning server built on top of state-of-the-art open
       source stack, that enables developers to manage and deploy production-ready
@@ -35,7 +35,7 @@
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
-     <a href="http://predictionio.apache.org/">http://predictionio.apache.org</a>
+     <a href="https://predictionio.apache.org/">http://predictionio.apache.org</a>
      for more information on PredictionIO.</p>
 
   <p>As with any project in the Attic - if you should choose to fork PredictionIO

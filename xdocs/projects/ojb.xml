@@ -27,7 +27,7 @@
 <section id="obj">
   <title>Apache ObJectRelationalBridge (OJB)</title>
 
-  <p><a href="http://db.apache.org/ojb">Apache ObJectRelationalBridge (OJB)</a>
+  <p><a href="https://db.apache.org/ojb">Apache ObJectRelationalBridge (OJB)</a>
      moved into the Attic in January 2011. Apache OJB was an Object/Relational
      mapping tool that allowed transparent persistence for Java Objects against
      relational databases.</p>
@@ -35,28 +35,28 @@
   <p>The website, downloads and issue tracker all remain open, though the
      issue tracker is read-only. The user mailing list has been closed down,
      but old posts can be browsed in the
-     <a href="http://mail-archives.apache.org/">mail archives</a>.
+     <a href="https://mail-archives.apache.org/">mail archives</a>.
      See the website at
-     <a href="http://db.apache.org/ojb/">http://db.apache.org/ojb</a> for more
+     <a href="https://db.apache.org/ojb/">http://db.apache.org/ojb</a> for more
      information on OJB.</p>
 
   <p>If you are looking for a project to use in place of OJB, implementations
-     of the standards <a href="http://db.apache.org/jdo">Java Data Objects
+     of the standards <a href="https://db.apache.org/jdo">Java Data Objects
      (JDO)</a> and <a href="">Java Persistence API (JPA)</a> may be good
      starting points. The Apache Software Foundation hosts the following
      alternatives:
       <ul>
-        <li><a href="http://cayenne.apache.org/">Apache Cayenne</a></li>
-        <li><a href="http://incubator.apache.org/empire-db/">Apache Empire-db</a></li>
-        <li><a href="http://openjpa.apache.org/">Apache OpenJPA</a></li>
-        <li><a href="http://db.apache.org/torque">Apache Torque</a></li>
+        <li><a href="https://cayenne.apache.org/">Apache Cayenne</a></li>
+        <li><a href="https://incubator.apache.org/empire-db/">Apache Empire-db</a></li>
+        <li><a href="https://openjpa.apache.org/">Apache OpenJPA</a></li>
+        <li><a href="https://db.apache.org/torque">Apache Torque</a></li>
       </ul></p>
 
   <p>As with any project in the Attic - if you should choose to fork OJB
      outside of Apache, please let us know so we can link to your project.</p>
 
   <p>Archived versions of OJB may be downloaded from the
-     <a href="http://archive.apache.org/dist/db/ojb/">Apache Archives</a>.</p>
+     <a href="https://archive.apache.org/dist/db/ojb/">Apache Archives</a>.</p>
  
 </section>
 

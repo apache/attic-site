@@ -27,7 +27,7 @@
 <section id="shindig">
   <title>Apache Shindig</title>
 
-  <p><a href="http://shindig.apache.org">Apache Shindig</a> moved into the Attic in November 2015. 
+  <p><a href="https://shindig.apache.org">Apache Shindig</a> moved into the Attic in November 2015. 
   Shindig was an OpenSocial container to help you to start hosting OpenSocial apps quickly. </p>
      
   <resource_table project="shindig">

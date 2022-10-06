@@ -27,13 +27,13 @@
 <section id="chukwa">
   <title>Apache Chukwa</title>
 
-  <p><a href="http://chukwa.apache.org/">Apache Chukwa</a>
+  <p><a href="https://chukwa.apache.org/">Apache Chukwa</a>
      moved into the Attic in 2020-05.
      Apache Chukwa mission was Open source data collection system for monitoring large distributed systems.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
-     <a href="http://chukwa.apache.org/">http://chukwa.apache.org</a>
+     <a href="https://chukwa.apache.org/">http://chukwa.apache.org</a>
      for more information on Chukwa.</p>
 
   <p>As with any project in the Attic - if you should choose to fork Chukwa

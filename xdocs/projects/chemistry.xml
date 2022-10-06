@@ -27,14 +27,14 @@
 <section id="chemistry">
   <title>Apache Chemistry</title>
 
-  <p><a href="http://chemistry.apache.org/">Apache Chemistry</a>
+  <p><a href="https://chemistry.apache.org/">Apache Chemistry</a>
      moved into the Attic in 2022-02.
      Apache Chemistry mission was the creation and maintenance of software related to
      CMIS (Content Managment Interoperability Services) Clients and Servers.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
-     <a href="http://chemistry.apache.org/">http://chemistry.apache.org</a>
+     <a href="https://chemistry.apache.org/">http://chemistry.apache.org</a>
      for more information on Chemistry.</p>
 
   <p>As with any project in the Attic - if you should choose to fork Chemistry

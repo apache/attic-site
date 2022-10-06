@@ -27,13 +27,13 @@
 <section id="labs">
   <title>Apache Labs</title>
 
-  <p><a href="http://labs.apache.org/">Apache Labs</a>
+  <p><a href="https://labs.apache.org/">Apache Labs</a>
      moved into the Attic in Aug 2020.
      Apache Labs was a place for innovation where committers of the foundation could experiment with new ideas.</p>
 
   <p>The website and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
-     <a href="http://labs.apache.org/">http://labs.apache.org</a>
+     <a href="https://labs.apache.org/">http://labs.apache.org</a>
      for more information on Labs.</p>
 
   <resource_table project="labs" replace_dev="labs">

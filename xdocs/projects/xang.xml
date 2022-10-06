@@ -27,13 +27,13 @@
 <section id="xang">
   <title>Apache Xang</title>
 
-  <p><a href="http://xml.apache.org/xang/">Apache Xang</a> moved into the Attic in December 2009. 
+  <p><a href="https://xml.apache.org/xang/">Apache Xang</a> moved into the Attic in December 2009. 
      Apache Xang was an XML Web Framework that aggregated multiple data sources, made that 
      data URL addressable and defined custom methods to access that data. </p>
      
   <p>The website and downloads remain open. There was no issue tracker for the project and the 
      mailing list was closed down. See the website at 
-     <a href="http://xml.apache.org/xang/">http://xml.apache.org/xang</a> for more information on Xang. </p>
+     <a href="https://xml.apache.org/xang/">http://xml.apache.org/xang</a> for more information on Xang. </p>
 
   <p>We do not know of any natural successors or potential forks for Xang. As with 
      any project in the Attic - if you should choose to fork Xang outside of Apache, 

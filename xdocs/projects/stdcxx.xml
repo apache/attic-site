@@ -27,13 +27,13 @@
 <section id="stdcxx">
   <title>Apache C++ Standard Library (STDCXX)</title>
 
-  <p>The <a href="http://stdcxx.apache.org">Apache C++ Standard Library (STDCXX)</a> moved into the Attic in July 2013. 
+  <p>The <a href="https://stdcxx.apache.org">Apache C++ Standard Library (STDCXX)</a> moved into the Attic in July 2013. 
      The Apache C++ Standard Library project was a collection of algorithms, containers, iterators, and other fundamental 
      components of every piece of software, implemented as C++ classes, templates, and functions essential for writing C++ programs. </p>
      
   <p>The user mailing list, website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at 
-     <a href="http://stdcxx.apache.org/">http://stdcxx.apache.org</a> for more information on the project. </p>
+     <a href="https://stdcxx.apache.org/">http://stdcxx.apache.org</a> for more information on the project. </p>
 
   <resource_table project="stdcxx" board_report_id="Cxx_Standard_Library">
     <mail name="commits"/>
@@ -47,7 +47,7 @@
      please let us know so we can link to your project. </p>
 
   <p>Archived versions of the Apache C++ Standard Library (STDCXX) may be downloaded from the 
-     <a href="http://archive.apache.org/dist/stdcxx/">Apache Archives</a>. </p>
+     <a href="https://archive.apache.org/dist/stdcxx/">Apache Archives</a>. </p>
 
 </section>
 

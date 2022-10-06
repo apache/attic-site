@@ -27,7 +27,7 @@
 <section id="mrunit">
   <title>Apache MRUnit</title>
 
-  <p><a href="http://mrunit.apache.org">Apache MRUnit</a> moved into the Attic in April 2016. 
+  <p><a href="https://mrunit.apache.org">Apache MRUnit</a> moved into the Attic in April 2016. 
   MRUnit was a Java library that helped developers unit test Apache Hadoop map reduce jobs. </p>
      
   <resource_table project="mrunit">
@@ -42,7 +42,7 @@
      please let us know so we can link to your project. </p>
 
   <p>Archived versions of the MRUnit may be downloaded from the 
-     <a href="http://archive.apache.org/dist/mrunit/">Apache Archives</a>. </p>
+     <a href="https://archive.apache.org/dist/mrunit/">Apache Archives</a>. </p>
 
 </section>
 

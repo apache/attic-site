@@ -27,7 +27,7 @@
 <section id="directmemory">
   <title>Apache DirectMemory</title>
 
-  <p><a href="http://directmemory.apache.org">Apache DirectMemory</a> moved into the Attic in July 2015. 
+  <p><a href="https://directmemory.apache.org">Apache DirectMemory</a> moved into the Attic in July 2015. 
   DirectMemory was an off-heap cache for the Java Virtual Machine. </p>
      
   <resource_table project="directmemory">

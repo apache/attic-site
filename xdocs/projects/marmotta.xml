@@ -27,13 +27,13 @@
 <section id="marmotta">
   <title>Apache Marmotta</title>
 
-  <p><a href="http://marmotta.apache.org/">Apache Marmotta</a>
+  <p><a href="https://marmotta.apache.org/">Apache Marmotta</a>
      moved into the Attic in 2020-11.
      Apache Marmotta was an Open Platform for Linked Data.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
-     <a href="http://marmotta.apache.org/">http://marmotta.apache.org</a>
+     <a href="https://marmotta.apache.org/">http://marmotta.apache.org</a>
      for more information on Marmotta.</p>
 
   <p>As with any project in the Attic - if you should choose to fork Marmotta

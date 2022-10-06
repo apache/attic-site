@@ -27,10 +27,10 @@
 <section id="avalon">
   <title>Apache Avalon</title>
 
-  <p><a href="http://avalon.apache.org">Apache Avalon</a> was closed down in 2004, long before the creation of the Apache Attic. It's mentioned here for completeness. </p>
+  <p><a href="https://avalon.apache.org">Apache Avalon</a> was closed down in 2004, long before the creation of the Apache Attic. It's mentioned here for completeness. </p>
      
   <p>For more information, including its successors, archives and description; see the website at 
-     <a href="http://avalon.apache.org/">http://avalon.apache.org</a>. </p>
+     <a href="https://avalon.apache.org/">http://avalon.apache.org</a>. </p>
 
   <resource_table project="avalon">
     <mail name="apps-dev,cvs,phoenix-dev"/>

@@ -27,7 +27,7 @@
 <section id="continuum">
   <title>Apache Continuum</title>
 
-  <p><a href="http://continuum.apache.org">Apache Continuum</a> moved into the Attic in May 2016. 
+  <p><a href="https://continuum.apache.org">Apache Continuum</a> moved into the Attic in May 2016. 
      Continuum was an enterprise-ready continuous integration server with features such as automated builds, release management, role-based security, and integration with popular build tools and source control management systems. </p>
      
   <resource_table project="continuum">

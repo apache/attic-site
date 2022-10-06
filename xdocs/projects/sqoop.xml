@@ -27,14 +27,14 @@
 <section id="sqoop">
   <title>Apache Sqoop</title>
 
-  <p><a href="http://sqoop.apache.org/">Apache Sqoop</a>
+  <p><a href="https://sqoop.apache.org/">Apache Sqoop</a>
      moved into the Attic in 2021-06.
      Apache Sqoop mission was the creation and maintenance of software related to
 Bulk Data Transfer for Apache Hadoop and Structured Datastores.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
-     <a href="http://sqoop.apache.org/">http://sqoop.apache.org</a>
+     <a href="https://sqoop.apache.org/">http://sqoop.apache.org</a>
      for more information on Sqoop.</p>
 
   <p>As with any project in the Attic - if you should choose to fork Sqoop

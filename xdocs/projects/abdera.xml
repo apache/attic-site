@@ -27,7 +27,7 @@
 <section id="abdera">
   <title>Apache Abdera</title>
 
-  <p><a href="http://abdera.apache.org">Apache Abdera</a> moved into the Attic in March 2017. 
+  <p><a href="https://abdera.apache.org">Apache Abdera</a> moved into the Attic in March 2017. 
 Apache Abdera was a project to build a functionally-complete, high-performance implementation of the IETF Atom Syndication Format (RFC 4287) and Atom Publishing Protocol (RFC 5023) specifications.</p>
      
   <resource_table project="abdera">

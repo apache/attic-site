@@ -27,13 +27,13 @@
 <section id="buildr">
   <title>Apache Buildr</title>
 
-  <p><a href="http://buildr.apache.org/">Apache Buildr</a>
+  <p><a href="https://buildr.apache.org/">Apache Buildr</a>
      moved into the Attic in 2022-07.
      Apache Buildr mission was to create a simple and intuitive build system for Java applications.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
-     <a href="http://buildr.apache.org/">http://buildr.apache.org</a>
+     <a href="https://buildr.apache.org/">http://buildr.apache.org</a>
      for more information on Buildr.</p>
 
   <p>As with any project in the Attic - if you should choose to fork Buildr

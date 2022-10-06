@@ -27,17 +27,17 @@
 <section id="crimson">
   <title>Apache Crimson</title>
 
-  <p><a href="http://xml.apache.org/crimson/">Apache Crimson</a> moved into the Attic in August 2010. 
+  <p><a href="https://xml.apache.org/crimson/">Apache Crimson</a> moved into the Attic in August 2010. 
      Apache Crimson was a Java XML parser which supports XML 1.0 via various APIs.</p>
      
   <p>The website and downloads remain. There was no
 	  issue tracker nor mailing lists for the project. Contact <a href="mailto:general@xml.apache.org">general@xml.apache.org</a>
 	  or <a href="mailto:general@attic.apache.org">general@attic.apache.org</a> for more information. </p>
 
-  <p><a href="http://xerces.apache.org/">Apache Xerces</a> replaced Crimson. </p>
+  <p><a href="https://xerces.apache.org/">Apache Xerces</a> replaced Crimson. </p>
 
   <p>Archived versions of Xerces may be downloaded from the 
-     <a href="http://archive.apache.org/dist/xerces/">Apache Archives</a>. </p>
+     <a href="https://archive.apache.org/dist/xerces/">Apache Archives</a>. </p>
 
 </section>
 

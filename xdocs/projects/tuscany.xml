@@ -27,7 +27,7 @@
 <section id="tuscany">
   <title>Apache Tuscany</title>
 
-  <p><a href="http://tuscany.apache.org">Apache Tuscany</a> moved into the Attic in May 2016. 
+  <p><a href="https://tuscany.apache.org">Apache Tuscany</a> moved into the Attic in May 2016. 
      Tuscany simplified the task of developing service-oriented architectured solutions by providing a comprehensive infrastructure for development and management, based on the <a href="https://en.wikipedia.org/wiki/Service_Component_Architecture">Service Component Architecture</a> standard. </p>
      
   <resource_table project="tuscany">

@@ -27,12 +27,12 @@
 <section id="ibatis">
   <title>Apache iBATIS</title>
 
-  <p><a href="http://ibatis.apache.org">Apache iBATIS</a> moved into the Attic in June 2010. 
+  <p><a href="https://ibatis.apache.org">Apache iBATIS</a> moved into the Attic in June 2010. 
      iBATIS was a data mapper framework that made it easier to use a relational database 
      with object-oriented applications. There were both Java and .Net implementations. </p>
 
   <p>The iBATIS committers moved over to 
-     <a href="http://www.mybatis.org/">MyBatis</a>
+     <a href="https://www.mybatis.org/">MyBatis</a>
      which is the natural successor to iBATIS. </p>
 
   <p>As with any project in the Attic - if you should choose to fork iBATIS outside of Apache, 
@@ -44,10 +44,10 @@
   </resource_table>
 
   <p>Archived versions of iBATIS may be downloaded from the 
-     <a href="http://archive.apache.org/dist/ibatis/">Apache Archives</a>. </p>
+     <a href="https://archive.apache.org/dist/ibatis/">Apache Archives</a>. </p>
 
   <p>As mentioned above, one fork that has been created is MyBatis at 
-     <a href="http://www.mybatis.org/">http://www.mybatis.org/</a>. </p>
+     <a href="https://www.mybatis.org/">http://www.mybatis.org/</a>. </p>
 
 </section>
 
