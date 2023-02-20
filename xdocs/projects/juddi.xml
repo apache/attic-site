@@ -46,7 +46,7 @@
     <!-- N.B. some projects may use GitHub issues instead of JIRA -->
     <jira key="JUDDI,SCOUT"/>
     <cwiki/>
-    <git><!-- missing juddi-scout because site.vsl does not support multiple entries... -->
+    <git/><!-- missing juddi-scout because site.vsl does not support multiple entries... -->
     <!-- use the tag
     <no_downloads/>
     to suppress the Downloads links -->
