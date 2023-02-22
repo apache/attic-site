@@ -42,11 +42,9 @@
 
   <resource_table project="juddi">
     <mail name="commits,user"/>
-    <!-- use attribute key="" to override default JIRA -->
-    <!-- N.B. some projects may use GitHub issues instead of JIRA -->
     <jira key="JUDDI,SCOUT"/>
     <cwiki/>
-    <git/><!-- missing juddi-scout because site.vsl does not support multiple entries... -->
+    <git/>
     <!-- use the tag
     <no_downloads/>
     to suppress the Downloads links -->
