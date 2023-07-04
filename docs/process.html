@@ -83,7 +83,6 @@
         <li>Close down the user mailing list (unless still active - in which case propose a moderator to Infra)</li>
         <li>Make JIRA|Bugzilla read-only</li>
         <li>Make the wiki (if any) read-only</li>
-        <li>Add a banner to the wiki: this involves creating the Puppet file  modules/cwiki_asf/files/attic/WIKIID.txt. See also AAREADME.txt in that directory.</li>
         <li>Delete LDAP group(s)</li>
         <li>Turn off automated builds</li>
       </ul>
@@ -166,6 +165,7 @@ ${Name} on behalf of ${project} + the Attic.
     <li><code>ID.jira.tmp</code></li>
     <li><code>xdocs/flagged/ID</code></li>
     <li><code>xdocs/projects/ID.xml</code></li>
+    <li><code>cwiki_retired/WIKI_ID.txt</code></li>
   </ul>
 <p>Review the changes in <code>xdocs/</code>, then commit to svn.</p>
 <p>The <code>ID.jira.tmp</code> file is text that can be copy-pasted into a JIRA description. It should be deleted after use, and not committed to SVN</p>
