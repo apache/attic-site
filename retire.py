@@ -14,6 +14,7 @@ Output:
 - xdocs/flagged/<pid> (created)
 - xdocs/projects/<pid>.xml (created)
 - xdocs/stylesheets/project.xml (updated)
+- cwiki_retired/<wiki_id>.txt (created)
 - <pid>.jira.tmp (created) - this is for pasting into an Attic JIRA issue
 
 N.B. The generated pid.xml file may need tweaking
@@ -27,7 +28,9 @@ from inspect import getsourcefile
 from string import Template
 import os
 import re
-from urlutils import loadyaml, loadjson
+from urlutils import loadyaml, loadjson, urlexists
+
+CWIKI='https://cwiki.apache.org/confluence/display/'
 
 if len(sys.argv) == 1:
     print("Please provide a list of project ids")
@@ -39,6 +42,7 @@ MYHOME = dirname(abspath(getsourcefile(lambda:0)))
 projects =    join((MYHOME), 'xdocs', 'projects')
 stylesheets = join((MYHOME), 'xdocs', 'stylesheets')
 flagged = join((MYHOME), 'xdocs', 'flagged')
+cwiki_retired = join((MYHOME), 'cwiki_retired')
 
 #  get details of the retired projects
 retirees = loadyaml('https://whimsy.apache.org/public/committee-retired.json')['retired']
@@ -124,6 +128,18 @@ def create_project(pid):
     os.system("svn add %s" % outfile)
     print("Check XML file for customisations such as JIRA and mailing lists")
 
+def check_wiki(pid):
+    url = CWIKI + pid.upper()
+    if urlexists(url):
+        flagfile = join(cwiki_retired, f"{pid}.txt")
+        with open(flagfile, 'a'):
+            pass # if wiki uses alias, would need to add tlp name here
+        os.system("svn add %s" % flagfile)
+        pass
+    else:
+        print(f"Could not find CWIKI entry at {url}, perhaps it uses an alias?")
+        # TODO how to search cwiki for aliases?
+
 for arg in sys.argv[1:]:
     print("Processing "+arg)
     if not arg in retirees:
@@ -139,5 +155,6 @@ for arg in sys.argv[1:]:
         os.system("svn add %s" % flagdir)
         create_project(arg)
         update_stylesheet(arg)
+        check_wiki(arg)
     except Exception as e:
         print(e)

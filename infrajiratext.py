@@ -33,7 +33,6 @@ def check_wiki(pid):
     url = CWIKI + pid.upper()
     if urlexists(url):
         print("Make CWIKI readonly: %s" % url)
-        print("Flag CWIKI as retired: create file '%s.txt' under puppet:modules/cwiki_asf/files/attic/" % pid)
 
 def check_mail(pid):
     try:
