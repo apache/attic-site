@@ -6,6 +6,3 @@ For example SQOOP has retired, so the directory contains the file sqoop.txt
 
 The first line of the file can be used to override the name of the status file where the
 wiki name is not the same. For example, eag.txt contains eagle
-
-WARNING: Puppet does not automatically remove files from the target host if they are
-deleted here. Raise an INFRA Jira if a file needs to be removed (e.g. a project restarts)
