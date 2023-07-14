@@ -49,7 +49,7 @@
   <mail name="issues"/>
   <mail name="user"/>
   <jira/>
-  <moin/>
+  <cwiki/>
   <git/>
   </resource_table>
 

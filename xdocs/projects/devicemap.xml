@@ -34,7 +34,7 @@
     <mail name="commits"/>
     <jira key="DMAP"/>
     <svn/>
-    <moin/>
+    <cwiki/>
   </resource_table>
 
   <p>As with any project in the Attic - if you should choose to fork DeviceMap outside of Apache, 

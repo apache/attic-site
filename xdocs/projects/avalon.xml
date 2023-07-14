@@ -34,7 +34,7 @@
 
   <resource_table project="avalon">
     <mail name="apps-dev,cvs,phoenix-dev"/>
-    <moin/>
+    <cwiki/>
     <svn/>
   </resource_table>
 

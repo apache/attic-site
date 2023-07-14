@@ -35,7 +35,7 @@
 ##    <resource_table project="NAME_OF_PROJECT" subproject="OPTIONAL_NAME_OF_SUBPROJECT" hide_keys="true|false" replace_dev="alternate_list" board_report_id="OPTIONAL_ALTERNATIVE_BOARD_REPORT_ID">
 ##      <mail name='MAIL_NAME(s): eg user[,issues,commits]'/>
 ##      <jira key="OPTIONAL_KEY[,key2,...]"/>  OR  <bugzilla/>
-##      <moin/>  OR  <cwiki/>
+##      <cwiki/>
 ##      <svn/>  OR  <git/>
 ##      <no_website/>
 ##      <no_lists/>
@@ -120,12 +120,6 @@
 #else
       <td><a href="https://bz.apache.org/bugzilla/buglist.cgi?product=${proj}">${proj}</a></td>
 #end
-    </tr>
-#end
-#if($elem.getChild("moin"))
-    <tr>
-      <td>Wiki</td>
-      <td><a href="https://wiki.apache.org/${proj}/">wiki.apache.org/${proj}/</a></td>
     </tr>
 #end
 #if($elem.getChild("cwiki"))
@@ -489,7 +483,7 @@ href="$title.getAttributeValue("href")">$menu.getChildText("title")</a></div>
   <meta http-equiv="refresh" content="$refresh"/>
 #end
 #set ($is_dynpage = 0)
-#if ($root.getAttributeValue("id") == "closer")
+#if ($root.getAttributeValue("id","") == "closer")
 #set ($is_dynpage = 1)
 #end
 	<link rel="stylesheet" href="/style/compressed.css" type="text/css" media="screen, projection"/>

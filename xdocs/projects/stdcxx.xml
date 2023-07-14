@@ -39,7 +39,7 @@
     <mail name="commits"/>
     <mail name="user"/>
     <jira/>
-    <moin/>
+    <cwiki/>
     <svn/>
   </resource_table>
 
