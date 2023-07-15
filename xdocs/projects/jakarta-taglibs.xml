@@ -39,6 +39,7 @@
     <resource_table project="jakarta" subproject="taglibs">
       <bugzilla/>
       <svn/>
+      <cwiki key="JAKARTATAGLIBS"/>
       <no_website/>
     </resource_table>
 

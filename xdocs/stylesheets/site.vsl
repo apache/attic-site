@@ -123,10 +123,20 @@
     </tr>
 #end
 #if($elem.getChild("cwiki"))
+#if ($elem.getChild("cwiki").getAttributeValue("key"))
+#set ($keys = $elem.getChild("cwiki").getAttributeValue("key"))
+#foreach ($key in $keys.split(","))
+    <tr>
+      <td>Wiki</td>
+      <td><a href="https://cwiki.apache.org/confluence/display/${key}/">cwiki.apache.org: ${key}</a></td>
+    </tr>
+#end
+#else
     <tr>
       <td>Wiki</td>
       <td><a href="https://cwiki.apache.org/confluence/display/${proj}/">cwiki.apache.org: ${proj}</a></td>
     </tr>
+#end
 #end
 #if($elem.getChild("svn"))
     <tr>
