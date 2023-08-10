@@ -74,15 +74,11 @@ def check_dist(pid):
             print('- ' + REL + pid)
         print()
 
-# Whimsy json may be stale, so use ldapsearch for now
+# There is no anonymous access to LDAP now
+# Assume there is a project LDAP group
 def check_ldap(pid):
     BASE='ou=project,ou=groups,dc=apache,dc=org'
-    res = subprocess.run(["ldapsearch", "-x", "-LLL", "-b", BASE, "cn=%s" % pid, "dn"], capture_output=True)
-    if res.returncode == 0:
-        if res.stdout != b'':
-            print("Remove the LDAP project group: %s" % res.stdout.rstrip().decode())
-    else:
-        print(res.stderr)
+    print("Remove the LDAP project group: dn: cn=%s,%s" % (pid, BASE))
     
 def check_jira(pid):
     jira = loadjson(JIRA)
