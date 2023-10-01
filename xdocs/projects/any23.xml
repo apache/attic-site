@@ -29,7 +29,9 @@
 
   <p><a href="https://any23.apache.org/">Apache Any23</a>
      moved into the Attic in 2023-06.
-     Apache Any23 mission was Anything to Triples.</p>
+     The mission of Apache Any23 (Anything to Triples) was the creation and maintenance of software related
+     to automatic crawling, parsing, analyzing, producing, validating and converting
+     RDF (Resource Description Framework) data.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
