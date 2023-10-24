@@ -15,3 +15,4 @@ Open an Infrastructure JIRA issue identifying the resources that need turning of
  * Make JIRA|Bugzilla|Github issues read-only
  * Make the wiki (Confluence|Moinmoin) read-only
  * Delete unix/ldap group
+ 
