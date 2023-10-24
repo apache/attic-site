@@ -1,3 +1,6 @@
 This is the source for the Attic website: source markup in xdocs/, HTML results of build.sh in docs/.
 
 It is automatically built by buildbot on changes: https://ci2.apache.org/#/builders/16
+
+The build script is at:
+https://svn.apache.org/repos/infra/infrastructure/buildbot2/projects/attic-site.py
