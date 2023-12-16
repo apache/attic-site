@@ -28,13 +28,20 @@ from inspect import getsourcefile
 from string import Template
 import os
 import re
-from urlutils import loadyaml, loadjson, urlexists
+from collections import defaultdict
+from urlutils import loadyaml, loadjson
 
 if len(sys.argv) == 1:
     print("Please provide a list of project ids")
     sys.exit(1)
 
 CWIKI='https://cwiki.apache.org/confluence/display/'
+
+CWIKI_INFO='https://cwiki.apache.org/confluence/rest/api/space/?type=global&limit=1000'
+WIKI_KEYS = defaultdict(list) # key = project name, value = list of possible spaces
+for entry in loadjson(CWIKI_INFO)['results']:
+    WIKI_KEYS[entry['name'].lower().replace('apache ', '')].append(entry['key'])
+
 JIRA='https://issues.apache.org/jira/rest/api/2/project'
 
 MYHOME = dirname(abspath(getsourcefile(lambda:0)))
@@ -127,16 +134,22 @@ def create_project(pid):
     os.system("svn add %s" % outfile)
     print("Check XML file for customisations such as JIRA and mailing lists")
 
+def find_wiki(pid):
+    found = []
+    for k, v in WIKI_KEYS.items():
+        if k == pid or (k.startswith(pid)): # and not k == valid project name
+            found += v
+    return found
+
 def check_wiki(pid):
-    url = CWIKI + pid.upper()
-    if urlexists(url):
-        flagfile = join(CWIKI_RETIRED, f"{pid}.txt")
-        with open(flagfile, 'a', encoding='utf-8'):
-            pass # if wiki uses alias, would need to add tlp name here
+    for wiki in find_wiki(pid):
+        flagname = wiki.lower()
+        flagfile = join(CWIKI_RETIRED, f"{flagname}.txt")
+        with open(flagfile, 'w', encoding='utf-8') as w:
+            if not flagname == pid:
+                w.write(pid)
+                w.write("\n")
         os.system("svn add %s" % flagfile)
-    else:
-        print(f"Could not find CWIKI entry at {url}, perhaps it uses an alias?")
-        # TODO how to search cwiki for aliases?
 
 for arg in sys.argv[1:]:
     print("Processing "+arg)
