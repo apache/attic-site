@@ -29,7 +29,7 @@ function output_filter(r)
       </div>]]):format(divstyle, astyle, host)
 
     -- special processing needed for some hosts
-    if host == 'predictionio' or host == 'eagle' or host == 'metamodel'
+    if host == 'predictionio' or host == 'eagle' or host == 'metamodel' or host == 'mxnet'
     then
         coroutine.yield('')
     else
@@ -41,6 +41,10 @@ function output_filter(r)
         if host == 'predictionio'
         then    
             local output = bucket:gsub('<header>', '<header>'..div, 1)
+            coroutine.yield(output)
+        elseif host == 'mxnet'
+        then    
+            local output = bucket:gsub('</header>', div..'</header>', 1)
             coroutine.yield(output)
         elseif host == 'eagle'
         then
