@@ -38,6 +38,15 @@
   </p>
 </section>
 
+<section id="2024">
+  <title>Attic 2024</title>
+
+  <p><table>
+    <tr><th>Retirement month</th><th>Completed</th><th>Project</th><th>Tracking</th></tr>
+    <tr><td>2024-02</td><td></td><td>Apache Bahir</td><td><a href="https://issues.apache.org/jira/browse/ATTIC-220">ATTIC-220</a></td></tr>
+  </table></p>
+</section>
+
 <section id="2023">
   <title>Attic 2023</title>
 
