@@ -29,7 +29,7 @@
 
   <p><a href="https://bahir.apache.org/">Apache Bahir</a>
      moved into the Attic in 2024-01.
-     Apache Bahir mission was Extensions to distributed analytic platforms such as Apache Spark.</p>
+     Apache Bahir mission was to provide extensions to distributed analytic platforms such as Apache Spark.</p>
 
   <p>The website, downloads and issue tracker all remain open, though 
      the issue tracker is read-only. See the website at
@@ -45,13 +45,11 @@
      To remove 'dev', use the attribute replace_dev="xxx" in the resource_table tag above
     -->
     <mail name="commits,reviews,user"/>
-    <!-- use attribute key="" to override default JIRA -->
-    <!-- N.B. some projects may use GitHub issues instead of JIRA -->
     <jira key="BAHIR"/>
     <!--
     <cwiki/>
     -->
-    <!--svn/>  OR  <git/-->
+    <git/>
     <!-- use the tag
     <no_downloads/>
     to suppress the Downloads links -->
