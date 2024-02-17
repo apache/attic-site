@@ -28,8 +28,8 @@
   <title>Board Resolution to move to the Attic</title>
 
   <p>The following is a sample resolution to move a project to the Apache Attic. A project's 
-     chair should include this in the agenda for the next board meeting. </p>
-
+     chair should include this in the agenda for the next board meeting: </p>
+  
   <pre>
    ?.  Terminate the Apache {PROJECT} Project
 
@@ -53,6 +53,16 @@
 
        RESOLVED, that the Apache {PROJECT} PMC is hereby terminated.
   </pre>
+
+  <p>Whimsy provides a tool to easily add such a resolution to the next board agenda:</p>
+  <ul>
+    <li>Go to <a href="https://whimsy.apache.org/board/agenda/">Whimsy Board Agenda</a> tool</li>
+    <li>Select the 'add item' button at the bottom</li>
+    <li>Select the 'Terminate Project' button from the list</li>
+    <li>Enter the project details</li>
+  </ul>
+
+  <p>See <a href="process.hmtl">Attic process</a> for more details on the process before adding the resolution to the board agenda. </p>
 
 </section>
 
