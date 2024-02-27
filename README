@@ -4,4 +4,3 @@ It is automatically built by buildbot on changes: https://ci2.apache.org/#/build
 
 The build script is at:
 https://svn.apache.org/repos/infra/infrastructure/buildbot2/projects/attic-site.py
-
