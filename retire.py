@@ -11,10 +11,10 @@ Input:
 - _template.jira
 
 Output:
-- xdocs/flagged/<pid> (created)
+- xdocs/flagged/<pid>/git.keep (created)
 - xdocs/projects/<pid>.xml (created)
 - xdocs/stylesheets/project.xml (updated)
-- cwiki_retired/<wiki_id>.txt (created)
+- xdocs/cwiki_retired/<wiki_id>.txt (created)
 - <pid>.jira.tmp (created) - this is for pasting into an Attic JIRA issue
 
 N.B. The generated pid.xml file may need tweaking
@@ -62,7 +62,7 @@ MYHOME = dirname(abspath(getsourcefile(lambda:0)))
 PROJECTS =    join((MYHOME), 'xdocs', 'projects')
 SYLESHEETS = join((MYHOME), 'xdocs', 'stylesheets')
 FLAGGED = join((MYHOME), 'xdocs', 'flagged')
-CWIKI_RETIRED = join((MYHOME), 'cwiki_retired')
+CWIKI_RETIRED = join((MYHOME), 'xdocs', 'cwiki_retired')
 
 #  get details of the retired projects
 RETIREES = loadyaml('https://whimsy.apache.org/public/committee-retired.json')['retired']
