@@ -42,7 +42,7 @@
       </ul>
     </li>
     <li>If the board approves the resolution, open an <a href="https://issues.apache.org/jira/browse/ATTIC">Attic JIRA</a> item - 'Move ${project} to the Attic'.<br />
-      The Attic PMC will step in and create a detailed issue description using <a href="https://svn.apache.org/viewvc/attic/site/retire.py?view=markup"><code>retire.py</code></a>, with other generated parts to move the project to the Attic.<br />
+      The Attic PMC will step in and create a detailed issue description using <a href="https://svn.apache.org/repos/asf/attic/site/retire.py"><code>retire.py</code></a>, with other generated parts to move the project to the Attic.<br />
       Generated issue content typically contains following steps (see <a href="#howto">"How to"</a> below for a description of each step): 
       <ol type="1">
         <li><a href="#confirm-resolution">#</a> Confirm Board Resolution</li>
@@ -64,16 +64,17 @@
 
   <p>The following are useful svn/https locations:</p>
     <ul>
-     <li>svn site <a href="https://svn.apache.org/viewvc/attic">https://svn.apache.org/repos/asf/attic</a>: sources in <code>xdocs</code>, generated html in <code>docs</code><br/>
+     <li>svn site <a href="https://svn.apache.org/repos/asf/attic">https://svn.apache.org/repos/asf/attic</a>: sources in <code>xdocs</code>, generated html in <code>docs</code><br/>
      git mirror <a href="https://github.com/apache/attic-site">https://github.com/apache/attic-site</a></li>
      <li>site <a href="https://attic.apache.org">https://attic.apache.org</a></li>
      <li>internals: <a href="https://ci2.apache.org/#/builders/16">Buildbot job</a> to build from source and commit generated html
-         (see <a href="https://svn.apache.org/repos/infra/infrastructure/buildbot/aegis/buildmaster/master1/projects/attic-site.conf">attic-site.conf</a>),
+         (see <a href="https://svn.apache.org/repos/infra/infrastructure/buildbot2/projects/attic-site.py">attic-site.py</a>),
          <a href="https://github.com/apache/infrastructure-p6/blob/production/modules/svnwcsub/files/svnwcsub.conf">svnwcsub configuration</a> to update generated html from svn to webserver</li>
      <li>jira <a href="https://issues.apache.org/jira/browse/ATTIC">https://issues.apache.org/jira/browse/ATTIC</a></li>
      <li>permissions on svn <a href="https://github.com/apache/infrastructure-p6/blob/production/modules/subversion_server/files/authorization/asf-authorization-template#L231">/repos/asf</a>
      and <a href="https://github.com/apache/infrastructure-p6/blob/production/modules/subversion_server/files/authorization/pit-authorization-template">/repos/infra</a></li>
-     <li>websites <a href="https://github.com/apache/infrastructure-p6/blob/production/modules/svnwcsub/files/svnwcsub.conf">svnpubsub</a></li>
+     <li>websites <a href="https://github.com/apache/infrastructure-p6/blob/production/modules/svnwcsub/files/svnwcsub.conf">svnpubsub</a> and
+         <a href="https://infra-reports.apache.org/#sitesource">infra-reports#sitesource</a></li>
     </ul>
 </section>
 
@@ -130,7 +131,7 @@ ${Name} on behalf of ${project} + the Attic.
      You can get the source for the site from Subversion: </p>
   <pre>svn co https://svn.apache.org/repos/asf/attic/site</pre>
 
-  <p>You can generate the required changes using the Python3 <a href="https://svn.apache.org/viewvc/attic/site/retire.py?view=markup"><code>retire.py</code></a> script as follows:</p>
+  <p>You can generate the required changes using the Python3 <a href="https://svn.apache.org/repos/asf/attic/site/retire.py"><code>retire.py</code></a> script as follows:</p>
   <pre>./retire.py id1 [id2...]</pre>
   <p>This should generate the following files for each ID, as well as updating <code>xdocs/stylesheets/project.xml</code>:</p>
   <ul>
@@ -150,7 +151,7 @@ ${Name} on behalf of ${project} + the Attic.
 
     <p>The files referenced are in <a href="https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk">https://svn.apache.org/repos/asf/comdev/projects.apache.org/trunk</a>, which every Apache committer can update.</p>
 
-    <p>Identify whether the project has a DOAP file (see the &lt;comdev repo&gt;/projects.apache.org/data/projects.xml file if update the rdf file with PMC to the Attic and add a category of <em>retired</em>: </p>
+    <p>Identify whether the project has a DOAP file (see the &lt;comdev repo&gt;/projects.apache.org/data/projects.xml file) and update the rdf file with PMC to the Attic and add a category of <em>retired</em>: </p>
      <pre>pmc change:    &lt;asfext:pmc rdf:resource="http://attic.apache.org" /&gt;
 new category:  &lt;category rdf:resource="http://projects.apache.org/category/retired" /&gt;</pre>
     <p>You can use <code>script/project2attic.py</code> to prepare the update that you'll just need to review and commit</p>
@@ -173,7 +174,7 @@ new category:  &lt;category rdf:resource="http://projects.apache.org/category/re
   <title>How to: 5. Get infra lock down project's resources</title>
   <p>Open an <a href="https://issues.apache.org/jira/browse/INFRA">Infrastructure JIRA</a> issue identifying the resources that need turning off/making read only.</p>
 
-  <p>The content of the issue can be generated using <a href="https://svn.apache.org/viewvc/attic/site/infrajiratext.py?view=markup"><code>infrajiratext.py</code></a>.</p>
+  <p>The content of the issue can be generated using <a href="https://svn.apache.org/repos/asf/attic/site/infrajiratext.py"><code>infrajiratext.py</code></a>.</p>
 
   <p>Typically, it contains steps like following, that need to be tweaked based on assets of the retired project:
     <ul>
