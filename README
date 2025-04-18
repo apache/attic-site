@@ -1,3 +1,7 @@
+MOVED TO GIT https://github.com/apache/attic
+  cwiki_retired/ last content still used from svn
+
+
 This is the source for the Attic website https://attic.apache.org/
 - source markup in xdocs/
 - HTML results of build.sh in docs/
